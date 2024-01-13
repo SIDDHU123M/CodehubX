@@ -1,0 +1,86 @@
+/* Reset */
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Import */
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap');
+
+/* Variables */
+:root {
+	--theme-bg-color: rgba(16, 18, 27, 0.4);
+	--body-font: "Poppins", sans-serif;
+}
+
+/* Background Styling */
+body {
+	background-color: #222222;
+	margin: auto;
+}
+
+/* Basic Styling */
+body {
+	font-family: Arial, sans-serif;
+}
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+/* Styles for tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+/* Styles for desktops */
+@media only screen and (min-width: 1025px) {
+	body {
+		font-size: 13px;
+	}
+}
+
+p {
+	font-weight: bold;
+	font-family: monospace;
+}

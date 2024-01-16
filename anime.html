@@ -23,26 +23,55 @@
             </nav>
         </header>
         <main>
-            <h1 class="page-title">Stream Anime Free</h1>
-            <div class="container">
-                <div class="link-item"><a href="https://www.google.com/search?q=AniWatch" target="_blank"><p>AniWatch</p></a></div>
-                <div class="link-item"><a href="https://www.google.com/search?q=AniWorld" target="_blank"><p>AniWorld</p></a></div>
-                <div class="link-item"><a href="https://aniwatch.to/" target="_blank"><p>Zoro</p></a></div>
-                <div class="link-item"><a href="https://www.google.com/search?q=animania" target="_blank"><p>Animania</p></a></div>
-                <div class="link-item"><a href="https://www.google.com/search?q=9anime" target="_blank"><p>9anime</p></a></div>
-                <div class="link-item"><a href="https://www.google.com/search?q=Animekisa" target="_blank"><p>Animekisa</p></a></div>
-                <div class="link-item"><a href="https://www.google.com/search?q=kiss+anime" target="_blank"><p>Kiss - Anime</p></a></div>
-                <div class="link-item"><a href="https://www.google.com/search?q=AnimiXPlay" target="_blank"><p>AnimiXPlay</p></a></div>
-                <div class="link-item"><a href="https://kayoanime.com/" target="_blank"><p>Kayo Anime</p></a></div>
-                <div class="link-item"><a href="https://anime-world.in/series/" target="_blank"><p>Anime-World</p></a></div>
-                <div class="link-item"><a href="https://animefox.io/" target="_blank"><p>AnimeFox</p></a></div>
-                <div class="link-item"><a href="https://anime-world.in/" target="_blank"><p>Anime World</p></a></div>
-                <div class="link-item"><a href="https://www.anime-planet.com/anime/all" target="_blank"><p>Allanime</p></a></div>
-                <div class="link-item"><a href="https://animeflick.net/" target="_blank"><p>Animeflick</p></a></div>
-                <div class="link-item"><a href="https://kimanime.com/" target="_blank"><p>Kimanime</p></a></div>
-                <div class="link-item"><a href="https://animet.tv/home" target="_blank"><p>Animet</p></a></div>
-                <div class="link-item"><a href="index.html"><p>Home - Back</p></a></div>
-            </div>
+            <section>
+                <h1 class="page-title">Stream Anime Free</h1>
+                <div class="container">
+                    <script>
+                        const freeAnime = {
+                                "AniWatch": "https://www.google.com/search?q=AniWatch",
+                                "AniWorld": "https://www.google.com/search?q=AniWorld",
+                                "Zoro": "https://aniwatch.to/",
+                                "Animania": "https://www.google.com/search?q=animania",
+                                "9anime": "https://www.google.com/search?q=9anime",
+                                "Animekisa": "https://www.google.com/search?q=Animekisa",
+                                "Kiss - Anime": "https://www.google.com/search?q=kiss+anime",
+                                "AnimiXPlay": "https://www.google.com/search?q=AnimiXPlay",
+                                "Kayo Anime": "https://kayoanime.com/",
+                                "Anime-World": "https://anime-world.in/series/",
+                                "AnimeFox": "https://animefox.io/",
+                                "Anime World": "https://anime-world.in/",
+                                "Allanime": "https://www.anime-planet.com/anime/all",
+                                "Animeflick": "https://animeflick.net/",
+                                "Kimanime": "https://kimanime.com/",
+                                "Animet": "https://animet.tv/home",
+                            };
+                            const container = document.querySelector(".container");
+                            for (const key in freeAnime) {
+                                if (freeAnime.hasOwnProperty(key)) {
+                                    const linkItem = document.createElement("div");
+                                    linkItem.className = "link-item";
+                                    const anchor = document.createElement("a");
+                                    anchor.href = freeAnime[key];
+                                    anchor.target = "_blank";
+                                    const paragraph = document.createElement("p");
+                                    paragraph.textContent = key;
+                                    anchor.appendChild(paragraph);
+                                    linkItem.appendChild(anchor);
+                                    container.appendChild(linkItem);
+                                }
+                            }
+                    </script>
+                </div>
+            </section>
+            <section>
+                <div class="container1">
+                    <div class="link-item">
+                        <a href="index.html">
+                            <p>Home - Back</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </main>
 </body>
 </html>

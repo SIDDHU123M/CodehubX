@@ -23,65 +23,50 @@
             </nav>
         </header>
         <main>
-            <h1 class="page-title">Udemy Coupons</h1>
-            <div class="container">
-                <div class="link-item">
-                    <a href="https://www.discudemy.com/" target="_blank">
-                        <p>DiscUdemy</p>
-                    </a>
+            <section>
+                <h1 class="page-title">Udemy Coupons</h1>
+                <div class="container">
+                    <script>
+                        const udemyCoupons = {
+                                "DiscUdemy": "https://www.discudemy.com/",
+                                "Coupon Scorpion": "https://couponscorpion.com/",
+                                "Best Coupon Hunter": "https://bestcouponhunter.com/",
+                                "LearnViral": "https://udemycoupon.learnviral.com/",
+                                "Real Discount": "https://www.real.discount/",
+                                "Mega Courses": "https://megacourses.net/",
+                                "Promo Coupons": "https://www.promocoupons24.com/",
+                                "FreeBies Global": "https://freebiesglobal.com/",
+                                "CourseCity": "https://coursesity.com/",
+                                "999CourseSale": "https://999coursesale.com/freebie-courses-list.php",
+                            };
+                            const container = document.querySelector(".container");
+                            for (const key in udemyCoupons) {
+                                if (udemyCoupons.hasOwnProperty(key)) {
+                                    const linkItem = document.createElement("div");
+                                    linkItem.className = "link-item";
+                                    const anchor = document.createElement("a");
+                                    anchor.href = udemyCoupons[key];
+                                    anchor.target = "_blank";
+                                    const paragraph = document.createElement("p");
+                                    paragraph.textContent = key;
+                                    anchor.appendChild(paragraph);
+                                    linkItem.appendChild(anchor);
+                                    container.appendChild(linkItem);
+                                }
+                            }
+                    </script>
                 </div>
-                <div class="link-item">
-                    <a href="https://couponscorpion.com/" target="_blank">
-                        <p>Coupon Scorpion</p>
-                    </a>
+                <p class="note"><b>Note:-</b> If a site doesn't work, try using a proxy or a VPN. If the issue persists, type the raw text into your search engine and open the first URL, as the site may have been updated. Stay persistent and don't give up!</p>
+            </section>
+            <section>
+                <div class="container1">
+                    <div class="link-item">
+                        <a href="../coupons.html">
+                            <p>Back To Coupons</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="link-item">
-                    <a href="https://bestcouponhunter.com/" target="_blank">
-                        <p>Best Coupon Hunter</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://udemycoupon.learnviral.com/" target="_blank">
-                        <p>LearnViral</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.real.discount/" target="_blank">
-                        <p>Real Discount</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://megacourses.net/" target="_blank">
-                        <p>Mega Courses</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.promocoupons24.com/" target="_blank">
-                        <p>Promo Coupons</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://freebiesglobal.com/" target="_blank">
-                        <p>FreeBies Global</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://coursesity.com/" target="_blank">
-                        <p>CourseCity</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://999coursesale.com/freebie-courses-list.php" target="_blank">
-                        <p>999CourseSale</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="../coupons.html">
-                        <p>Back To Coupons</p>
-                    </a>
-                </div>
-            </div>
-            <p class="note"><b>Note:-</b> If a site doesn't work, try using a proxy or a VPN. If the issue persists, type the raw text into your search engine and open the first URL, as the site may have been updated. Stay persistent and don't give up!</p>
+            </section>
         </main>
     </body>
 </html>

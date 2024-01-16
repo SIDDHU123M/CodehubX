@@ -23,139 +23,64 @@
             </nav>
         </header>
         <main>
-            <h1 class="page-title">Stream Movies Free</h1>
-            <div class="container">
-                <div class="link-item">
-                    <a href="https://www.filmxy.vip" target="_blank">
-                        <p>FilmXY</p>
-                    </a>
+            <section>
+                <h1 class="page-title">Stream Movies Free</h1>
+                <div class="container">
+                    <script>
+                        const freeMovie = {
+                                "FilmXY": "https://www.filmxy.vip",
+                                "PutLockers": "https://www.google.com/search?q=putlockers",
+                                "LikeStream": "https://www.google.com/search?q=likestream",
+                                "Ev01": "https://www.Ev01.to",
+                                "Soap2Day": "https://www.google.com/search?q=Soap2Day",
+                                "Soap2Day org": "https://www.google.com/search?q=Soap2day org",
+                                "HDToday": "https://www.google.com/search?q=HDToday",
+                                "Y-Movies": "https://www.google.com/search?q=Y-Movies",
+                                "YesMovies": "https://www.google.com/search?q=YesMovies",
+                                "FlixTor": "https://www.google.com/search?q=Flixtor",
+                                "LookMovies": "https://www.google.com/search?q=LookMovies",
+                                "FlixHD": "https://www.google.com/search?q=FlixHD",
+                                "HDSeries": "https://www.google.com/search?q=HDSeries",
+                                "SauFlix": "https://www.google.com/search?q=SauFlix",
+                                "PRmovies": "https://www.google.com/search?q=PRMovies",
+                                "Movies2Watch": "https://www.google.com/search?q=Movies2Watch",
+                                "HDWatch": "https://www.google.com/search?q=HDWatch",
+                                "OpenLoadMovies": "https://www.google.com/search?q=OpenLoadMovies",
+                                "M4UHD": "https://www.google.com/search?q=M4UHD",
+                                "WorthFul": "https://www.worthful.info/",
+                                "fmovies": "https://www.google.com/search?q=FMovies",
+                                "Sflix": "https://www.google.com/search?q=SFlix",
+                                "Bflix": "https://bflix.ru",
+                                "FboxTV": "https://www.fboxtv.com/movie",
+                                "Cmovies": "https://www.google.com/search?q=CMovies",
+                            };
+                            const container = document.querySelector(".container");
+                            for (const key in freeMovie) {
+                                if (freeMovie.hasOwnProperty(key)) {
+                                    const linkItem = document.createElement("div");
+                                    linkItem.className = "link-item";
+                                    const anchor = document.createElement("a");
+                                    anchor.href = freeMovie[key];
+                                    anchor.target = "_blank";
+                                    const paragraph = document.createElement("p");
+                                    paragraph.textContent = key;
+                                    anchor.appendChild(paragraph);
+                                    linkItem.appendChild(anchor);
+                                    container.appendChild(linkItem);
+                                }
+                            }
+                    </script>
                 </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=putlockers" target="_blank">
-                        <p>PutLockers</p>
-                    </a>
+            </section>
+            <section>
+                <div class="container1">
+                    <div class="link-item">
+                        <a href="index.html">
+                            <p>Home - Back</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=likestream" target="_blank">
-                        <p>LikeStream</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.Ev01.to" target="_blank">
-                        <p>Ev01</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=Soap2Day" target="_blank">
-                        <p>Soap2Day</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=Soap2day org" target="_blank">
-                        <p>Soap2Day org</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=HDToday " target="_blank">
-                        <p>HDToday</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=Y-Movies" target="_blank">
-                        <p>Y-Movies</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=YesMovies" target="_blank">
-                        <p>YesMovies</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=Flixtor" target="_blank">
-                        <p>FlixTor</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=LookMovies" target="_blank">
-                        <p>LookMovies</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=FlixHD" target="_blank">
-                        <p>FlixHD</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=HDSeries" target="_blank">
-                        <p>HDSeries</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=SauFlix" target="_blank">
-                        <p>SauFlix</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=PRMovies" target="_blank">
-                        <p>Prmovies</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=Movies2Watch" target="_blank">
-                        <p>Movies2Watch</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=HDWatch" target="_blank">
-                        <p>HDWatch</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=OpenLoadMovies" target="_blank">
-                        <p>OpenLoadMovies</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=M4UHD" target="_blank">
-                        <p>M4UHD</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.worthful.info/" target="_blank">
-                        <p>WorthFul</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=FMovies" target="_blank">
-                        <p>fmovies</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=SFlix" target="_blank">
-                        <p>Sflix</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://bflix.ru" target="_blank">
-                        <p>Bflix</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.fboxtv.com/movie" target="_blank">
-                        <p>FboxTV</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.google.com/search?q=CMovies" target="_blank">
-                        <p>Cmovies</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="index.html">
-                        <p>Home - Back</p>
-                    </a>
-                </div>
-            </div>
+            </section>
         </main>
     </body>
 </html>

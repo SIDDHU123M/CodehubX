@@ -76,14 +76,11 @@
                             if (programmingLanguages.hasOwnProperty(key)) {
                                 const linkItem = document.createElement("div");
                                 linkItem.className = "link-item";
-        
                                 const anchor = document.createElement("a");
                                 anchor.href = programmingLanguages[key];
                                 anchor.target = "_blank";
-        
                                 const paragraph = document.createElement("p");
                                 paragraph.textContent = key;
-        
                                 anchor.appendChild(paragraph);
                                 linkItem.appendChild(anchor);
                                 container.appendChild(linkItem);
@@ -94,7 +91,7 @@
             </section>
             <section>
                 <h1 class="page-title">Cyber Security Skills</h1>
-                <div class="container2">
+                <div class="container1">
                     <script>
                         const cybersecuritySkills = {
                             "Ethical Hacking": "https://www.cybrary.it/course/ethical-hacking/",
@@ -120,22 +117,19 @@
                             "Legal and Ethical Considerations": "https://www.eff.org/",
                             "Internet of Things (IoT) Security": "https://www.iotsecurityfoundation.org/",
                         };
-                        const container2 = document.querySelector(".container2");
+                        const container1 = document.querySelector(".container1");
                         for (const key in cybersecuritySkills) {
                             if (cybersecuritySkills.hasOwnProperty(key)) {
                                 const linkItem = document.createElement("div");
                                 linkItem.className = "link-item";
-        
                                 const anchor = document.createElement("a");
                                 anchor.href = cybersecuritySkills[key];
                                 anchor.target = "_blank";
-        
                                 const paragraph = document.createElement("p");
                                 paragraph.textContent = key;
-        
                                 anchor.appendChild(paragraph);
                                 linkItem.appendChild(anchor);
-                                container2.appendChild(linkItem);
+                                container1.appendChild(linkItem);
                             }
                         }
                     </script>
@@ -143,7 +137,7 @@
             </section>
             <section>
                 <h1 class="page-title">Professional Skills</h1>
-                <div class="container1">
+                <div class="container2">
                     <script>
                         const professionalSkills = {
                             "Communication Skills": "https://www.coursera.org/learn/communication-skills-for-managers",
@@ -158,28 +152,32 @@
                             "Digital Literacy": "https://learndigital.withgoogle.com/digitalgarage, https://www.linkedin.com/learning/digital-literacy",
                             "Networking Skills": "https://www.netacad.com/courses/networking/cisco-networking-basics",
                             "Emotional Intelligence": "https://www.linkedin.com/learning/developing-emotional-intelligence",
-                            "Back - Home" : "index.html"
-                            // Add more professional skills as needed
                         };
-                        const container1 = document.querySelector(".container1");
+                        const container2 = document.querySelector(".container2");
                         for (const key in professionalSkills) {
                             if (professionalSkills.hasOwnProperty(key)) {
                                 const linkItem = document.createElement("div");
                                 linkItem.className = "link-item";
-        
                                 const anchor = document.createElement("a");
                                 anchor.href = professionalSkills[key];
                                 anchor.target = "_blank";
-        
                                 const paragraph = document.createElement("p");
                                 paragraph.textContent = key;
-        
                                 anchor.appendChild(paragraph);
                                 linkItem.appendChild(anchor);
-                                container1.appendChild(linkItem);
+                                container2.appendChild(linkItem);
                             }
                         }
                     </script>
+                </div>
+            </section>
+            <section>
+                <div class="container3">
+                    <div class="link-item">
+                        <a href="index.html">
+                            <p>Back - Home</p>
+                        </a>
+                    </div>
                 </div>
             </section>
         </main>

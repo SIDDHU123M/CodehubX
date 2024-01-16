@@ -59,7 +59,7 @@ main{
     color: #ffffff;
 }
 
-.container, .container1, .container2{
+.container, .container1, .container2, .container3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

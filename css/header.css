@@ -53,6 +53,10 @@ header {
     color: whitesmoke;
 }
 
+llo {
+    color: orange;
+}
+
 .nav-bar {
     display: flex;
     align-items: center;

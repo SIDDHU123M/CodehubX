@@ -23,20 +23,49 @@
             </nav>
         </header>
         <main>
-            <h1 class="page-title">Apps for Streaming</h1>
-            <div class="container">
-                <div class="link-item"><a href="https://github.com/BeamlakAschalew/cinemax" target="_blank"><p>CineMax</p></a></div>
-                <div class="link-item"><a href="https://onstream.to/" target="_blank"><p>OnStream</p></a></div>
-                <div class="link-item"><a href="https://filmplusapk.com/" target="_blank"><p>FilmPlus</p></a></div>
-                <div class="link-item"><a href="https://github.com/recloudstream/cloudstream" target="_blank"><p>CloudStream</p></a></div>
-                <div class="link-item"><a href="http://castlemovies.in/" target="_blank"><p>Castle Movies</p></a></div>
-                <div class="link-item"><a href="https://www.movieboxpro.app/" target="_blank"><p>Moviebox Pro</p></a></div>
-                <div class="link-item"><a href="https://cinemahd.app/v2-apk-8/" target="_blank"><p>Cinema HD</p></a></div>
-                <div class="link-item"><a href="https://teatv.org/new-version/" target="_blank"><p>Tea TV</p></a></div>
-                <div class="link-item"><a href="https://www.crackle.com/" target="_blank"><p>Crackle</p></a></div>
-                <div class="link-item"><a href="https://ev01.sx/android-movies-apk" target="_blank"><p>EV01 Net</p></a></div>
-                <div class="link-item"><a href="index.html">Home - Back</p></a></div>
-            </div>   
+            <section>
+                <h1 class="page-title">Apps for Streaming</h1>
+                <div class="container">
+                    <script>
+                        const appStreaming = {
+                                "CineMax": "https://github.com/BeamlakAschalew/cinemax",
+                                "OnStream": "https://onstream.to/",
+                                "FilmPlus": "https://filmplusapk.com/",
+                                "CloudStream": "https://github.com/recloudstream/cloudstream",
+                                "Castle Movies": "http://castlemovies.in/",
+                                "Moviebox Pro": "https://www.movieboxpro.app/",
+                                "Cinema HD": "https://cinemahd.app/v2-apk-8/",
+                                "Tea TV": "https://teatv.org/new-version/",
+                                "Crackle": "https://www.crackle.com/",
+                                "EV01 Net": "https://ev01.sx/android-movies-apk",
+                            };
+                            const container = document.querySelector(".container");
+                            for (const key in appStreaming) {
+                                if (appStreaming.hasOwnProperty(key)) {
+                                    const linkItem = document.createElement("div");
+                                    linkItem.className = "link-item";
+                                    const anchor = document.createElement("a");
+                                    anchor.href = appStreaming[key];
+                                    anchor.target = "_blank";
+                                    const paragraph = document.createElement("p");
+                                    paragraph.textContent = key;
+                                    anchor.appendChild(paragraph);
+                                    linkItem.appendChild(anchor);
+                                    container.appendChild(linkItem);
+                                }
+                            }
+                    </script>
+                </div>
+            </section>
+            <section>
+                <div class="container1">
+                    <div class="link-item">
+                        <a href="index.html">
+                            <p>Home - Back</p>
+                        </a>
+                    </div>
+                </div> 
+            </section>
         </main>    
     </body>
 </html>

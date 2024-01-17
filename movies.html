@@ -18,59 +18,14 @@
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="profile/index.html" target="_blank" class="nav-link">Profile</a></li>
-                    <li><a href="https://github.com/SIDDHU123M/" class="nav-link">GitHub</a></li>
+                    <li><a href="" class="nav-link" id="githubLink">GitHub</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section>
                 <h1 class="page-title">Stream Movies Free</h1>
-                <div class="container">
-                    <script>
-                        const freeMovie = {
-                                "FilmXY": "https://www.filmxy.vip",
-                                "PutLockers": "https://www.google.com/search?q=putlockers",
-                                "LikeStream": "https://www.google.com/search?q=likestream",
-                                "Ev01": "https://www.Ev01.to",
-                                "Soap2Day": "https://www.google.com/search?q=Soap2Day",
-                                "Soap2Day org": "https://www.google.com/search?q=Soap2day org",
-                                "HDToday": "https://www.google.com/search?q=HDToday",
-                                "Y-Movies": "https://www.google.com/search?q=Y-Movies",
-                                "YesMovies": "https://www.google.com/search?q=YesMovies",
-                                "FlixTor": "https://www.google.com/search?q=Flixtor",
-                                "LookMovies": "https://www.google.com/search?q=LookMovies",
-                                "FlixHD": "https://www.google.com/search?q=FlixHD",
-                                "HDSeries": "https://www.google.com/search?q=HDSeries",
-                                "SauFlix": "https://www.google.com/search?q=SauFlix",
-                                "PRmovies": "https://www.google.com/search?q=PRMovies",
-                                "Movies2Watch": "https://www.google.com/search?q=Movies2Watch",
-                                "HDWatch": "https://www.google.com/search?q=HDWatch",
-                                "OpenLoadMovies": "https://www.google.com/search?q=OpenLoadMovies",
-                                "M4UHD": "https://www.google.com/search?q=M4UHD",
-                                "WorthFul": "https://www.worthful.info/",
-                                "fmovies": "https://www.google.com/search?q=FMovies",
-                                "Sflix": "https://www.google.com/search?q=SFlix",
-                                "Bflix": "https://bflix.ru",
-                                "FboxTV": "https://www.fboxtv.com/movie",
-                                "Cmovies": "https://www.google.com/search?q=CMovies",
-                            };
-                            const container = document.querySelector(".container");
-                            for (const key in freeMovie) {
-                                if (freeMovie.hasOwnProperty(key)) {
-                                    const linkItem = document.createElement("div");
-                                    linkItem.className = "link-item";
-                                    const anchor = document.createElement("a");
-                                    anchor.href = freeMovie[key];
-                                    anchor.target = "_blank";
-                                    const paragraph = document.createElement("p");
-                                    paragraph.textContent = key;
-                                    anchor.appendChild(paragraph);
-                                    linkItem.appendChild(anchor);
-                                    container.appendChild(linkItem);
-                                }
-                            }
-                    </script>
-                </div>
+                <div class="container" id="container"></div>
             </section>
             <section>
                 <div class="container1">
@@ -81,6 +36,37 @@
                     </div>
                 </div>
             </section>
+            <script>
+                const fetchDataAndCreateLinks = (skills, containerId) => {
+                    fetch("json/movies.json")
+                        .then((response) => response.json())
+                        .then((data) => {
+                            const skillData = data[skills];
+                            const container =
+                                document.getElementById(containerId);
+                            for (const key in skillData) {
+                                if (skillData.hasOwnProperty(key)) {
+                                    const linkItem =
+                                        document.createElement("div");
+                                    linkItem.className = "link-item";
+                                    const anchor = document.createElement("a");
+                                    anchor.href = skillData[key];
+                                    anchor.target = "_blank";
+                                    const paragraph =
+                                        document.createElement("p");
+                                    paragraph.textContent = key;
+                                    anchor.appendChild(paragraph);
+                                    linkItem.appendChild(anchor);
+                                    container.appendChild(linkItem);
+                                }
+                            }
+                        })
+                        .catch((error) =>
+                            console.error("Error fetching JSON:", error)
+                        );
+                };
+                fetchDataAndCreateLinks("freeMovies", "container");
+            </script>
         </main>
     </body>
 </html>

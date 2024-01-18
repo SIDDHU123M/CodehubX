@@ -18,90 +18,14 @@
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="profile/index.html" target="_blank" class="nav-link">Profile</a></li>
-                    <li><a href="https://github.com/SIDDHU123M/" class="nav-link">GitHub</a></li>
+                    <li><a href="" class="nav-link" id="githubLink">GitHub</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section>
                 <h1 class="page-title">Github Repositories</h1>
-                <div class="container">
-                    <script>
-                        const githubRepo = {
-                                "Web Scraping": "https://github.com/scrapy/scrapy",
-                                "Hacking Tools": "https://github.com/carpedm20/awesome-hacking",
-                                "Password Cracking": "https://github.com/vanhauser-thc/thc-hydra",
-                                "Cryptography": "https://github.com/pyca/cryptography",
-                                "Malware Analysis": "https://github.com/rshipp/awesome-malware-analysis",
-                                "Awesome Hacking": "https://github.com/Hack-with-Github/Awesome-Hacking",
-                                "Payloads all the things": "https://github.com/swisskyrepo/PayloadsAllTheThings",
-                                "H4cker": "https://github.com/The-Art-of-Hacking/h4cker",
-                                "Hacking Resource": "https://github.com/vitalysim/Awesome-Hacking-Resources",
-                                "Web Security": "https://github.com/qazbnm456/awesome-web-security",
-                                "Brute Force": "https://github.com/vanhauser-thc/thc-hydra",
-                                "Exploite Development": "https://github.com/wtsxDev/Exploit-Development",
-                                "Firewall Cfg": "https://github.com/trimstray/iptables-essentials",
-                                "Vulnerability Scanning": "https://github.com/sqlmapproject/sqlmap",
-                                "BruteForce": "hhttps://github.com/threat9/routersploit",
-                                "Red Team Ops": "https://github.com/CyberSecurityUP/Awesome-Red-Team-Operations",
-                                "Red Teaming": "https://github.com/yeyintminthuhtut/Awesome-Red-Teaming",
-                                "Red Team ToolKit": "https://0x1.gitlab.io/pentesting/Red-Teaming-Toolkit/",
-                                "Blue Team Ops": "https://github.com/fabacab/awesome-cybersecurity-blueteam",
-                                "OSINT": "https://github.com/jivoi/awesome-osint",
-                                "DevSecOps": "https://github.com/devsecops/awesome-devsecop",
-                                "Pentest": "https://github.com/enaqx/awesome-pentest",
-                                "Cloud Pentest": "https://github.com/CyberSecurityUP/Awesome-Cloud-PenTest",
-                                "Shodan": "https://github.com/jakejarvis/awesome-shodan-queries",
-                                "AWS Security": "https://github.com/jassics/awesome-aws-security",
-                                "Malware Analysis & Reverse Engineering": "https://github.com/CyberSecurityUP/Awesome-Malware-Analysis-Reverse-Engineering",
-                                "Malware Analysis": "https://github.com/rshipp/awesome-malware-analysis",
-                                "Computer Forensic": "https://github.com/cugu/awesome-forensics",
-                                "Cloud Security": "https://github.com/4ndersonLin/awesome-cloud-security",
-                                "Reverse Engineering": "https://github.com/tylerha97/awesome-reversing",
-                                "Threat Intelligence": "https://github.com/hslatman/awesome-threat-intelligence",
-                                "SOC": "https://github.com/cyb3rxp/awesome-soc",
-                                "Social Engineering": "https://github.com/v2-dev/awesome-social-engineering",
-                                "Web Security": "https://github.com/qazbnm456/awesome-web-security#prototype-pollution",
-                                "Forensics": "https://github.com/cugu/awesome-forensics",
-                                "API Security": "https://github.com/arainho/awesome-api-security",
-                                "WEB3": "https://github.com/Anugrahsr/Awesome-web3-Security",
-                                "Incident Response": "https://github.com/Correia-jpv/fucking-awesome-incident-response",
-                                "Search Engines": "https://github.com/edoardottt/awesome-hacker-search-engines",
-                                "Smart Contract Security": "https://github.com/saeidshirazi/Awesome-Smart-Contract-Security",
-                                "Terraform": "https://github.com/shuaibiyy/awesome-terraform",
-                                "Cloud Pentest": "https://github.com/CyberSecurityUP/Awesome-Cloud-PenTest",
-                                "Burpsuite Extensions": "https://github.com/snoopysecurity/awesome-burp-extensions",
-                                "IOT": "https://github.com/phodal/awesome-iot/blob/master/README.md",
-                                "IOS Security": "https://github.com/Cy-clon3/awesome-ios-security",
-                                "Embedded & IOT Security": "https://github.com/fkie-cad/awesome-embedded-and-iot-security",
-                                "OSINT Bots": "https://github.com/ItIsMeCall911/Awesome-Telegram-OSINT#-bots",
-                                "IOT Hacks": "https://github.com/nebgnahz/awesome-iot-hacks",
-                                "WEB3 Security": "https://github.com/Anugrahsr/Awesome-web3-Security",
-                                "Security": "https://github.com/sbilly/awesome-security",
-                                "Reversing": "https://github.com/tylerha97/awesome-reversing",
-                                "Piracy": "https://github.com/Igglybuff/awesome-piracy",
-                                "Web Hacking": "https://github.com/infoslack/awesome-web-hacking",
-                                "Memory Forensics": "https://github.com/digitalisx/awesome-memory-forensics",
-                                "OSCP": "https://github.com/0x4D31/awesome-oscp",
-                                "RAT": "https://github.com/alphaSeclab/awesome-rat",
-                            };
-                            const container = document.querySelector(".container");
-                            for (const key in githubRepo) {
-                                if (githubRepo.hasOwnProperty(key)) {
-                                    const linkItem = document.createElement("div");
-                                    linkItem.className = "link-item";
-                                    const anchor = document.createElement("a");
-                                    anchor.href = githubRepo[key];
-                                    anchor.target = "_blank";
-                                    const paragraph = document.createElement("p");
-                                    paragraph.textContent = key;
-                                    anchor.appendChild(paragraph);
-                                    linkItem.appendChild(anchor);
-                                    container.appendChild(linkItem);
-                                }
-                            }
-                    </script>
-                </div>
+                <div class="container" id="container"></div>
             </section>
             <section>
                 <div class="container1">
@@ -112,6 +36,9 @@
                     </div>
                 </div>
             </section>
+            <script>
+                fetchDataAndCreateLinks("githubRepo", "container");
+            </script>
             <!-- <h1 class="page-title">Github Repositories ☠︎</h1> -->
         </main>
     </body>

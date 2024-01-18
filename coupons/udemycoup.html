@@ -25,37 +25,7 @@
         <main>
             <section>
                 <h1 class="page-title">Udemy Coupons</h1>
-                <div class="container">
-                    <script>
-                        const udemyCoupons = {
-                                "DiscUdemy": "https://www.discudemy.com/",
-                                "Coupon Scorpion": "https://couponscorpion.com/",
-                                "Best Coupon Hunter": "https://bestcouponhunter.com/",
-                                "LearnViral": "https://udemycoupon.learnviral.com/",
-                                "Real Discount": "https://www.real.discount/",
-                                "Mega Courses": "https://megacourses.net/",
-                                "Promo Coupons": "https://www.promocoupons24.com/",
-                                "FreeBies Global": "https://freebiesglobal.com/",
-                                "CourseCity": "https://coursesity.com/",
-                                "999CourseSale": "https://999coursesale.com/freebie-courses-list.php",
-                            };
-                            const container = document.querySelector(".container");
-                            for (const key in udemyCoupons) {
-                                if (udemyCoupons.hasOwnProperty(key)) {
-                                    const linkItem = document.createElement("div");
-                                    linkItem.className = "link-item";
-                                    const anchor = document.createElement("a");
-                                    anchor.href = udemyCoupons[key];
-                                    anchor.target = "_blank";
-                                    const paragraph = document.createElement("p");
-                                    paragraph.textContent = key;
-                                    anchor.appendChild(paragraph);
-                                    linkItem.appendChild(anchor);
-                                    container.appendChild(linkItem);
-                                }
-                            }
-                    </script>
-                </div>
+                <div class="container" id="container"></div>
                 <p class="note"><b>Note:-</b> If a site doesn't work, try using a proxy or a VPN. If the issue persists, type the raw text into your search engine and open the first URL, as the site may have been updated. Stay persistent and don't give up!</p>
             </section>
             <section>
@@ -67,6 +37,9 @@
                     </div>
                 </div>
             </section>
+            <script>
+                fetchDataAndCreateLinks("udemyCoup", "container");
+            </script>
         </main>
     </body>
 </html>

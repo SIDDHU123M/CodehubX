@@ -23,39 +23,22 @@
             </nav>
         </header>
         <main>
-            <h1 class="page-title">HTML Games</h1>
-            <div class="container">
-                <div class="link-item">
-                    <a href="hgames/rubix/index.html">
-                        <p>Rubix Cube Game</p>
-                    </a>
+            <section>
+                <h1 class="page-title">HTML Games</h1>
+                <div class="container" id="container"></div>
+            </section>
+            <section>
+                <div class="container1">
+                    <div class="link-item">
+                        <a href="index.html">
+                            <p>Home - Back</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="link-item">
-                    <a href="hgames/bullseye/index.html">
-                        <p>Bullseye Game</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="hgames/tower/index.html">
-                        <p>Tower Blocks Game</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="hgames/rabbit/index.html">
-                        <p>Valorous Rabbit Game</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="hgames/menja/index.html">
-                        <p>Menja Game</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="index.html">
-                        <p>Home - Back</p>
-                    </a>
-                </div>
-            </div>
+            </section>
+            <script>
+                fetchDataAndCreateLinks("cheatSheet", "container");
+            </script>
         </main>
     </body>
 </html>

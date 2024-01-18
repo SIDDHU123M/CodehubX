@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animes</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="assets/apps.jpg" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="logo"><a href="index.html">CodeHub<llo>X</llo></a></h1>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="profile/index.html" target="_blank" class="nav-link">Profile</a></li>
+                    <li><a href="https://github.com/SIDDHU123M/" class="nav-link">GitHub</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1 class="page-title">Apps for Streaming</h1>
+                <div class="container">
+                    <script>
+                        const appStreaming = {
+                                "CineMax": "https://github.com/BeamlakAschalew/cinemax",
+                                "OnStream": "https://onstream.to/",
+                                "FilmPlus": "https://filmplusapk.com/",
+                                "CloudStream": "https://github.com/recloudstream/cloudstream",
+                                "Castle Movies": "http://castlemovies.in/",
+                                "Moviebox Pro": "https://www.movieboxpro.app/",
+                                "Cinema HD": "https://cinemahd.app/v2-apk-8/",
+                                "Tea TV": "https://teatv.org/new-version/",
+                                "Crackle": "https://www.crackle.com/",
+                                "EV01 Net": "https://ev01.sx/android-movies-apk",
+                            };
+                            const container = document.querySelector(".container");
+                            for (const key in appStreaming) {
+                                if (appStreaming.hasOwnProperty(key)) {
+                                    const linkItem = document.createElement("div");
+                                    linkItem.className = "link-item";
+                                    const anchor = document.createElement("a");
+                                    anchor.href = appStreaming[key];
+                                    anchor.target = "_blank";
+                                    const paragraph = document.createElement("p");
+                                    paragraph.textContent = key;
+                                    anchor.appendChild(paragraph);
+                                    linkItem.appendChild(anchor);
+                                    container.appendChild(linkItem);
+                                }
+                            }
+                    </script>
+                </div>
+            </section>
+            <section>
+                <div class="container1">
+                    <div class="link-item">
+                        <a href="index.html">
+                            <p>Home - Back</p>
+                        </a>
+                    </div>
+                </div> 
+            </section>
+        </main>    
+    </body>
+</html>

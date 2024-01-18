@@ -18,16 +18,3 @@ if (typeof window !== 'undefined') {
       console.log('Error protecting your security!');
   }
 }
-
-// Set GitHub link dynamically
-fetch('json/main.json')
-.then(response => response.json())
-.then(data => {
-    const githubLink = data.githubLink;
-    const githubLinkElement = document.getElementById("githubLink");
-    const anchor = document.createElement("a");
-    anchor.href = githubLink;
-    anchor.target = "_blank";
-    githubLinkElement.appendChild(anchor);
-})
-.catch(error => console.error('Error fetching GitHub link:', error));

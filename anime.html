@@ -18,50 +18,14 @@
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="profile/index.html" target="_blank" class="nav-link">Profile</a></li>
-                    <li><a href="https://github.com/SIDDHU123M/" class="nav-link">GitHub</a></li>
+                    <li><a href="" class="nav-link" id="githubLink">GitHub</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section>
                 <h1 class="page-title">Stream Anime Free</h1>
-                <div class="container">
-                    <script>
-                        const freeAnime = {
-                                "AniWatch": "https://www.google.com/search?q=AniWatch",
-                                "AniWorld": "https://www.google.com/search?q=AniWorld",
-                                "Zoro": "https://aniwatch.to/",
-                                "Animania": "https://www.google.com/search?q=animania",
-                                "9anime": "https://www.google.com/search?q=9anime",
-                                "Animekisa": "https://www.google.com/search?q=Animekisa",
-                                "Kiss - Anime": "https://www.google.com/search?q=kiss+anime",
-                                "AnimiXPlay": "https://www.google.com/search?q=AnimiXPlay",
-                                "Kayo Anime": "https://kayoanime.com/",
-                                "Anime-World": "https://anime-world.in/series/",
-                                "AnimeFox": "https://animefox.io/",
-                                "Anime World": "https://anime-world.in/",
-                                "Allanime": "https://www.anime-planet.com/anime/all",
-                                "Animeflick": "https://animeflick.net/",
-                                "Kimanime": "https://kimanime.com/",
-                                "Animet": "https://animet.tv/home",
-                            };
-                            const container = document.querySelector(".container");
-                            for (const key in freeAnime) {
-                                if (freeAnime.hasOwnProperty(key)) {
-                                    const linkItem = document.createElement("div");
-                                    linkItem.className = "link-item";
-                                    const anchor = document.createElement("a");
-                                    anchor.href = freeAnime[key];
-                                    anchor.target = "_blank";
-                                    const paragraph = document.createElement("p");
-                                    paragraph.textContent = key;
-                                    anchor.appendChild(paragraph);
-                                    linkItem.appendChild(anchor);
-                                    container.appendChild(linkItem);
-                                }
-                            }
-                    </script>
-                </div>
+                <div class="container" id="container"></div>
             </section>
             <section>
                 <div class="container1">
@@ -72,6 +36,9 @@
                     </div>
                 </div>
             </section>
+            <script>
+                fetchDataAndCreateLinks("freeAnime", "container");
+            </script>
         </main>
-</body>
+    </body>
 </html>

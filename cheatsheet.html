@@ -18,54 +18,27 @@
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="profile/index.html" target="_blank" class="nav-link">Profile</a></li>
-                    <li><a href="https://github.com/SIDDHU123M/" class="nav-link">GitHub</a></li>
+                    <li><a href="" class="nav-link" id="githubLink">GitHub</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div class="container">
-                <div class="link-item">
-                    <a href="https://quickref.me/">
-                        <p>Quick Ref</p>
-                    </a>
+            <section>
+                <h1 class="page-title">Cheatsheets</h1>
+                <div class="container" id="container"></div>
+            </section>
+            <section>
+                <div class="container1">
+                    <div class="link-item">
+                        <a href="index.html">
+                            <p>Home - Back</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="link-item">
-                    <a href="https://www.codewithharry.com/">
-                        <p>Code with Harry</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.geeksforgeeks.org/">
-                        <p>GeekForGeeks</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.interviewbit.com/">
-                        <p>Interview Bit</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.edureka.co/blog/cheatsheets/">
-                        <p>Edureks</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://codeburst.io/">
-                        <p>CodeBurst</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://exercism.org/">
-                        <p>Exercism</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="index.html">
-                        <p>Home - Back</p>
-                    </a>
-                </div>
-            </div>
-            <p class="note"><b>Note:-</b> If a site doesn't work, try using a proxy or a VPN. If the issue persists, type the raw text into your search engine and open the first URL, as the site may have been updated. Stay persistent and don't give up!</p>
+            </section>
+            <script>
+                fetchDataAndCreateLinks("cheatSheet", "container");
+            </script>
         </main>
     </body>
 </html>

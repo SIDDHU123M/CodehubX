@@ -12,45 +12,44 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="script.js"></script>
 </head>
-    <body>
-        <header>
-            <h1 class="logo"><a href="index.html">CodeHub<llo>X</llo></a></h1>
-            <nav class="nav-bar">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="profile/index.html" target="_blank" class="nav-link">Profile</a></li>
-                    <li><a href="https://github.com/SIDDHU123M/" class="nav-link">GitHub</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h1 class="page-title">Free Coupons</h1>
-                <div class="container">
-                    <div class="link-item">
-                        <a href="coupons/softwarecoup.html">
-                            <p>Softwares Coupons</p>
-                        </a>
-                    </div>
-                    <div class="link-item">
-                        <a href="coupons/udemycoup.html">
-                            <p>Udemy Coupon</p>
-                        </a>
-                    </div>
+
+<body>
+    <header>
+        <h1 class="logo"><a href="index.html">CodeHub<llo>X</llo></a></h1>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="profile/index.html" target="_blank" class="nav-link">Profile</a></li>
+                <li><a href="https://github.com/SIDDHU123M/" class="nav-link">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="page-title">Software Coupons</h1>
+            <div class="container" id="container"></div>
+        </section>
+        <section>
+            <h1 class="page-title">Udemy Coupons</h1>
+            <div class="container1" id="container1"></div>
+        </section>
+        <section>
+            <div class="container1">
+                <div class="link-item">
+                    <a href="index.html">
+                        <p>Home - Back</p>
+                    </a>
                 </div>
-            </section>
-            <section>
-                <div class="container1">
-                    <div class="link-item">
-                        <a href="index.html">
-                            <p>Home - Back</p>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </main>
+            </div>
+        </section>
+        <script>
+            fetchDataAndCreateLinks("softwareCoup", "container");
+            fetchDataAndCreateLinks("udemyCoup", "container1");
+        </script>
+    </main>
 </body>
 
 </html>
 </body>
+
 </html>

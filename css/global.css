@@ -1,3 +1,10 @@
+/* Import */
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap');
+
 /* Reset */
 html {
 	box-sizing: border-box;
@@ -34,13 +41,6 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-
-/* Import */
-@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Borel&family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap');
 
 /* Variables */
 :root {

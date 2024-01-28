@@ -18,55 +18,28 @@
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="profile/index.html" target="_blank" class="nav-link">Profile</a></li>
-                    <li><a href="https://github.com/SIDDHU123M/" class="nav-link">GitHub</a></li>
+                    <li><a href="" class="nav-link" id="githubLink">GitHub</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h1 class="page-title">Pirated Software</h1>
-            <div class="container">
-                <div class="link-item">
-                    <a href="https://filecr.com/en" target="_blank">
-                        <p>Filecr</p>
-                    </a>
+            <section>
+                <h1 class="page-title">Pirated Software</h1>
+                <div class="container" id="container"></div>
+                <p class="note"><b>Note:-</b> If a site doesn't work, try using a proxy or a VPN. If the issue persists, type the raw text into your search engine and open the first URL, as the site may have been updated. Stay persistent and don't give up!</p>
+            </section>
+            <section>
+                <div class="container1">
+                    <div class="link-item">
+                        <a href="../piracy.html">
+                            <p>Back to Piracy</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="link-item">
-                    <a href="https://www.softpedia.com/" target="_blank">
-                        <p>SoftPedia</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://download.cnet.com/" target="_blank">
-                        <p>CNET Download</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://filehippo.com/" target="_blank">
-                        <p>File Hippo</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://abbaspc.net/" target="_blank">
-                        <p>AbbasPC</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.download.io/" target="_blank">
-                        <p>Download .io</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://crackzoom.com/" target="_blank">
-                        <p>Crackzoom</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="../piracy.html">
-                        <p>Back to Piracy</p>
-                    </a>
-                </div>
-            </div>
-            <p class="note"><b>Note:-</b> If a site doesn't work, try using a proxy or a VPN. If the issue persists, type the raw text into your search engine and open the first URL, as the site may have been updated. Stay persistent and don't give up!</p>
+            </section>
+            <script>
+                fetchDataAndCreateLinks("piratedSoftware", "container");
+            </script>
         </main>
     </body>
 </html>

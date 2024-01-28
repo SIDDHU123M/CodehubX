@@ -19,7 +19,7 @@
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="profile/index.html" target="_blank" class="nav-link">Profile</a></li>
-                    <li><a href="https://github.com/SIDDHU123M/" class="nav-link">GitHub</a></li>
+                    <li><a href="" class="nav-link" id="githubLink">GitHub</a></li>
                 </ul>
             </nav>
         </header>
@@ -27,112 +27,15 @@
         <main>
             <section>
                 <h1 class="page-title">Disposable Number</h1>
-                <div class="container">
-                    <script>
-                        const disposableNumber = {
-                                "hs3x": "http://hs3x.com",
-                                "smsget": "http://smsget.net",
-                                "sms-online": "http://sms-online.co",
-                                "catchsms": "http://catchsms.com",
-                                "sms-receive": "http://sms-receive.net",
-                                "sellaite": "http://sms.sellaite.com",
-                                "receivefreesms.net": "http://receivefreesms.net",
-                                "receive-a-sms": "https://receive-a-sms.com",
-                                "receivesmsonline.in": "http://receivesmsonline.in",
-                                "receivefreesms.com": "http://receivefreesms.com",
-                                "receivesmsonline.me": "http://receivesmsonline.me",
-                                "smsreceivefree": "http://smsreceivefree.com",
-                                "smsreceiveonline.com": "https://smsreceiveonline.com",
-                                "receive-sms-online": "https://receive-sms-online.com",
-                                "receivesmsonline": "https://www.receivesmsonline.net",
-                                "temp-mails Number": "https://www.temp-mails.com/number",
-                                "freeonlinephone": "https://www.freeonlinephone.org",
-                                "getfreesmsnumber": "https://getfreesmsnumber.com",
-                            };
-                            const container = document.querySelector(".container");
-                            for (const key in disposableNumber) {
-                                if (disposableNumber.hasOwnProperty(key)) {
-                                    const linkItem = document.createElement("div");
-                                    linkItem.className = "link-item";
-                                    const anchor = document.createElement("a");
-                                    anchor.href = disposableNumber[key];
-                                    anchor.target = "_blank";
-                                    const paragraph = document.createElement("p");
-                                    paragraph.textContent = key;
-                                    anchor.appendChild(paragraph);
-                                    linkItem.appendChild(anchor);
-                                    container.appendChild(linkItem);
-                                }
-                            }
-                    </script>
-                </div>
+                <div class="container" id="container"></div>
             </section>
             <section>
                 <h1 class="page-title">Disposable Mails</h1>
-                <div class="container1">
-                    <script>
-                        const disposableMail = {
-                                "MailDrop": "https://maildrop.cc",
-                                "TempR": "https://tempr.email",
-                                "TempMail": "https://tempmail.net",
-                                "Temp-Mail": "https://temp-mail.org",
-                                "Moakt": "https://www.moakt.com",
-                                "TempMailo": "https://tempmailo.com",
-                                "EmailOnDeck": "https://www.emailondeck.com",
-                                "GuerrillaMail": "https://www.guerrillamail.com",
-                                "SmailPro": "https://smailpro.com",
-                                "Gmailnator": "https://gmailnator.com",
-                            };
-                            const container1 = document.querySelector(".container1");
-                            for (const key in disposableMail) {
-                                if (disposableMail.hasOwnProperty(key)) {
-                                    const linkItem = document.createElement("div");
-                                    linkItem.className = "link-item";
-                                    const anchor = document.createElement("a");
-                                    anchor.href = disposableMail[key];
-                                    anchor.target = "_blank";
-                                    const paragraph = document.createElement("p");
-                                    paragraph.textContent = key;
-                                    anchor.appendChild(paragraph);
-                                    linkItem.appendChild(anchor);
-                                    container1.appendChild(linkItem);
-                                }
-                            }
-                    </script>
-                </div>
+                <div class="container1" id="container1"></div>
             </section>
             <section>
                 <h1 class="page-title">Fake Identity</h1>
-                <div class="container2">
-                    <script>
-                        const fakeIdentidy = {
-                                "FakeNa" : "https://fakena.me",
-                                "FauxID" : "https://fauxid.com",
-                                "FakeXY" : "https://www.fakexy.com",
-                                "Elfqrin" : "https://www.elfqrin.com/fakeid.php8",
-                                "Fake Name Generator" : "https://www.fakenamegenerator.com",
-                                "Fake Person Generator" : "https://www.fakepersongenerator.com",
-                                "Fake Address Generator" : "https://www.fakeaddressgenerator.com",
-                                "Data Fake Generator" : "https://datafakegenerator.com/generador.php",
-                                "Name Generators" : "http://namegenerators.org/fake-name-generator-gr",
-                            };
-                            const container2 = document.querySelector(".container2");
-                            for (const key in fakeIdentidy) {
-                                if (fakeIdentidy.hasOwnProperty(key)) {
-                                    const linkItem = document.createElement("div");
-                                    linkItem.className = "link-item";
-                                    const anchor = document.createElement("a");
-                                    anchor.href = fakeIdentidy[key];
-                                    anchor.target = "_blank";
-                                    const paragraph = document.createElement("p");
-                                    paragraph.textContent = key;
-                                    anchor.appendChild(paragraph);
-                                    linkItem.appendChild(anchor);
-                                    container2.appendChild(linkItem);
-                                }
-                            }
-                    </script>
-                </div>
+                <div class="container2" id="container2"></div>
             </section>
             <section>
                 <div class="container3">
@@ -143,6 +46,11 @@
                     </div>
                 </div>
             </section>
+            <script>
+                fetchDataAndCreateLinks("disposableNumber", "container");
+                fetchDataAndCreateLinks("disposableMail", "container1");
+                fetchDataAndCreateLinks("fakeIdentidy", "container2");
+            </script>
         </main>
     </body>
 </html>

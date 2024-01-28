@@ -13,45 +13,19 @@
     </head>
     <body>
         <header>
-            <h1 class="logo"><a href="index.html">CodeHub<llo>X</llo></a></h1>
+            <h1 class="logo"><a href="../index.html">CodeHub<llo>X</llo></a></h1>
             <nav class="nav-bar">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="profile/index.html" target="_blank" class="nav-link">Profile</a></li>
-                    <li><a href="https://github.com/SIDDHU123M/" class="nav-link">GitHub</a></li>
+                    <li><a href="" class="nav-link" id="githubLink">GitHub</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section>
                 <h1 class="page-title">Free Legal Software</h1>
-                <div class="container">
-                    <script>
-                        const freeSoftware = {
-                                "SharewareOnSale": "https://sharewareonsale.com/",
-                                "BitsDuJour": "https://www.bitsdujour.com/",
-                                "Giveaway of the day": "https://www.giveawayoftheday.com/",
-                                "Net Load": "https://net-load.com/",
-                                "Vovsoft Giveaway": "https://vovsoft.com/",
-                                "Giveaways Networks": "https://giveawaysnetworks.net/",
-                            };
-                            const container = document.querySelector(".container");
-                            for (const key in freeSoftware) {
-                                if (freeSoftware.hasOwnProperty(key)) {
-                                    const linkItem = document.createElement("div");
-                                    linkItem.className = "link-item";
-                                    const anchor = document.createElement("a");
-                                    anchor.href = freeSoftware[key];
-                                    anchor.target = "_blank";
-                                    const paragraph = document.createElement("p");
-                                    paragraph.textContent = key;
-                                    anchor.appendChild(paragraph);
-                                    linkItem.appendChild(anchor);
-                                    container.appendChild(linkItem);
-                                }
-                            }
-                    </script>
-                </div>
+                <div class="container" id="container"></div>
                 <p class="note"><b>Note:-</b> If a site doesn't work, try using a proxy or a VPN. If the issue persists, type the raw text into your search engine and open the first URL, as the site may have been updated. Stay persistent and don't give up!</p>
             </section>
             <section>
@@ -63,6 +37,9 @@
                     </div>
                 </div>
             </section>
+            <script>
+                fetchDataAndCreateLinks("softwareCoup", "container");
+            </script>
         </main>
     </body>
 </html>

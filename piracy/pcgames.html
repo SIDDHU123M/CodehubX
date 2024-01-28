@@ -18,60 +18,28 @@
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="profile/index.html" target="_blank" class="nav-link">Profile</a></li>
-                    <li><a href="https://github.com/SIDDHU123M/" class="nav-link">GitHub</a></li>
+                    <li><a href="" class="nav-link" id="githubLink">GitHub</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h1 class="page-title">PC Games Mods</h1>
-            <div class="container">
-                <div class="link-item">
-                    <a href="https://fitgirl-repacks.site/" target="_blank">
-                        <p>Fitgirl Repack</p>
-                    </a>
+            <section>
+                <h1 class="page-title">PC Games Mods</h1>
+                <div class="container" id="container"></div>
+                <p class="note"><b>Note:-</b> If a site doesn't work, try using a proxy or a VPN. If the issue persists, type the raw text into your search engine and open the first URL, as the site may have been updated. Stay persistent and don't give up!</p>
+            </section>
+            <section>
+                <div class="container1">
+                    <div class="link-item">
+                        <a href="../piracy.html">
+                            <p>Back to Piracy</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="link-item">
-                    <a href="https://steamunlocked.net/" target="_blank">
-                        <p>SteamUnlocked</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="http://oceanofgames.com/" target="_blank">
-                        <p>Ocean of Games</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://dodi-repacks.site/" target="_blank">
-                        <p>DoDi Repacks</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://www.skidrowreloaded.com/" target="_blank">
-                        <p>Skidrow Reloaded</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://cpyskidrow.com/" target="_blank">
-                        <p>CPY Skidrow</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://skidrowcpy.games/" target="_blank">
-                        <p>Skidrow CPY</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://itorrents-igruha.org/" target="_blank">
-                        <p>Igruha torrent</p>
-                    </a>
-                </div>
-                <div class="link-item">
-                    <a href="../piracy.html">
-                        <p>Back to Piracy</p>
-                    </a>
-                </div>
-            </div>
-            <p class="note"><b>Note:-</b> If a site doesn't work, try using a proxy or a VPN. If the issue persists, type the raw text into your search engine and open the first URL, as the site may have been updated. Stay persistent and don't give up!</p>
+            </section>
+            <script>
+                fetchDataAndCreateLinks("pcGame", "container");
+            </script>
         </main>
     </body>
 </html>

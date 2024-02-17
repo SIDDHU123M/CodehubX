@@ -1,0 +1,278 @@
+:root {
+  --body-bg-color: #f5f5f5;
+  --page-title-text-color: #333333;
+  --link-item-text-color: #333333;
+  --link-item-bg-color: #ffffff;
+  --link-item-border-color: #333333;
+  --link-item-hover-bg-color: #f5f5f5;
+  --link-item-hover-border-color: #333333;
+  --link-item-hover-shadow-color: #333333;
+  --about-bg-color: #ffffff;
+  --about-h2-text-color: black;
+  --about-p-text-color: #333333;
+  --about-border-color: #333333;
+  --about-hover-bg-color: #f5f5f5;
+  --about-hover-border-color: #333333;
+  --about-hover-shadow-color: #333333;
+  --warning-bg-color: #ffffff;
+  --warning-h1-text-color: black;
+  --warning-p-text-color: #333333;
+  --warning-border-color: #333333;
+  --warning-hover-bg-color: #f5f5f5;
+  --warning-hover-border-color: #333333;
+  --warning-hover-shadow-color: #333333;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+
+body {
+  background-color: var(--body-bg-color);
+}
+
+main {
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin: 0 18%;
+  }
+}
+
+.page-title {
+  padding: 20px 0;
+  font-size: 30px;
+  font-family: "Bungee Spice", sans-serif;
+  text-align: center;
+  color: var(--page-title-text-color);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.link-item {
+  flex-basis: 180px;
+  flex-grow: 1;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .link-item {
+    flex-basis: 140px;
+  }
+}
+
+.link-item a:link,
+.link-item a:visited {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--link-item-text-color);
+  background-color: var(--link-item-bg-color);
+  font-weight: bold;
+  font-family: "Changa", sans-serif;
+  border: 2px solid var(--link-item-border-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.link-item a:hover,
+.link-item a:active {
+  background-color: var(--link-item-hover-bg-color);
+  border: 2px solid var(--link-item-hover-border-color);
+  border-radius: 14px;
+  box-shadow: 0 0 15px var(--link-item-hover-shadow-color);
+  overflow: hidden;
+}
+
+.link-item a p {
+  text-align: center;
+  font-family: monospace;
+}
+
+@media (min-width: 768px) {
+  .link-img {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .link-item a:hover .link-img {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(360deg);
+    position: absolute;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+/* About Panel */
+.about {
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--about-bg-color);
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+}
+
+.about h2 {
+  text-align: center;
+  color: var(--about-h2-text-color);
+  font-weight: bold;
+}
+
+.about p {
+  text-align: center;
+  color: var(--about-p-text-color);
+}
+
+@media (min-width: 768px) {
+  .about,
+  .about:visited {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--about-p-text-color);
+    background-color: var(--about-bg-color);
+    font-weight: bold;
+    font-family: "Changa", sans-serif;
+    border: 2px solid var(--about-border-color);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .about:hover,
+  .about:active {
+    background-color: var(--about-hover-bg-color);
+    border: 2px solid var(--about-hover-border-color);
+    border-radius: 14px;
+    box-shadow: 0 0 15px var(--about-hover-shadow-color);
+    overflow: hidden;
+  }
+}
+
+.warning {
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--warning-bg-color);
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+}
+
+.warning h1 {
+  text-align: center;
+  color: var(--warning-h1-text-color);
+  font-weight: bold;
+}
+
+.warning p {
+  text-align: center;
+  color: var(--warning-p-text-color);
+}
+
+@media (min-width: 768px) {
+  .warning,
+  .warning:visited {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--warning-p-text-color);
+    background-color: var(--warning-bg-color);
+    font-weight: bold;
+    font-family: "Changa", sans-serif;
+    border: 2px solid var(--warning-border-color);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .warning:hover,
+  .warning:active {
+    background-color: var(--warning-hover-bg-color);
+    border: 2px solid var(--warning-hover-border-color);
+    border-radius: 14px;
+    box-shadow: 0 0 15px var(--warning-hover-shadow-color);
+    overflow: hidden;
+  }
+}
+
+.container,
+.container1,
+.container2,
+.container3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.link-item a p {
+  text-align: center;
+  font-family: monospace;
+}
+
+@media (max-width: 767px) {
+  .link-img {
+    width: 35px;
+    position: flex;
+    transition: all 0.4s ease-in-out;
+  }
+}
+@media (min-width: 768px) {
+  .link-img {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .link-item a:hover .link-img {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(360deg);
+    position: absolute;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+  }
+}
+main {
+  padding: 30px;
+}
+@media (min-width: 768px) {
+  main {
+    margin: 0 18%;
+  }
+}
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 24px;
+  }
+  .about {
+    margin: 10px 0;
+  }
+  .container {
+    justify-content: space-around;
+  }
+}
+
+.note {
+  font-family: monospace;
+  padding: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about p a {
+  color: blue;
+}

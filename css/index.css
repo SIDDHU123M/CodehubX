@@ -76,7 +76,7 @@ main {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-.warning h1 {
+.warning h2 {
   text-align: center;
   color: orange;
 }

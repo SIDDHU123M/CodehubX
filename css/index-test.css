@@ -23,6 +23,15 @@
   --warning-hover-shadow-color: #333333;
 }
 
+@media (max-width: 767px) {
+  .about,
+  .about:visited,
+  .warning,
+  .warning:visited {
+    border: 3px solid #333333; /* Increase border width and use a darker color */
+  }
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
 
 body {
@@ -170,7 +179,7 @@ main {
   transition: all 0.4s ease-in-out;
 }
 
-.warning h1 {
+.warning h2 {
   text-align: center;
   color: var(--warning-h1-text-color);
   font-weight: bold;

@@ -8,14 +8,28 @@
     <link rel="icon" type="image/png" href="index.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name='description' content='tools, Resources, Codehub x. CodehubX, Code hub x, Free resources, Student resources, Programmers, Ai tools, movies, streaming, time pass, ai, developer'>
+    <meta name='description'
+        content='tools, Resources, Codehub x. CodehubX, Code hub x, Free resources, Student resources, Programmers, Ai tools, movies, streaming, time pass, ai, developer'>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css" id="themeStyle">
     <script src="script.js"></script>
 </head>
 
 <body>
+    <button id="changeThemeButton">Change Theme</button>
+    <script>
+        document.getElementById("changeThemeButton").addEventListener("click", function () {
+            var linkElement = document.getElementById("themeStyle");
+            var currentHref = linkElement.getAttribute("href");
+
+            if (currentHref === "css/index.css") {
+                linkElement.setAttribute("href", "css/index-test.css");
+            } else {
+                linkElement.setAttribute("href", "css/index.css");
+            }
+        });
+    </script>
     <header>
         <h1 class="logo"><a href="index.html">CodeHub<llo>X</llo></a></h1>
         <nav class="nav-bar">
@@ -36,30 +50,36 @@
             <br>
             <!-- <h2>Tools and Tutorials for All Levels</h2> -->
             <p>
-                <b><i>Tools and Tutorials for All Levels: </i></b>Whether you are a beginner or an experienced programmer, our website has something for everyone. From
+                <b><i>Tools and Tutorials for All Levels: </i></b>Whether you are a beginner or an experienced
+                programmer, our website has something for everyone. From
                 coding tutorials and helpful tips to powerful development tools, we've got it all. Our comprehensive
                 collection of programming resources includes everything from popular programming languages and
-                frameworks to code editors and project management tools.</p>
+                frameworks to code editors and project management tools.
+            </p>
             <br>
             <!-- <h2>Connecting Programmers and Developers</h2> -->
             <p>
-                <b><i>Connecting Programmers and Developers: </i></b>At CodeHubX, we believe that knowledge sharing is essential for growth, and we strive to provide our
+                <b><i>Connecting Programmers and Developers: </i></b>At CodeHubX, we believe that knowledge sharing is
+                essential for growth, and we strive to provide our
                 users with a platform to share and learn from one another. We have a dedicated community of programmers
                 and developers who regularly contribute to our website, ensuring that we are always up-to-date with the
-                latest trends and tools in the industry.</p>
+                latest trends and tools in the industry.
+            </p>
             <br>
             <h2>Contact Us</h2>
             <p>
-                Get in Touch with Us for Resources or Requests at <a href="mailto:sidharth69aio@gmail.com" style="color: whitesmoke;">sidharth69aio@gmail.com</a>
+                Get in Touch with Us for Resources or Requests at <a
+                    href="mailto:sidharth69aio@gmail.com">sidharth69aio@gmail.com</a>
             </p>
         </div>
         <div class="warning">
-            <h1>Warning: Proceed with Caution</h1>
+            <h2>Warning: Proceed with Caution</h2>
             <p>
-                We want to caution you about clicking on external links embedded within this website. While we strive 
-                to provide a safe browsing experience, we cannot guarantee the security of content from external sources. 
-                It is essential to be aware that navigating to untrusted websites may pose risks to your device's 
-                security. Please exercise caution and visit external links at your own risk. We recommend ensuring that 
+                We want to caution you about clicking on external links embedded within this website. While we strive
+                to provide a safe browsing experience, we cannot guarantee the security of content from external
+                sources.
+                It is essential to be aware that navigating to untrusted websites may pose risks to your device's
+                security. Please exercise caution and visit external links at your own risk. We recommend ensuring that
                 your device's security measures are up-to-date before exploring unfamiliar websites
             </p>
         </div>

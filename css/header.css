@@ -10,17 +10,21 @@ header {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     height: min-content;
 }
+
 @media (max-width: 767px) {
     header {
-        flex-direction: column; /* Stack the logo and navigation vertically */
+        flex-direction: column;
+        /* Stack the logo and navigation vertically */
         align-items: center;
         padding: 10px;
         height: 120px;
     }
 }
+
 @media (min-width: 768px) {
     header {
-        flex-direction: row; /* Align the logo and navigation horizontally */
+        flex-direction: row;
+        /* Align the logo and navigation horizontally */
         padding: 20px;
         height: 60px;
     }
@@ -40,26 +44,31 @@ header {
     text-decoration: none;
     color: whitesmoke;
 }
+
 @media (max-width: 768px) {
-    .logo a{
+    .logo a {
         text-decoration: none;
         color: whitesmoke;
     }
 }
+
 @media (min-width: 768px) {
-    .logo a{
+    .logo a {
         text-decoration: none;
     }
 
-    .logo a, .logo a:visited{
+    .logo a,
+    .logo a:visited {
         color: whitesmoke;
         transition: all 0.4s ease-in-out;
     }
 
-    .logo a:hover, .logo a:active{
+    .logo a:hover,
+    .logo a:active {
         color: orange;
     }
 }
+
 llo {
     color: orange;
 }

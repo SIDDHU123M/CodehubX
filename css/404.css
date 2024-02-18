@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap');
 
-main{
+main {
     padding: 30px;
     text-align: center;
 }
+
 @media (min-width: 768px) {
-    main{
+    main {
         margin: 0 18%;
     }
 }
@@ -35,13 +36,14 @@ p {
     color: #ffffff;
 }
 
-.link-item{
+.link-item {
     margin: 10px;
     text-align: center;
     position: relative;
 }
 
-.link-item a:link, .link-item a:visited{
+.link-item a:link,
+.link-item a:visited {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -55,7 +57,8 @@ p {
     transition: all 0.4s ease-in-out;
 }
 
-.link-item a:hover, .link-item a:active{
+.link-item a:hover,
+.link-item a:active {
     background-color: var(--theme-bg-color);
     border: 2px solid white;
     border-radius: 14px;
@@ -63,7 +66,7 @@ p {
     overflow: hidden;
 }
 
-.link-item a p{
+.link-item a p {
     text-align: center;
     font-family: monospace;
 }

@@ -2,19 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Borel&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap");
 
 /* Reset */
 html {
-	box-sizing: border-box;
-	font-size: 100%;
+    box-sizing: border-box;
+    font-size: 100%;
 }
 
 *,
 *:before,
 *:after {
-	box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body,
@@ -27,60 +27,79 @@ h6,
 p,
 ol,
 ul {
-	margin: 0;
-	padding: 0;
-	font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
 }
 
 ol,
 ul {
-	list-style: none;
+    list-style: none;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
-}
-
-/* Variables */
-:root {
-	--theme-bg-color: rgba(16, 18, 27, 0.4);
-	--body-font: "Poppins", sans-serif;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Background Styling */
 body {
-	background-color: #222222;
-	margin: auto;
+    background-color: #222222;
+    margin: auto;
 }
 
 /* Basic Styling */
 body {
-	font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 /* Styles for mobile devices */
 @media only screen and (max-width: 600px) {
-	body {
-		font-size: 14px;
-	}
+    body {
+        font-size: 14px;
+    }
 }
 
 /* Styles for tablets */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-	body {
-		font-size: 16px;
-	}
+    body {
+        font-size: 16px;
+    }
 }
 
 /* Styles for desktops */
 @media only screen and (min-width: 1025px) {
-	body {
-		font-size: 13px;
-	}
+    body {
+        font-size: 13px;
+    }
 }
 
 p {
-	font-weight: bold;
-	font-family: monospace;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#changeThemeButton {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    /* Green background */
+    color: white;
+    /* White text */
+    border: none;
+    /* Remove border */
+    cursor: pointer;
+    /* Cursor style */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease;
+    /* Transition effect */
+}
+
+#changeThemeButton:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
 }

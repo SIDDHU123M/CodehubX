@@ -188,7 +188,7 @@ main {
 
 .link-item a:hover,
 .link-item a:active {
-    background-color: var(--theme-bg-color);
+    background-color: rgba(16, 18, 27, 0.75);
     border: 2px solid white;
     border-radius: 14px;
     box-shadow: 0 0 15px gold;

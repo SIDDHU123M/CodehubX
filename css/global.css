@@ -44,7 +44,13 @@ img {
 
 /* Background Styling */
 body {
-    background-color: #222222;
+    /* background-image: url('../asset-bg.png'); */
+    /* background-image: url('../assets/images/carbon_fiber_texture_minimalism.jpg'); */
+    background-image: url('../assets/images/minimalist_4k_blue_scenery.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     margin: auto;
 }
 

@@ -1,42 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap');
 
+@keyframes switchAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header {
+    animation: switchAnimation 0.6s ease-in-out;
+}
+
+/* @media (max-width: 767px) {
+    .header {
+        animation: switchAnimation 0.6s ease-in-out;
+    }
+} */
+
 header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #00000000;
+    transition: all 0.3s ease-in-out;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 25px;
     background-color: rgba(42, 96, 106, 0.8);
-    backdrop-filter: blur(8px);
-    border-radius: 0 0 16px 16px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    height: min-content;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: top 0.3s ease-in-out;
 }
 
-.sticky {
-    top: -10px;
-    /* Adjust the value based on the height of your header */
-}
-
 @media (max-width: 767px) {
-    header {
+    .header {
         flex-direction: column;
         /* Stack the logo and navigation vertically */
         align-items: center;
         padding: 10px;
         height: 120px;
+        border-radius: 0 0 16px 16px;
     }
 }
 
 @media (min-width: 768px) {
     header {
+        padding: 10px;
+    }
+
+    .header {
         flex-direction: row;
         /* Align the logo and navigation horizontally */
         padding: 20px;
         height: 60px;
+        border-radius: 16px;
     }
 }
 
@@ -45,14 +72,8 @@ header {
     font-family: 'Rubik Broken Fax', system-ui;
     text-align: center;
     justify-content: center;
-    color: #ffffff;
     letter-spacing: 2px;
     opacity: 1;
-}
-
-.logo a {
-    text-decoration: none;
-    color: whitesmoke;
 }
 
 @media (max-width: 768px) {
@@ -65,6 +86,7 @@ header {
 @media (min-width: 768px) {
     .logo a {
         text-decoration: none;
+        color: whitesmoke;
     }
 
     .logo a,

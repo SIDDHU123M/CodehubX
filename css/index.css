@@ -146,8 +146,8 @@ main {
 }
 
 .link-item {
-    /* flex-basis: 180px; */
-    flex: 0 0 calc(16% - 10px);
+    flex-basis: 180px;
+    /* flex: 0 0 calc(16% - 10px); */
     flex-grow: 1;
     margin: 10px;
     text-align: center;

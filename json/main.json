@@ -265,7 +265,8 @@
         "Bullseye Game": "hgames/bullseye/index.html",
         "Tower Blocks Game": "hgames/tower/index.html",
         "Valorous Rabbit Game": "hgames/rabbit/index.html",
-        "Menja Game": "hgames/menja/index.html"
+        "Menja Game": "hgames/menja/index.html",
+        "Gorillas": "hgames/gorillas/index.html"
     },
     "disposableNumber": {
         "hs3x": "http://hs3x.com",

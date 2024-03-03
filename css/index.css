@@ -1,138 +1,130 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
 
 main {
-    padding: 15px;
+	padding: 15px;
 }
 
 @media (min-width: 768px) {
-    main {
-        margin: 0 10%;
-    }
+	main {
+		margin: 0 10%;
+	}
 }
 
 /* Page Title */
 .page-title {
-    padding: 10px 0;
-    font-size: 24px;
-    font-family: "Bungee Spice", sans-serif;
-    text-align: center;
-    color: #ffffff;
+	padding: 10px 0;
+	font-size: 24px;
+	font-family: "Bungee Spice", sans-serif;
+	text-align: center;
+	color: #ffffff;
 }
 
 /* About Panel */
 .about {
-    margin: 5px;
-    padding: 5px;
-    background-color: rgba(51, 51, 51, 0.6);
-    border-radius: 14px;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-sizing: border-box;
-    transition: all 0.4s ease-in-out;
+	margin: 5px;
+	padding: 5px;
+	background-color: rgba(51, 51, 51, 0.6);
+	border-radius: 14px;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	box-sizing: border-box;
+	transition: all 0.4s ease-in-out;
 }
 
 .about h2 {
-    text-align: center;
-    color: orange;
+	text-align: center;
+	color: orange;
 }
 
 .about p {
-    text-align: center;
-    color: #ffffff;
+	text-align: center;
+	color: #ffffff;
 }
 
 .about p a {
-    color: orange;
+	color: orange;
 }
 
 @media (min-width: 768px) {
-
-    .about,
-    .about:visited {
-        display: block;
-        padding: 5px;
-        text-decoration: none;
-        color: #ffffff;
-        background-color: rgba(51, 51, 51, 0.6);
-        font-weight: bold;
-        font-family: "Changa", sans-serif;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        overflow: hidden;
-    }
-
-    .about:hover,
-    .about:active {
-        background-color: rgba(16, 18, 27, 0.75);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        overflow: hidden;
-    }
+	.about,
+	.about:visited {
+		display: block;
+		padding: 5px;
+		text-decoration: none;
+		color: #ffffff;
+		background-color: rgba(51, 51, 51, 0.6);
+		font-weight: bold;
+		font-family: "Changa", sans-serif;
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		overflow: hidden;
+	}
+	.about:hover,
+	.about:active {
+		background-color: rgba(16, 18, 27, 0.75);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		overflow: hidden;
+	}
 }
 
 /* Warning Panel */
 .warning {
-    margin: 5px;
-    margin-top: 10px;
-    padding: 5px;
-    background-color: rgba(51, 51, 51, 0.6);
-    border-radius: 14px;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    box-sizing: border-box;
-    transition: all 0.4s ease-in-out;
-    animation-name: blink;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+	margin: 5px;
+	margin-top: 10px;
+	padding: 5px;
+	background-color: rgba(51, 51, 51, 0.6);
+	border-radius: 14px;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	box-sizing: border-box;
+	transition: all 0.4s ease-in-out;
+	animation: blink 2s infinite linear;
 }
 
 .warning h2 {
-    text-align: center;
-    color: orange;
+	text-align: center;
+	color: orange;
 }
 
 .warning p {
-    text-align: center;
-    color: #ffffff;
+	text-align: center;
+	color: #ffffff;
 }
 
 @media (min-width: 768px) {
-
-    .warning,
-    .warning:visited {
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        color: #ffffff;
-        background-color: rgb(51, 51, 51, 0.6);
-        font-weight: bold;
-        font-family: "Changa", sans-serif;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        overflow: hidden;
-    }
-
-    .warning:hover,
-    .warning:active {
-        background-color: rgba(16, 18, 27, 0.75);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        overflow: hidden;
-    }
+	.warning,
+	.warning:visited {
+		display: block;
+		padding: 10px;
+		text-decoration: none;
+		color: #ffffff;
+		background-color: rgb(51, 51, 51, 0.6);
+		font-weight: bold;
+		font-family: "Changa", sans-serif;
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		overflow: hidden;
+	}
+	.warning:hover,
+	.warning:active {
+		background-color: rgba(16, 18, 27, 0.75);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		overflow: hidden;
+	}
 }
 
 @keyframes blink {
+	0%,
+	100% {
+		border: 4px solid rgb(51, 51, 51, 0);
+	}
 
-    0%,
-    100% {
-        border: 4px solid rgb(51, 51, 51, 0);
-    }
-
-    50% {
-        border: 4px solid red;
-        box-shadow: 0 0 25px red;
-    }
+	50% {
+		border: 4px solid red;
+		box-shadow: 0 0 25px red;
+	}
 }
 
 /* Link Box */
@@ -140,102 +132,108 @@ main {
 .container1,
 .container2,
 .container3 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .link-item {
-    flex-basis: 180px;
-    /* flex: 0 0 calc(16% - 10px); */
-    flex-grow: 1;
-    margin: 10px;
-    text-align: center;
-    position: relative;
+	flex-basis: 180px;
+	/* flex: 0 0 calc(16% - 10px); */
+	flex-grow: 1;
+	margin: 10px;
+	text-align: center;
+	position: relative;
 }
 
 @media (max-width: 768px) {
-    .link-item {
-        /* flex-basis: 140px; */
-        flex: 0 0 calc(46% - 10px);
-        flex-grow: 1;
-    }
+	.link-item {
+		/* flex-basis: 140px; */
+		flex: 0 0 calc(46% - 10px);
+		flex-grow: 1;
+	}
 }
 
 .link-item a:link,
 .link-item a:visited {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: rgb(51, 51, 51, 0.6);
-    font-weight: bold;
-    font-family: "Changa", sans-serif;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.4s ease-in-out;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: rgb(51, 51, 51, 0.6);
+	font-weight: bold;
+	font-family: "Changa", sans-serif;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: all 0.4s ease-in-out;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
 }
 
 .link-item a:hover,
 .link-item a:active {
-    background-color: rgba(16, 18, 27, 0.75);
-    overflow: hidden;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+	background-color: rgba(16, 18, 27, 0.75);
+	overflow: hidden;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 }
 
 .link-item a p {
-    text-align: center;
-    font-family: monospace;
+	text-align: center;
+	font-family: monospace;
 }
 
-@media (max-width: 767px) {
-    .link-img {
-        width: 35px;
-        position: flex;
-        transition: all 0.4s ease-in-out;
-    }
+.link-img {
+	width: 33px;
+	position: flex;
+	transition: all 0.4s ease-in-out;
+}
+
+/* @media (max-width: 767px) {
+	.link-img {
+		width: 35px;
+		position: flex;
+		transition: all 0.4s ease-in-out;
+	}
 }
 
 @media (min-width: 768px) {
-    .link-img {
-        width: 30px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0.1;
-        transition: all 0.4s ease-in-out;
-    }
+	.link-img {
+		width: 30px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0.1;
+		transition: all 0.4s ease-in-out;
+	}
 
-    .link-item a:hover .link-img {
-        opacity: 1;
-        transform: translate(-0%, -50%) rotate(360deg);
-        position: absolute;
-        left: 0;
-        transition: all 0.4s ease-in-out;
-    }
-}
+	.link-item a:hover .link-img {
+		opacity: 1;
+		transform: translate(-0%, -50%) rotate(360deg);
+		position: absolute;
+		left: 0;
+		transition: all 0.4s ease-in-out;
+	}
+} */
 
 @media (max-width: 768px) {
-    .page-title {
-        font-size: 24px;
-    }
+	.page-title {
+		font-size: 24px;
+	}
 
-    .about {
-        margin: 10px 0;
-    }
+	.about {
+		margin: 10px 0;
+	}
 
-    .container {
-        justify-content: space-around;
-    }
+	.container {
+		justify-content: space-around;
+	}
 }
 
 .note {
-    font-family: monospace;
-    padding: 30px;
-    text-align: center;
-    color: #ffffff;
+	font-family: monospace;
+	padding: 30px;
+	text-align: center;
+	color: #ffffff;
 }

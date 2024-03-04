@@ -6,7 +6,7 @@ main {
 
 @media (min-width: 768px) {
 	main {
-		margin: 0 10%;
+		margin: 0 18%;
 	}
 }
 
@@ -21,9 +21,11 @@ main {
 
 /* About Panel */
 .about {
+	display: block;
 	margin: 5px;
 	padding: 5px;
 	background-color: rgba(51, 51, 51, 0.6);
+	font-size: 16px;
 	border-radius: 14px;
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
@@ -34,40 +36,30 @@ main {
 
 .about h2 {
 	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 700;
 	color: orange;
 }
 
 .about p {
 	text-align: center;
+	font-size: 0.9rem;
 	color: #ffffff;
 }
 
 .about p a {
 	color: orange;
 }
-
+/* 
 @media (min-width: 768px) {
 	.about,
 	.about:visited {
-		display: block;
-		padding: 5px;
 		text-decoration: none;
 		color: #ffffff;
-		background-color: rgba(51, 51, 51, 0.6);
 		font-weight: bold;
 		font-family: "Changa", sans-serif;
-		backdrop-filter: blur(10px);
-		-webkit-backdrop-filter: blur(10px);
-		overflow: hidden;
 	}
-	.about:hover,
-	.about:active {
-		background-color: rgba(16, 18, 27, 0.75);
-		backdrop-filter: blur(10px);
-		-webkit-backdrop-filter: blur(10px);
-		overflow: hidden;
-	}
-}
+} */
 
 /* Warning Panel */
 .warning {
@@ -85,13 +77,15 @@ main {
 }
 
 .warning h2 {
-	font-weight: 600;
 	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 700;
 	color: red;
 }
 
 .warning p {
 	text-align: center;
+	font-size: 0.9rem;
 	color: #ffffff;
 }
 
@@ -187,38 +181,8 @@ main {
 }
 
 .link-img {
-	width: 33px;
-	position: flex;
-	transition: all 0.4s ease-in-out;
+	width: 28px;
 }
-
-/* @media (max-width: 767px) {
-	.link-img {
-		width: 35px;
-		position: flex;
-		transition: all 0.4s ease-in-out;
-	}
-}
-
-@media (min-width: 768px) {
-	.link-img {
-		width: 30px;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		opacity: 0.1;
-		transition: all 0.4s ease-in-out;
-	}
-
-	.link-item a:hover .link-img {
-		opacity: 1;
-		transform: translate(-0%, -50%) rotate(360deg);
-		position: absolute;
-		left: 0;
-		transition: all 0.4s ease-in-out;
-	}
-} */
 
 @media (max-width: 768px) {
 	.page-title {

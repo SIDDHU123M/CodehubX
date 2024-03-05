@@ -115,7 +115,7 @@ header {
 	.logo a:hover,
 	.logo a:active {
 		color: orange;
-		-webkit-text-fill-color: orange;
+		/* -webkit-text-fill-color: orange; */
 	}
 
 	@keyframes load89234 {

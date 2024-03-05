@@ -89,7 +89,11 @@ body {
 /* Web Settings */
 * {
 	-webkit-user-drag: none;
-	user-select: none;
+}
+
+div,
+li a {
+	transition: all 0.4s ease-in-out;
 }
 
 /* Basic Styling */

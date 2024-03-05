@@ -1,26 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap");
 
-@keyframes switchAnimation {
+@keyframes entryAnimation {
 	0% {
-		opacity: 0;
-		transform: translateY(-20px);
+		transform: translateY(-135px);
 	}
 
 	100% {
-		opacity: 1;
 		transform: translateY(0);
 	}
 }
 
 .header {
-	animation: switchAnimation 0.6s ease-in-out;
+	animation: entryAnimation 0.6s ease-in-out;
 }
-
-/* @media (max-width: 767px) {
-    .header {
-        animation: switchAnimation 0.6s ease-in-out;
-    }
-} */
 
 header {
 	position: sticky;
@@ -28,7 +20,6 @@ header {
 	width: 100%;
 	z-index: 100;
 	background-color: #00000000;
-	transition: all 0.3s ease-in-out;
 }
 
 .header {
@@ -39,8 +30,6 @@ header {
 	background-color: rgba(42, 96, 106, 0.8);
 	backdrop-filter: blur(4px);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	/* animation: load89234 5s infinite; */
-	transition: top 0.3s ease-in-out;
 }
 
 @media (max-width: 767px) {
@@ -50,7 +39,6 @@ header {
 
 	.header {
 		flex-direction: column;
-		/* Stack the logo and navigation vertically */
 		align-items: center;
 		padding: 10px;
 		height: 120px;
@@ -65,7 +53,6 @@ header {
 
 	.header {
 		flex-direction: row;
-		/* Align the logo and navigation horizontally */
 		padding: 20px;
 		height: 60px;
 		border-radius: 16px;
@@ -109,7 +96,6 @@ header {
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		animation: load89234 5s infinite;
-		transition: all 0.4s ease-in-out;
 	}
 
 	.logo a:hover,
@@ -148,11 +134,9 @@ llo {
 	border-radius: 0.6em;
 	text-decoration: none;
 	color: #ffffff;
-	transition: all 0.3s;
 }
 
 .nav-link:hover,
-.nav-link:active,
 .nav-link.active {
 	background-color: orange;
 	color: #000000;

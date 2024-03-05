@@ -7,14 +7,14 @@
 
 /* Reset */
 html {
-    box-sizing: border-box;
-    font-size: 100%;
+	box-sizing: border-box;
+	font-size: 100%;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body,
@@ -27,38 +27,38 @@ h6,
 p,
 ol,
 ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
 }
 
 ol,
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 /* Background Styling */
 body {
-    /* background-image: url('../assets/images/ai_abstract_minimal_blue_scenery.jpg'); */
-    /* background-image: url('../assets/images/minimalist_4k_blue_scenery.jpg'); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: auto;
+	/* background-image: url('../assets/images/ai_abstract_minimal_blue_scenery.jpg'); */
+	/* background-image: url('../assets/images/minimalist_4k_blue_scenery.jpg'); */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: auto;
 }
 
-.background {
+/* .background {
     position: fixed;
     width: 100%;
     height: 100vh;
     z-index: -100;
-    --s: 200px; /* control the size */
+    --s: 400px;
     --c1: #1d1d1d;
     --c2: #4e4f51;
     --c3: #3c3c3c;
@@ -76,87 +76,80 @@ body {
         var(--c3) 0 180deg
     );
     background-size: var(--s) calc(var(--s) * 0.577);
+} */
+
+.background {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: -100;
+	background-image: linear-gradient(45deg, #29323c, #485563);
 }
 
+/* Web Settings */
+* {
+	-webkit-user-drag: none;
+	user-select: none;
+}
 
 /* Basic Styling */
 body {
-    font-family: Arial, sans-serif;
+	font-family: Arial, sans-serif;
+	margin-bottom: 25px;
+}
+
+::selection {
+	background-color: #ffcc00;
+	color: #000;
 }
 
 /* Styles for desktops */
 @media only screen and (min-width: 1025px) {
-    body {
-        font-size: 13px;
-    }
+	body {
+		font-size: 13px;
+	}
 
-    /* Custom scrollbar */
-    body::-webkit-scrollbar {
-        width: 4px;
-    }
+	/* Custom scrollbar */
+	body::-webkit-scrollbar {
+		width: 6px;
+	}
 
-    body::-webkit-scrollbar-track {
-        background-color: #f1f1f1;
-    }
+	body::-webkit-scrollbar-track {
+		background-color: #485563;
+	}
 
-    body::-webkit-scrollbar-thumb {
-        background-color: #888;
-        border-radius: 20px;
-    }
+	body::-webkit-scrollbar-thumb {
+		background-color: #888;
+		border-radius: 20px;
+	}
 
-    body::-webkit-scrollbar-thumb:hover {
-        background-color: #555;
-    }
+	body::-webkit-scrollbar-thumb:hover {
+		background-color: #ddd;
+	}
 }
-
 
 /* Styles for mobile devices */
 @media only screen and (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
+	body {
+		font-size: 14px;
+	}
 }
 
 /* Styles for tablets */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    body {
-        font-size: 16px;
-    }
+	body {
+		font-size: 16px;
+	}
 }
 
 /* Styles for desktops */
 @media only screen and (min-width: 1025px) {
-    body {
-        font-size: 13px;
-    }
+	body {
+		font-size: 13px;
+	}
 }
 
 p {
-    font-weight: bold;
-    font-family: monospace;
-}
-
-#changeThemeButton {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4caf50;
-    /* Green background */
-    color: white;
-    /* White text */
-    border: none;
-    /* Remove border */
-    cursor: pointer;
-    /* Cursor style */
-    border-radius: 5px;
-    /* Rounded corners */
-    transition: background-color 0.3s ease;
-    /* Transition effect */
-}
-
-#changeThemeButton:hover {
-    background-color: #45a049;
-    /* Darker green on hover */
+	font-weight: bold;
+	font-family: monospace;
 }

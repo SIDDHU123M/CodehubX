@@ -6,7 +6,8 @@ main {
 
 @media (min-width: 768px) {
 	main {
-		margin: 0 18%;
+		/* margin: 0 18%; */
+		padding: 0 18%;
 	}
 }
 
@@ -17,6 +18,71 @@ main {
 	font-family: "Bungee Spice", sans-serif;
 	text-align: center;
 	color: #ffffff;
+	/* transition: all 0.3s ease-in-out; */
+}
+
+/* About Panel */
+.about {
+	display: block;
+	width: 100%;
+	/* margin: 5px; */
+	padding: 10px;
+	background-color: rgba(51, 51, 51, 0.6);
+	font-size: 16px;
+	border-radius: 14px;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	box-sizing: border-box;
+	/* transition: all 0.4s ease-in-out; */
+}
+
+.about h2 {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: orange;
+}
+
+.about p {
+	text-align: center;
+	/* font-size: 0.9rem; */
+	color: #ffffff;
+}
+
+.about p a {
+	color: orange;
+}
+
+/* Warning Panel */
+.warning {
+	display: block;
+	width: 100%;
+	/* margin: 5px; */
+	margin: 15px 0;
+	padding: 10px;
+	background-color: rgba(51, 51, 51, 0.6);
+	font-size: 16px;
+	border-radius: 14px;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	box-sizing: border-box;
+	/* transition: all 0.4s ease-in-out; */
+	/* animation: blink 2s infinite linear; */
+}
+
+.warning h2 {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: red;
+}
+
+.warning p {
+	text-align: center;
+	/* font-size: 0.9rem; */
+	color: #ffffff;
 }
 
 /* Link Box */
@@ -25,9 +91,10 @@ main {
 .container2,
 .container3 {
 	display: flex;
-	width: 100%;
+	/* width: 100%; */
 	flex-wrap: wrap;
 	justify-content: center;
+	/* transition: all 0.3s ease-in-out; */
 }
 
 .link-item {
@@ -37,6 +104,7 @@ main {
 	margin: 10px;
 	text-align: center;
 	position: relative;
+	/* transition: all 0.3s ease-in-out; */
 }
 
 @media (max-width: 767px) {
@@ -44,6 +112,7 @@ main {
 		/* flex-basis: 140px; */
 		flex: 0 0 calc(46% - 10px);
 		flex-grow: 1;
+		/* transition: all 0.3s ease-in-out; */
 	}
 }
 
@@ -59,7 +128,7 @@ main {
 	font-family: "Changa", sans-serif;
 	border-radius: 10px;
 	overflow: hidden;
-	transition: all 0.4s ease-in-out;
+	/* transition: all 0.4s ease-in-out; */
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
 }
@@ -69,7 +138,7 @@ main {
 	background-color: rgba(16, 18, 27, 0.75);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	overflow: hidden;
-	transform: scale(1.05);
+	/* transform: scale(0.8); */
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 }

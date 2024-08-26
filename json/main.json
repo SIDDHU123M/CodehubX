@@ -117,6 +117,7 @@
 		"Animet": "https://animet.tv/home"
 	},
 	"appStreaming": {
+		"Flixfox" : "https://www.flixfox.in/",
 		"CineMax": "https://github.com/BeamlakAschalew/cinemax",
 		"OnStream": "https://onstream.to/",
 		"FilmPlus": "https://filmplusapk.com/",
@@ -204,12 +205,6 @@
 		"OSCP": "https://github.com/0x4D31/awesome-oscp",
 		"RAT": "https://github.com/alphaSeclab/awesome-rat"
 	},
-	"ultimatePiracy": {
-		"Torrent": "piracy/torrent.html",
-		"App Mods": "piracy/appmods.html",
-		"PC Games Piracy": "piracy/pcgames.html",
-		"Software Piracy": "piracy/software.html"
-	},
 	"torrents": {
 		"Torrentz2": "https://torrentz2.nz/",
 		"Torrent Downloads": "https://www.torrentdownloads.pro/",
@@ -223,6 +218,7 @@
 		"Torrent Galexy": "https://torrentgalaxy.cyou/"
 	},
 	"androidAppMods": {
+		"LiteApks" : "https://liteapks.com",
 		"Filecr": "https://filecr.com/android",
 		"ApkDone": "https://apkdone.com/",
 		"Apk Mody": "https://apkmody.io/",

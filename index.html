@@ -14,6 +14,68 @@
 		<link rel="stylesheet" href="css/header.css" />
 		<link rel="stylesheet" href="css/index.css" />
 		<script src="script.js"></script>
+
+		<style>
+			#popup {
+				display: none;
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				background-color: white;
+				border: 1px solid #ccc;
+				padding: 20px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				z-index: 1000;
+				width: 80%;
+				max-width: 400px;
+				border-radius: 10px;
+			}
+
+			#popup h2 {
+				margin-top: 0;
+				color: red;
+			}
+
+			#popup p {
+				margin: 10px 0;
+			}
+
+			#popup button {
+				margin-top: 20px;
+				padding: 10px 20px;
+				background-color: #007bff;
+				color: white;
+				border: none;
+				cursor: pointer;
+				border-radius: 5px;
+				width: 100%;
+				font-size: 16px;
+			}
+
+			#popup button:hover {
+				background-color: #0056b3;
+			}
+
+			/* Overlay styles */
+			#overlay {
+				display: none;
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.5);
+				z-index: 999;
+			}
+
+			/* Responsive styles */
+			@media (max-width: 600px) {
+				#popup {
+					width: 90%;
+				}
+			}
+		</style>
 	</head>
 
 	<body>
@@ -39,40 +101,61 @@
 			</div>
 		</header>
 		<main>
+			<div id="overlay"></div>
+			<div id="popup">
+				<h2>Note</h2>
+				<p>Use a VPN to access the site or wait for an update. The URL might have changed, till the time use
+					other alternates</p>
+				<button id="popup-ok">OK</button>
+			</div>
+			<script>
+				const showPopup = () => {
+					document.getElementById('overlay').style.display = 'block';
+					document.getElementById('popup').style.display = 'block';
+				};
+
+				const hidePopup = () => {
+					document.getElementById('overlay').style.display = 'none';
+					document.getElementById('popup').style.display = 'none';
+					const now = new Date().getTime();
+					localStorage.setItem('popupShown', JSON.stringify({ shown: true, timestamp: now }));
+				};
+
+				document.getElementById('popup-ok').addEventListener('click', hidePopup);
+
+				const popupData = JSON.parse(localStorage.getItem('popupShown'));
+				const now = new Date().getTime();
+				const hours48 = 48 * 60 * 60 * 1000;
+
+				if (!popupData || (now - popupData.timestamp) > hours48) {
+					showPopup();
+				}
+			</script>
+
+
 			<div class="about">
 				<h2>Introduction</h2>
 				<p>
-					CodeHubX is the perfect destination for programmers,
-					developers, and students looking for a vast collection of
-					tools to make their work easier. With a wide range of useful
-					websites and resources, CodeHubX is your one-stop-shop for
-					all your programming needs.
+					CodeHubX offers a comprehensive collection of tools and resources for programmers, developers, and
+					students. From coding tutorials to powerful development tools, we have everything you need to
+					enhance your programming skills.
 				</p>
 				<br />
 				<p>
-					<b><i>Tools and Tutorials for All Levels: </i></b>Whether
-					you are a beginner or an experienced programmer, our website
-					has something for everyone. From coding tutorials and
-					helpful tips to powerful development tools, we've got it
-					all. Our comprehensive collection of programming resources
-					includes everything from popular programming languages and
-					frameworks to code editors and project management tools.
+					<b><i>Tools and Tutorials for All Levels:</i></b> Whether you're a beginner or an experienced
+					programmer, our site provides tutorials, tips, and tools for various programming languages,
+					frameworks, code editors, and project management.
 				</p>
 				<br />
 				<p>
-					<b><i>Connecting Programmers and Developers: </i></b>At
-					CodeHubX, we believe that knowledge sharing is essential for
-					growth, and we strive to provide our users with a platform
-					to share and learn from one another. We have a dedicated
-					community of programmers and developers who regularly
-					contribute to our website, ensuring that we are always
-					up-to-date with the latest trends and tools in the industry.
+					<b><i>Connecting Programmers and Developers:</i></b> Join our community to share knowledge and stay
+					updated with the latest trends and tools in the industry.
 				</p>
 				<br />
 				<h2>Contact Us</h2>
 				<p>
-					Get in Touch with Us for Resources or Requests at
-					<a href="mailto:sidharth69aio@gmail.com">sidharth69aio@gmail.com</a>
+					Reach out for resources or requests at <a
+						href="mailto:sidharth69aio@gmail.com">sidharth69aio@gmail.com</a>
 				</p>
 			</div>
 			<div class="warning">

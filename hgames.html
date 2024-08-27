@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>HTML Games</title>
         <meta charset="UTF-8" />
@@ -10,6 +11,47 @@
         <link rel="stylesheet" href="css/header.css" />
         <link rel="stylesheet" href="css/index.css" />
         <script src="script.js"></script>
+        <style>
+            main {
+                padding: 20px;
+                background-color: #fff;
+                max-width: 800px;
+                margin: 0 auto;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+            }
+
+            main h2 {
+                font-size: 24px;
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            main ul {
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+
+            main li {
+                margin-bottom: 10px;
+            }
+
+            main a {
+                text-decoration: none;
+                color: #007bff;
+                font-weight: bold;
+            }
+
+            main a:hover {
+                text-decoration: underline;
+            }
+
+            main .separator {
+                height: 1px;
+                background-color: #ddd;
+                margin: 20px 0;
+            }
+        </style>
     </head>
 
     <body>
@@ -23,29 +65,40 @@
                     <ul class="nav-list">
                         <li><a href="index.html" class="nav-link">Home</a></li>
                         <li>
-                            <a
-                                href="profile/index.html"
-                                target="_blank"
-                                class="nav-link"
-                                >Profile</a
-                            >
+                            <a href="profile/index.html" target="_blank" class="nav-link">Profile</a>
                         </li>
                         <li>
-                            <a
-                                href="https://github.com/SIDDHU123M/"
-                                class="nav-link"
-                                >GitHub</a
-                            >
+                            <a href="https://github.com/SIDDHU123M/" class="nav-link">GitHub</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
-            <section>
-                <h1 class="page-title">HTML Games</h1>
-                <div class="container" id="container"></div>
-            </section>
+            <h2>HTML Games</h2>
+            <ul>
+                <li>🧩 <a href="hgames/rubix/index.html">Rubix Cube Game</a> - Challenge yourself to solve the classic
+                    Rubik's Cube puzzle!</li>
+
+                <li>🎯 <a href="hgames/bullseye/index.html">Bullseye Game</a> - Test your aim and reflexes in this fun
+                    shooting game!</li>
+
+                <li>🏗️ <a href="hgames/tower/index.html">Tower Blocks Game</a> - Stack blocks to build the tallest
+                    tower, but be careful not to let it fall!</li>
+
+                <li>🐇 <a href="hgames/rabbit/index.html">Valorous Rabbit Game</a> - Help the brave rabbit navigate
+                    obstacles and collect carrots!</li>
+
+                <li>🍛 <a href="hgames/menja/index.html">Menja Game</a> - A fun and engaging game focused on food
+                    preparation and challenges!</li>
+
+                <li>🐒 <a href="hgames/gorillas/index.html">Gorillas</a> - Take control of gorillas and engage in a
+                    battle of wits and strategy!</li>
+
+                <li>❄️ <a href="hgames/pink_snow/index.html">Pink Snow</a> - Enjoy a whimsical game filled with pink
+                    snow and fun surprises!</li>
+            </ul>
+
             <section>
                 <div class="container1">
                     <div class="link-item">
@@ -55,9 +108,7 @@
                     </div>
                 </div>
             </section>
-            <script>
-                fetchDataAndCreateLinks("hGames", "container");
-            </script>
         </main>
     </body>
+
 </html>

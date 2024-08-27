@@ -89,7 +89,10 @@ main {
 .container,
 .container1,
 .container2,
-.container3 {
+.container3,
+.container4,
+.container5,
+.container6 {
 	display: flex;
 	/* width: 100%; */
 	flex-wrap: wrap;

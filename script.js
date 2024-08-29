@@ -86,4 +86,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		checkLinkStatus(link, statusCircle.id);
 	});
+
+	// Set the target attribute to '_blank' for each link within the <main> element
+	const allLinks = document.querySelectorAll("main a");
+	allLinks.forEach((link) => {
+		link.setAttribute("target", "_blank");
+	});
 });

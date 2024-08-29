@@ -59,3 +59,31 @@ const fetchDataAndCreateLinks = (skills, containerId) => {
 		})
 		.catch((error) => console.error("Error fetching JSON:", error));
 };
+
+function checkLinkStatus(link, statusId) {
+	const statusCircle = document.getElementById(statusId);
+
+	fetch(link.href, {mode: "no-cors"})
+		.then((response) => {
+			// Since we are using no-cors mode, we cannot check the response status
+			console.log(`Response for ${link.href}:`, response);
+			statusCircle.classList.add("online");
+		})
+		.catch((error) => {
+			console.error(`Error fetching ${link.href}:`, error);
+			statusCircle.classList.add("offline");
+		});
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+	// Add status circles to each link within the <ul> element and check their status
+	const links = document.querySelectorAll("ul a");
+	links.forEach((link, index) => {
+		const statusCircle = document.createElement("span");
+		statusCircle.classList.add("status-circle");
+		statusCircle.id = `status-${index}`;
+		link.parentNode.insertBefore(statusCircle, link);
+
+		checkLinkStatus(link, statusCircle.id);
+	});
+});

@@ -65,6 +65,7 @@ function checkLinkStatus(link, statusId) {
 
 	fetch(link.href, {mode: "no-cors"})
 		.then((response) => {
+			// Since we are using no-cors mode, we cannot check the response status
 			console.log(`Response for ${link.href}:`, response);
 			statusCircle.classList.add("online");
 		})
@@ -75,7 +76,8 @@ function checkLinkStatus(link, statusId) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-	const links = document.querySelectorAll("ul a");
+	// Add status circles to each link within the <main> <ul> element and check their status
+	const links = document.querySelectorAll("main ul a");
 	links.forEach((link, index) => {
 		const statusCircle = document.createElement("span");
 		statusCircle.classList.add("status-circle");

@@ -76,7 +76,6 @@ function checkLinkStatus(link, statusId) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-	// Add status circles to each link within the <main> <ul> element and check their status
 	const links = document.querySelectorAll("main ul a");
 	links.forEach((link, index) => {
 		const statusCircle = document.createElement("span");
@@ -87,9 +86,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		checkLinkStatus(link, statusCircle.id);
 	});
 
-	// Set the target attribute to '_blank' for each link within the <main> element
-	const allLinks = document.querySelectorAll("main a");
-	allLinks.forEach((link) => {
-		link.setAttribute("target", "_blank");
-	});
+	const isIndexPage = window.location.pathname.endsWith("index.html");
+
+	const allLinks = document.querySelectorAll(
+		'main a:not(header a):not(.back-button a):not(.logo a):not([href^="#"]):not([href="index.html"])'
+	);
+
+	if (!isIndexPage) {
+		allLinks.forEach((link) => {
+			link.setAttribute("target", "_blank");
+		});
+	}
 });

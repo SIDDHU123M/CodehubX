@@ -35,37 +35,36 @@ fetch("json/main.json")
 	})
 	.catch((error) => console.error("Error fetching GitHub link:", error));
 
-// Dynamic List Script
-const fetchDataAndCreateLinks = (skills, containerId) => {
-	fetch("json/main.json")
-		.then((response) => response.json())
-		.then((data) => {
-			const skillData = data[skills];
-			const container = document.getElementById(containerId);
-			for (const key in skillData) {
-				if (skillData.hasOwnProperty(key)) {
-					const linkItem = document.createElement("div");
-					linkItem.className = "link-item";
-					const anchor = document.createElement("a");
-					anchor.href = skillData[key];
-					anchor.target = "_blank";
-					const paragraph = document.createElement("p");
-					paragraph.textContent = key;
-					anchor.appendChild(paragraph);
-					linkItem.appendChild(anchor);
-					container.appendChild(linkItem);
-				}
-			}
-		})
-		.catch((error) => console.error("Error fetching JSON:", error));
-};
+// // Dynamic List Script
+// const fetchDataAndCreateLinks = (skills, containerId) => {
+// 	fetch("json/main.json")
+// 		.then((response) => response.json())
+// 		.then((data) => {
+// 			const skillData = data[skills];
+// 			const container = document.getElementById(containerId);
+// 			for (const key in skillData) {
+// 				if (skillData.hasOwnProperty(key)) {
+// 					const linkItem = document.createElement("div");
+// 					linkItem.className = "link-item";
+// 					const anchor = document.createElement("a");
+// 					anchor.href = skillData[key];
+// 					anchor.target = "_blank";
+// 					const paragraph = document.createElement("p");
+// 					paragraph.textContent = key;
+// 					anchor.appendChild(paragraph);
+// 					linkItem.appendChild(anchor);
+// 					container.appendChild(linkItem);
+// 				}
+// 			}
+// 		})
+// 		.catch((error) => console.error("Error fetching JSON:", error));
+// };
 
 function checkLinkStatus(link, statusId) {
 	const statusCircle = document.getElementById(statusId);
 
 	fetch(link.href, {mode: "no-cors"})
 		.then((response) => {
-			// Since we are using no-cors mode, we cannot check the response status
 			console.log(`Response for ${link.href}:`, response);
 			statusCircle.classList.add("online");
 		})
@@ -76,7 +75,6 @@ function checkLinkStatus(link, statusId) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-	// Add status circles to each link within the <ul> element and check their status
 	const links = document.querySelectorAll("ul a");
 	links.forEach((link, index) => {
 		const statusCircle = document.createElement("span");

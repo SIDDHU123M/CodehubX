@@ -65,7 +65,6 @@ function checkLinkStatus(link, statusId) {
 
 	fetch(link.href, {mode: "no-cors"})
 		.then((response) => {
-			// Since we are using no-cors mode, we cannot check the response status
 			console.log(`Response for ${link.href}:`, response);
 			statusCircle.classList.add("online");
 		})
@@ -86,7 +85,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		checkLinkStatus(link, statusCircle.id);
 	});
 
-	const isIndexPage = window.location.pathname.endsWith("index.html");
+	const isIndexPage =
+		window.location.pathname === "/" ||
+		window.location.pathname.endsWith("index.html");
 
 	const allLinks = document.querySelectorAll(
 		'main a:not(header a):not(.back-button a):not(.logo a):not([href^="#"]):not([href="index.html"])'

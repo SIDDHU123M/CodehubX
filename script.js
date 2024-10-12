@@ -74,30 +74,34 @@ function checkLinkStatus(link, statusId) {
         });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll("main ul a");
-    links.forEach((link, index) => {
-        const statusCircle = document.createElement("span");
-        statusCircle.classList.add("status-circle");
-        statusCircle.id = `status-${index}`;
-        link.parentNode.insertBefore(statusCircle, link);
+let Setting = JSON.parse(localStorage.getItem('statusPopupShown'))
 
-        checkLinkStatus(link, statusCircle.id);
-    });
-
-    const isIndexPage =
-        window.location.pathname === "/" ||
-        window.location.pathname.endsWith("index.html") ||
-        window.location.href === "https://siddhu123m.github.io/CodehubX/" ||
-        window.location.href === "https://siddhu123m.github.io/CodehubX";
-
-    const allLinks = document.querySelectorAll(
-        'main a:not(header a):not(.back-button a):not(.logo a):not([href^="#"]):not([href="index.html"])'
-    );
-
-    if (!isIndexPage) {
-        allLinks.forEach((link) => {
-            link.setAttribute("target", "_blank");
+if(Setting.showStatus) {
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("main ul a");
+        links.forEach((link, index) => {
+            const statusCircle = document.createElement("span");
+            statusCircle.classList.add("status-circle");
+            statusCircle.id = `status-${index}`;
+            link.parentNode.insertBefore(statusCircle, link);
+    
+            checkLinkStatus(link, statusCircle.id);
         });
-    }
-});
+    
+        const isIndexPage =
+            window.location.pathname === "/" ||
+            window.location.pathname.endsWith("index.html") ||
+            window.location.href === "https://siddhu123m.github.io/CodehubX/" ||
+            window.location.href === "https://siddhu123m.github.io/CodehubX";
+    
+        const allLinks = document.querySelectorAll(
+            'main a:not(header a):not(.back-button a):not(.logo a):not([href^="#"]):not([href="index.html"])'
+        );
+    
+        if (!isIndexPage) {
+            allLinks.forEach((link) => {
+                link.setAttribute("target", "_blank");
+            });
+        }
+    });    
+}

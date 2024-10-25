@@ -5,98 +5,27 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Dynamic Content</title>
-        <link rel="stylesheet" href="thisiscss.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     </head>
 
     <body>
-        <div>
+        <div class="container text-center mt-5">
             <!-- entertainment.json  fidentity.json  fresources.json  hgames.json  piracy.json  repos.json -->
-            <button onclick="fetchJSON('repos')">Repos</button>
-            <button onclick="fetchJSON('fresources')"> Free Resources</button>
-            <button onclick="fetchJSON('piracy')">Piracy</button>
-            <button onclick="fetchJSON('hgames')">HTML Games</button>
-            <button onclick="fetchJSON('entertainment')">Entertainment</button>
-            <button onclick="fetchJSON('fidentity')">Fake Identity</button>
-            
-            <button onclick="Otherpages('ai')">AI</button>
-            <!-- <button onclick="Otherpages('cc-chk/index')">Bin Generator</button> -->
-
+            <button class="btn btn-primary m-2" onclick="fetchJSON('repos')">Repos</button>
+            <button class="btn btn-primary m-2" onclick="fetchJSON('fresources')">Free Resources</button>
+            <button class="btn btn-primary m-2" onclick="fetchJSON('piracy')">Piracy</button>
+            <button class="btn btn-primary m-2" onclick="fetchJSON('hgames')">HTML Games</button>
+            <button class="btn btn-primary m-2" onclick="fetchJSON('entertainment')">Entertainment</button>
+            <button class="btn btn-primary m-2" onclick="fetchJSON('fidentity')">Fake Identity</button>
+            <button class="btn btn-primary m-2" onclick="Otherpages('ai')">AI</button>
+            <!-- <button class="btn btn-primary m-2" onclick="Otherpages('cc-chk/index')">Bin Generator</button> -->
         </div>
-        <h3>Contents</h3>
-        <nav id="navigation"></nav>
-        <div id="content"></div>
+        <h3 class="text-center mt-5">Contents</h3>
+        <nav id="navigation" class="container mt-3"></nav>
+        <div id="content" class="container mt-3"></div>
 
-        <script>
-            function fetchJSON(file) {
-                fetch(`json/${file}.json`)
-                    .then((response) => response.json())
-                    .then((data) => {
-                        const contentDiv = document.getElementById("content");
-                        const navDiv = document.getElementById("navigation");
-
-                        contentDiv.innerHTML = "";
-                        navDiv.innerHTML = "";
-
-                        const navList = document.createElement("ul");
-
-                        data.forEach((section) => {
-                            for (const [sectionTitle, items] of Object.entries(
-                                section
-                            )) {
-                                const sectionId = sectionTitle
-                                    .replace(/\s+/g, "")
-                                    .toLowerCase();
-
-                                const h2 = document.createElement("h2");
-                                h2.innerText = sectionTitle;
-                                h2.id = sectionId;
-                                contentDiv.appendChild(h2);
-
-                                const ul = document.createElement("ul");
-                                items.forEach((item) => {
-                                    const li = document.createElement("li");
-
-                                    const emojiSpan =
-                                        document.createElement("span");
-                                    emojiSpan.innerText = item.emoji;
-                                    li.appendChild(emojiSpan);
-
-                                    const a = document.createElement("a");
-                                    a.innerText = item.title;
-                                    a.href = item.link.toLowerCase(); // Ensure href is lowercase
-                                    li.appendChild(a);
-
-                                    const descriptionText =
-                                        document.createTextNode(
-                                            ` ${item.description}`
-                                        );
-                                    li.appendChild(descriptionText);
-
-                                    ul.appendChild(li);
-                                });
-
-                                contentDiv.appendChild(ul);
-
-                                const navItem = document.createElement("li");
-                                const navLink = document.createElement("a");
-                                navLink.href = `#${sectionId}`;
-                                navLink.innerText = sectionTitle;
-                                navItem.appendChild(navLink);
-                                navList.appendChild(navItem);
-                            }
-                        });
-
-                        navDiv.appendChild(navList);
-                    })
-                    .catch((error) =>
-                        console.error("Error fetching JSON:", error)
-                    );
-            }
-
-        function Otherpages(file) {
-            window.open(`pages/${file}.html`, "_blank");
-        }
-        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="index.js"></script>
     </body>
 
 </html>

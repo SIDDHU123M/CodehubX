@@ -1,0 +1,324 @@
+[
+    {
+      "Github Repositories": [
+        {
+          "emoji": "🔍",
+          "title": "Web Scraping",
+          "link": "https://github.com/scrapy/scrapy",
+          "description": "- A popular framework for web scraping written in Python."
+        },
+        {
+          "emoji": "🛠️",
+          "title": "Hacking Tools",
+          "link": "https://github.com/carpedm20/awesome-hacking",
+          "description": "- A curated list of hacking tools for various purposes."
+        },
+        {
+          "emoji": "🔒",
+          "title": "Password Cracking",
+          "link": "https://github.com/vanhauser-thc/thc-hydra",
+          "description": "- A versatile password-cracking tool that supports many protocols."
+        },
+        {
+          "emoji": "🔐",
+          "title": "Cryptography",
+          "link": "https://github.com/pyca/cryptography",
+          "description": "- A library that provides cryptographic recipes and primitives for Python."
+        },
+        {
+          "emoji": "🦠",
+          "title": "Malware Analysis",
+          "link": "https://github.com/rshipp/awesome-malware-analysis",
+          "description": "- Resources and tools for malware analysis and reverse engineering."
+        },
+        {
+          "emoji": "🤖",
+          "title": "Awesome Hacking",
+          "link": "https://github.com/Hack-with-Github/Awesome-Hacking",
+          "description": "- A collection of hacking resources and tutorials for ethical hackers."
+        },
+        {
+          "emoji": "💣",
+          "title": "Payloads All The Things",
+          "link": "https://github.com/swisskyrepo/PayloadsAllTheThings",
+          "description": "- A repository of useful payloads for various attacks."
+        },
+        {
+          "emoji": "👨‍💻",
+          "title": "H4cker",
+          "link": "https://github.com/The-Art-of-Hacking/h4cker",
+          "description": "- An in-depth resource for ethical hacking and security research."
+        },
+        {
+          "emoji": "📚",
+          "title": "Hacking Resource",
+          "link": "https://github.com/vitalysim/Awesome-Hacking-Resources",
+          "description": "- A comprehensive collection of resources for ethical hacking and cybersecurity."
+        },
+        {
+          "emoji": "🌐",
+          "title": "Web Security",
+          "link": "https://github.com/qazbnm456/awesome-web-security",
+          "description": "- A curated list of resources for web application security."
+        },
+        {
+          "emoji": "🔓",
+          "title": "Brute Force",
+          "link": "https://github.com/vanhauser-thc/thc-hydra",
+          "description": "- A tool for performing brute-force attacks on various protocols."
+        },
+        {
+          "emoji": "🛡️",
+          "title": "Exploit Development",
+          "link": "https://github.com/wtsxDev/Exploit-Development",
+          "description": "- A collection of resources useful for exploit development."
+        },
+        {
+          "emoji": "🧯",
+          "title": "Firewall Cfg",
+          "link": "https://github.com/trimstray/iptables-essentials",
+          "description": "- Essential resources and examples for configuring iptables."
+        },
+        {
+          "emoji": "🔍",
+          "title": "Vulnerability Scanning",
+          "link": "https://github.com/sqlmapproject/sqlmap",
+          "description": "- An automated tool for detecting and exploiting SQL injection vulnerabilities."
+        },
+        {
+          "emoji": "🔐",
+          "title": "BruteForce",
+          "link": "https://github.com/threat9/routersploit",
+          "description": "- An exploit framework for embedded devices."
+        },
+        {
+          "emoji": "🩸",
+          "title": "Red Team Ops",
+          "link": "https://github.com/CyberSecurityUP/Awesome-Red-Team-Operations",
+          "description": "- A collection of resources and tools used by red teams."
+        },
+        {
+          "emoji": "🔑",
+          "title": "Red Teaming",
+          "link": "https://github.com/yeyintminthuhtut/Awesome-Red-Teaming",
+          "description": "- Resources related to pentesting and red team operations."
+        },
+        {
+          "emoji": "🧰",
+          "title": "Red Team ToolKit",
+          "link": "https://0x1.gitlab.io/pentesting/Red-Teaming-Toolkit/",
+          "description": "- A curated toolkit for red teaming operations."
+        },
+        {
+          "emoji": "🔵",
+          "title": "Blue Team Ops",
+          "link": "https://github.com/fabacab/awesome-cybersecurity-blueteam",
+          "description": "- Resources and tools for blue team cybersecurity operations."
+        },
+        {
+          "emoji": "🌍",
+          "title": "OSINT",
+          "link": "https://github.com/jivoi/awesome-osint",
+          "description": "- A collection of resources and tools for open-source intelligence gathering."
+        },
+        {
+          "emoji": "🔧",
+          "title": "DevSecOps",
+          "link": "https://github.com/devsecops/awesome-devsecop",
+          "description": "- A repository of DevSecOps resources and practices."
+        },
+        {
+          "emoji": "🕵️",
+          "title": "Pentest",
+          "link": "https://github.com/enaqx/awesome-pentest",
+          "description": "- A comprehensive list of resources for penetration testing."
+        },
+        {
+          "emoji": "☁️",
+          "title": "Cloud Pentest",
+          "link": "https://github.com/CyberSecurityUP/Awesome-Cloud-PenTest",
+          "description": "- Resources and tools for cloud penetration testing."
+        },
+        {
+          "emoji": "🔎",
+          "title": "Shodan",
+          "link": "https://github.com/jakejarvis/awesome-shodan-queries",
+          "description": "- A collection of useful Shodan queries"
+        },
+        {
+          "emoji": "☁️",
+          "title": "AWS Security",
+          "link": "https://github.com/jassics/awesome-aws-security",
+          "description": "- A curated list of AWS security resources and best practices."
+        },
+        {
+          "emoji": "🦠",
+          "title": "Malware Analysis & Reverse Engineering",
+          "link": "https://github.com/CyberSecurityUP/Awesome-Malware-Analysis-Reverse-Engineering",
+          "description": "- Tools and resources for analyzing and reverse-engineering malware."
+        },
+        {
+          "emoji": "🕵️‍♂️",
+          "title": "Computer Forensic",
+          "link": "https://github.com/cugu/awesome-forensics",
+          "description": "- A compilation of resources and tools related to digital forensics."
+        },
+        {
+          "emoji": "🌐",
+          "title": "Cloud Security",
+          "link": "https://github.com/4ndersonLin/awesome-cloud-security",
+          "description": "- Resources focused on securing cloud environments and applications."
+        },
+        {
+          "emoji": "🔧",
+          "title": "Reverse Engineering",
+          "link": "https://github.com/tylerha97/awesome-reversing",
+          "description": "- A collection of resources for software reverse engineering."
+        },
+        {
+          "emoji": "🛡️",
+          "title": "Threat Intelligence",
+          "link": "https://github.com/hslatman/awesome-threat-intelligence",
+          "description": "- Tools and resources for gathering and analyzing threat intelligence."
+        },
+        {
+          "emoji": "🔍",
+          "title": "SOC",
+          "link": "https://github.com/cyb3rxp/awesome-soc",
+          "description": "- A list of tools and resources for Security Operations Centers."
+        },
+        {
+          "emoji": "🤝",
+          "title": "Social Engineering",
+          "link": "https://github.com/v2-dev/awesome-social-engineering",
+          "description": "- Resources related to the science of manipulating people in security contexts."
+        },
+        {
+          "emoji": "🔍",
+          "title": "Forensics",
+          "link": "https://github.com/cugu/awesome-forensics",
+          "description": "- Another collection of forensics tools and methodologies."
+        },
+        {
+          "emoji": "🔑",
+          "title": "API Security",
+          "link": "https://github.com/arainho/awesome-api-security",
+          "description": "- Best practices and tools for securing APIs."
+        },
+        {
+          "emoji": "🌐",
+          "title": "WEB3",
+          "link": "https://github.com/Anugrahsr/Awesome-web3-Security",
+          "description": "- Security practices and resources for web3 development."
+        },
+        {
+          "emoji": "🚨",
+          "title": "Incident Response",
+          "link": "https://github.com/Correia-jpv/fucking-awesome-incident-response",
+          "description": "- A resource for incident response strategies and frameworks."
+        },
+        {
+          "emoji": "🔎",
+          "title": "Search Engines",
+          "link": "https://github.com/edoardottt/awesome-hacker-search-engines",
+          "description": "- A collection of hacker-focused search engines and tools."
+        },
+        {
+          "emoji": "🔒",
+          "title": "Smart Contract Security",
+          "link": "https://github.com/saeidshirazi/Awesome-Smart-Contract-Security",
+          "description": "- Resources for securing smart contract applications."
+        },
+        {
+          "emoji": "🔧",
+          "title": "Terraform",
+          "link": "https://github.com/shuaibiyy/awesome-terraform",
+          "description": "- Tools and resources for using Terraform effectively."
+        },
+        {
+          "emoji": "🔒",
+          "title": "Burpsuite Extensions",
+          "link": "https://github.com/snoopysecurity/awesome-burp-extensions",
+          "description": "- A collection of useful extensions for Burp Suite."
+        },
+        {
+          "emoji": "🌐",
+          "title": "IOT",
+          "link": "https://github.com/phodal/awesome-iot/blob/master/README.md",
+          "description": "- A list of resources related to the Internet of Things."
+        },
+        {
+          "emoji": "📱",
+          "title": "IOS Security",
+          "link": "https://github.com/Cy-clon3/awesome-ios-security",
+          "description": "- Resources and tools focused on security for iOS applications."
+        },
+        {
+          "emoji": "🔒",
+          "title": "Embedded & IOT Security",
+          "link": "https://github.com/fkie-cad/awesome-embedded-and-iot-security",
+          "description": "- Security practices for embedded systems and IoT devices."
+        },
+        {
+          "emoji": "🤖",
+          "title": "OSINT Bots",
+          "link": "https://github.com/ItIsMeCall911/Awesome-Telegram-OSINT#-bots",
+          "description": "- A collection of bots for gathering open-source intelligence."
+        },
+        {
+          "emoji": "🔧",
+          "title": "IOT Hacks",
+          "link": "https://github.com/nebgnahz/awesome-iot-hacks",
+          "description": "- Resources and examples of hacks targeting IoT devices."
+        },
+        {
+          "emoji": "🌐",
+          "title": "WEB3 Security",
+          "link": "https://github.com/Anugrahsr/Awesome-web3-Security",
+          "description": "- Another collection of resources for web3 security practices."
+        },
+        {
+          "emoji": "🔐",
+          "title": "Security",
+          "link": "https://github.com/sbilly/awesome-security",
+          "description": "- A comprehensive list of security resources."
+        },
+        {
+          "emoji": "🔧",
+          "title": "Reversing",
+          "link": "https://github.com/tylerha97/awesome-reversing",
+          "description": "- Resources focusing on reverse engineering"
+        },
+        {
+          "emoji": "📜",
+          "title": "Piracy",
+          "link": "https://github.com/Igglybuff/awesome-piracy",
+          "description": "- A collection of resources and tools related to piracy and digital rights."
+        },
+        {
+          "emoji": "🌐",
+          "title": "Web Hacking",
+          "link": "https://github.com/infoslack/awesome-web-hacking",
+          "description": "- A curated list of resources for hacking web applications."
+        },
+        {
+          "emoji": "🧠",
+          "title": "Memory Forensics",
+          "link": "https://github.com/digitalisx/awesome-memory-forensics",
+          "description": "- Tools and methodologies for analyzing memory dumps in digital forensics."
+        },
+        {
+          "emoji": "📜",
+          "title": "OSCP",
+          "link": "https://github.com/0x4D31/awesome-oscp",
+          "description": "- A collection of resources to help prepare for the Offensive Security Certified Professional exam."
+        },
+        {
+          "emoji": "🦠",
+          "title": "RAT",
+          "link": "https://github.com/alphaSeclab/awesome-rat",
+          "description": "- Resources related to Remote Access Trojans (RAT) implementations and usage."
+        }
+      ]
+    }
+  ]

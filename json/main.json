@@ -1,445 +1,1214 @@
-{
-	"githubLink": "https://github.com/SIDDHU123M/CodehubX",
-	"programingLanguage": {
-		"C - Programming": "https://www.learn-c.org",
-		"Python": "https://www.codecademy.com/learn/learn-python-3",
-		"Java": "https://www.codecademy.com/learn/learn-java",
-		"JavaScript": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
-		"C++": "https://www.learncpp.com/",
-		"C#": "https://learn.microsoft.com/en-us/dotnet/csharp/",
-		"PHP": "https://www.w3schools.com/php/",
-		"Swift": "https://www.swift.org/documentation/#the-swift-programming-language",
-		"Ruby": "https://www.codecademy.com/learn/learn-ruby",
-		"Go (Golang)": "https://tour.golang.org/welcome/",
-		"TypeScript": "https://www.typescriptlang.org/docs/",
-		"Rust": "https://doc.rust-lang.org/book/",
-		"Kotlin": "https://kotlinlang.org/docs/home.html",
-		"Shell Scripting (Bash)": "http://www.tldp.org/LDP/Bash-Beginners-Guide/html/",
-		"Objective-C": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html",
-		"Dart": "https://dart.dev/guides/language/language-tour",
-		"R": "https://www.tutorialspoint.com/r/index.htm",
-		"MATLAB": "https://www.mathworks.com/learn/tutorials/matlab-onramp.html",
-		"Scala": "https://docs.scala-lang.org/",
-		"Lua": "https://www.tutorialspoint.com/lua/index.htm",
-		"Groovy": "https://groovy-lang.org/documentation.html",
-		"Perl": "https://learn.perl.org/",
-		"Haskell": "http://learnyouahaskell.com/",
-		"Julia": "https://docs.julialang.org/",
-		"PowerShell Scripting": "https://docs.microsoft.com/en-us/powershell/",
-		"VB.NET": "https://learn.microsoft.com/en-us/dotnet/visual-basic/",
-		"COBOL": "https://github.com/openmainframeproject/cobol-programming-course",
-		"Ada": "https://learn.adacore.com/",
-		"Fortran": "https://www.tutorialspoint.com/fortran/index.htm",
-		"Elixir": "https://elixirschool.com/",
-		"Django (Python Framework)": "https://djangoforbeginners.com/"
+[
+	{
+		"Programming Language": [
+			{
+				"emoji": "🅾️",
+				"title": "C - Programming",
+				"link": "https://www.learn-c.org/",
+				"description": "- A foundational programming language known for its performance and close system hardware manipulation."
+			},
+			{
+				"emoji": "🐍",
+				"title": "Python",
+				"link": "https://www.codecademy.com/learn/learn-python-3",
+				"description": "- A versatile and widely-used programming language known for its readability and simplicity."
+			},
+			{
+				"emoji": "☕",
+				"title": "Java",
+				"link": "https://www.codecademy.com/learn/learn-java",
+				"description": "- A popular, object-oriented language commonly used for building web applications and Android apps."
+			},
+			{
+				"emoji": "🌐",
+				"title": "JavaScript",
+				"link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+				"description": "- A core technology of the web, used for client-side development to create interactive websites."
+			},
+			{
+				"emoji": "⚙️",
+				"title": "C++",
+				"link": "https://www.learncpp.com/",
+				"description": "- An extension of C that includes object-oriented features and is widely used in system/software development."
+			},
+			{
+				"emoji": "🖥️",
+				"title": "C#",
+				"link": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+				"description": "- A modern, object-oriented language developed by Microsoft, primarily used for Windows applications."
+			},
+			{
+				"emoji": "🔧",
+				"title": "PHP",
+				"link": "https://www.w3schools.com/php/",
+				"description": "- A server-side scripting language designed for web development and creating dynamic web pages."
+			},
+			{
+				"emoji": "🍏",
+				"title": "Swift",
+				"link": "https://www.swift.org/documentation/#the-swift-programming-language",
+				"description": "- A powerful and intuitive programming language for iOS and macOS app development."
+			},
+			{
+				"emoji": "💎",
+				"title": "Ruby",
+				"link": "https://www.codecademy.com/learn/learn-ruby",
+				"description": "- Known for its simplicity and productivity, Ruby is a dynamic language often used for web development."
+			},
+			{
+				"emoji": "🌿",
+				"title": "Go (Golang)",
+				"link": "https://tour.golang.org/welcome/",
+				"description": "- A statically typed language designed for simplicity and efficiency, commonly used in backend development."
+			},
+			{
+				"emoji": "🔷",
+				"title": "TypeScript",
+				"link": "https://www.typescriptlang.org/docs/",
+				"description": "- A superset of JavaScript that adds static types, making it easier to debug and maintain larger applications."
+			},
+			{
+				"emoji": "🦀",
+				"title": "Rust",
+				"link": "https://doc.rust-lang.org/book/",
+				"description": "- A systems programming language that prioritizes safety and performance, often used in concurrent programming."
+			},
+			{
+				"emoji": "🟢",
+				"title": "Kotlin",
+				"link": "https://kotlinlang.org/docs/home.html",
+				"description": "- A modern programming language that is fully interoperable with Java and used for Android development."
+			},
+			{
+				"emoji": "🔍",
+				"title": "Shell Scripting (Bash)",
+				"link": "http://www.tldp.org/LDP/Bash-Beginners-Guide/html/",
+				"description": "- A scripting language for task automation and configuration on Unix-based systems."
+			},
+			{
+				"emoji": "🍎",
+				"title": "Objective-C",
+				"link": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html",
+				"description": "- A programming language that adds Smalltalk-style messaging to the C programming language, used in iOS and macOS development."
+			},
+			{
+				"emoji": "🔈",
+				"title": "Dart",
+				"link": "https://dart.dev/guides/language/language-tour",
+				"description": "- A client-optimized language for fast apps on any platform, often used with Flutter for mobile development."
+			},
+			{
+				"emoji": "📊",
+				"title": "R",
+				"link": "https://www.tutorialspoint.com/r/index.htm",
+				"description": "- A programming language for statistical computing and graphics, widely used among statisticians and data miners."
+			},
+			{
+				"emoji": "📐",
+				"title": "MATLAB",
+				"link": "https://www.mathworks.com/learn/tutorials/matlab-onramp.html",
+				"description": "- A high-performance language for technical computing, particularly in mathematics and engineering."
+			},
+			{
+				"emoji": "⚗️",
+				"title": "Scala",
+				"link": "https://docs.scala-lang.org/",
+				"description": "- A hybrid functional/object-oriented programming language that runs on the JVM and is known for its concise code."
+			},
+			{
+				"emoji": "🌙",
+				"title": "Lua",
+				"link": "https://www.tutorialspoint.com/lua/index.htm",
+				"description": "- A lightweight scripting language designed for embedded use in applications."
+			},
+			{
+				"emoji": "📐",
+				"title": "MATLAB",
+				"link": "https://www.mathworks.com/learn/tutorials/matlab-onramp.html",
+				"description": "- A high-level language and interactive environment for numerical computation, visualization, and programming."
+			},
+			{
+				"emoji": "⚙️",
+				"title": "Scala",
+				"link": "https://docs.scala-lang.org/",
+				"description": "- A powerful language that combines functional and object-oriented programming, running on the Java Virtual Machine (JVM)."
+			},
+			{
+				"emoji": "🌙",
+				"title": "Lua",
+				"link": "https://www.tutorialspoint.com/lua/index.htm",
+				"description": "- A lightweight, fast, and embeddable scripting language often used in game development."
+			},
+			{
+				"emoji": "🚀",
+				"title": "Groovy",
+				"link": "https://groovy-lang.org/documentation.html",
+				"description": "- A dynamic language for the Java Platform that is known for its ease of use and integration with Java."
+			},
+			{
+				"emoji": "🐪",
+				"title": "Perl",
+				"link": "https://learn.perl.org/",
+				"description": "- A highly capable, feature-rich programming language with powerful text processing capabilities, often used for web development and system administration."
+			},
+			{
+				"emoji": "📚",
+				"title": "Haskell",
+				"link": "http://learnyouahaskell.com/",
+				"description": "- A standardized, general-purpose purely functional programming language known for its strong static typing and lazy evaluation."
+			},
+			{
+				"emoji": "🧪",
+				"title": "Julia",
+				"link": "https://docs.julialang.org/",
+				"description": "- A high-level, high-performance programming language for technical computing, with capabilities for numerical and scientific computing."
+			},
+			{
+				"emoji": "🔧",
+				"title": "PowerShell Scripting",
+				"link": "https://docs.microsoft.com/en-us/powershell/",
+				"description": "- A task automation and configuration management framework from Microsoft, built on .NET."
+			},
+			{
+				"emoji": "🖥️",
+				"title": "VB.NET",
+				"link": "https://learn.microsoft.com/en-us/dotnet/visual-basic/",
+				"description": "- An object-oriented programming language developed by Microsoft that is easy to learn and widely used for Windows applications."
+			},
+			{
+				"emoji": "🖋️",
+				"title": "COBOL",
+				"link": "https://github.com/openmainframeproject/cobol-programming-course",
+				"description": "- A legacy programming language primarily used in business, finance, and administrative systems for companies and governments."
+			},
+			{
+				"emoji": "🦕",
+				"title": "Ada",
+				"link": "https://learn.adacore.com/",
+				"description": "- A high-level programming language used in systems where reliability and efficiency are critical, often used in aerospace and defense."
+			},
+			{
+				"emoji": "🔢",
+				"title": "Fortran",
+				"link": "https://www.tutorialspoint.com/fortran/index.htm",
+				"description": "- One of the oldest high-level programming languages, particularly strong in numerical computation and scientific programming."
+			},
+			{
+				"emoji": "🔥",
+				"title": "Elixir",
+				"link": "https://elixirschool.com/",
+				"description": "- A functional, concurrent language built on the Erlang VM, known for its scalable and maintainable applications."
+			},
+			{
+				"emoji": "🌍",
+				"title": "Django (Python Framework)",
+				"link": "https://djangoforbeginners.com/",
+				"description": "- A high-level Python web framework that encourages rapid development and clean, pragmatic design."
+			}
+		]
 	},
-	"cyberSecuritySkills": {
-		"Ethical Hacking": "https://www.cybrary.it/course/ethical-hacking/",
-		"Penetration Testing": "https://www.metasploitunleashed.com/",
-		"Bug Hunting": "https://www.openbugbounty.org/",
-		"Bug Hunting 2": "https://www.hacker101.com/",
-		"Security+": "https://www.professormesser.com/security-plus/sy0-501/sy0-501-training-course/",
-		"Web Application Security": "https://owasp.org/www-project-web-security-testing-guide/",
-		"Network Security": "https://isc.sans.edu/",
-		"Incident Response": "https://www.incidentresponse.com/",
-		"Malware Analysis": "https://blog.malwarebytes.com/category/malware-101/",
-		"Digital Forensics": "http://www.digital-forensic.org/",
-		"Threat Intelligence": "https://attack.mitre.org/",
-		"Security Certifications": "https://www.comptia.org/certifications/security",
-		"Web Application Security (OWASP)": "https://owasp.org/",
-		"Cloud Security": "https://cloudsecurityalliance.org/",
-		"Security Blogs and News": "https://krebsonsecurity.com/",
-		"Security Blogs and News 2": "https://www.schneier.com/",
-		"Cybersecurity Podcasts": "https://darknetdiaries.com/",
-		"Cybersecurity Podcasts 2": "https://www.grc.com/securitynow.htm",
-		"Security Training Platforms": "https://www.cybrary.it/",
-		"Security Training Platforms 2": "https://www.pluralsight.com/courses/ethical-hacking-website-web-applications",
-		"Mobile Security (OWASP)": "https://owasp.org/www-project-mobile-security-testing-guide/",
-		"Social Engineering Awareness": "https://www.social-engineer.org/",
-		"Wireless Network Security": "https://wigle.net/",
-		"Cybersecurity Conferences": "https://www.defcon.org/",
-		"Cybersecurity Conferences 2": "https://www.blackhat.com/",
-		"Legal and Ethical Considerations": "https://www.eff.org/",
-		"Internet of Things (IoT) Security": "https://www.iotsecurityfoundation.org/"
+	{
+		"Cybersecurity Skills": [
+			{
+				"emoji": "🕵️‍♂️",
+				"title": "Ethical Hacking",
+				"link": "https://www.cybrary.it/course/ethical-hacking/",
+				"description": "- A course that teaches the principles and practices of ethical hacking and penetration testing."
+			},
+			{
+				"emoji": "🔍",
+				"title": "Penetration Testing",
+				"link": "https://www.metasploitunleashed.com/",
+				"description": "- Learn to use Metasploit, a powerful tool for penetration testing and security assessment."
+			},
+			{
+				"emoji": "🐞",
+				"title": "Bug Hunting",
+				"link": "https://www.openbugbounty.org/",
+				"description": "- An open platform where researchers can report vulnerabilities and earn bounties."
+			},
+			{
+				"emoji": "🔎",
+				"title": "Bug Hunting 2",
+				"link": "https://www.hacker101.com/",
+				"description": "- A free class for budding hackers that provides foundational knowledge for bug hunting."
+			},
+			{
+				"emoji": "🔐",
+				"title": "Security+",
+				"link": "https://www.professormesser.com/security-plus/sy0-501/sy0-501-training-course/",
+				"description": "- A comprehensive training course for CompTIA Security+, covering essential security concepts."
+			},
+			{
+				"emoji": "🌐",
+				"title": "Web Application Security",
+				"link": "https://owasp.org/www-project-web-security-testing-guide/",
+				"description": "- A detailed guide on securing web applications with best practices and testing techniques."
+			},
+			{
+				"emoji": "🔒",
+				"title": "Network Security",
+				"link": "https://isc.sans.edu/",
+				"description": "- Resources and information about network security from the SANS Internet Storm Center."
+			},
+			{
+				"emoji": "🚨",
+				"title": "Incident Response",
+				"link": "https://www.incidentresponse.com/",
+				"description": "- A guide and resources for preparing for and responding to security incidents."
+			},
+			{
+				"emoji": "🦠",
+				"title": "Malware Analysis",
+				"link": "https://blog.malwarebytes.com/category/malware-101/",
+				"description": "- Articles and resources focused on understanding and analyzing malware."
+			},
+			{
+				"emoji": "💻",
+				"title": "Digital Forensics",
+				"link": "http://www.digital-forensic.org/",
+				"description": "- Resources and training focused on recovering and analyzing data from digital devices."
+			},
+			{
+				"emoji": "📊",
+				"title": "Threat Intelligence",
+				"link": "https://attack.mitre.org/",
+				"description": "- A repository of information on cyber adversaries and the tactics, techniques, and procedures they use."
+			},
+			{
+				"emoji": "📜",
+				"title": "Security Certifications",
+				"link": "https://www.comptia.org/certifications/security",
+				"description": "- Information about various security certifications offered by CompTIA."
+			},
+			{
+				"emoji": "🛡️",
+				"title": "Web Application Security (OWASP)",
+				"link": "https://owasp.org/",
+				"description": "- The OWASP Foundation's resources dedicated to improving the security of software."
+			},
+			{
+				"emoji": "☁️",
+				"title": "Cloud Security",
+				"link": "https://cloudsecurityalliance.org/",
+				"description": "- Resources and tools to help secure data in the cloud."
+			},
+			{
+				"emoji": "📰",
+				"title": "Security Blogs and News",
+				"link": "https://krebsonsecurity.com/",
+				"description": "- Featuring articles from renowned security expert Brian Krebs on news and insights."
+			},
+			{
+				"emoji": "🖋️",
+				"title": "Security Blogs and News 2",
+				"link": "https://www.schneier.com/",
+				"description": "- Bruce Schneier's blog focusing on security, technology, and privacy issues."
+			},
+			{
+				"emoji": "🎙️",
+				"title": "Cybersecurity Podcasts",
+				"link": "https://darknetdiaries.com/",
+				"description": "- A dive into the world of cybercrime and security through engaging podcasts."
+			},
+			{
+				"emoji": "🎧",
+				"title": "Cybersecurity Podcasts 2",
+				"link": "https://www.grc.com/securitynow.htm",
+				"description": "- Security Now podcast with topics on security news and interviews with experts."
+			},
+			{
+				"emoji": "📚",
+				"title": "Security Training Platforms",
+				"link": "https://www.cybrary.it/",
+				"description": "- Various courses and resources to learn about cybersecurity."
+			},
+			{
+				"emoji": "💻",
+				"title": "Security Training Platforms 2",
+				"link": "https://www.pluralsight.com/courses/ethical-hacking-website-web-applications",
+				"description": "- Courses focused on ethical hacking for web applications."
+			},
+			{
+				"emoji": "📱",
+				"title": "Mobile Security (OWASP)",
+				"link": "https://owasp.org/www-project-mobile-security-testing-guide/",
+				"description": "- A comprehensive guide to ensuring mobile application security."
+			},
+			{
+				"emoji": "📣",
+				"title": "Social Engineering Awareness",
+				"link": "https://www.social-engineer.org/",
+				"description": "- Resources for understanding and preventing social engineering attacks."
+			},
+			{
+				"emoji": "📶",
+				"title": "Wireless Network Security",
+				"link": "https://wigle.net/",
+				"description": "- Tools and resources for securing wireless networks."
+			},
+			{
+				"emoji": "🎤",
+				"title": "Cybersecurity Conferences",
+				"link": "https://www.defcon.org/",
+				"description": "- DEF CON is one of the world's largest and oldest hacker conventions."
+			},
+			{
+				"emoji": "🖥️",
+				"title": "Cybersecurity Conferences 2",
+				"link": "https://www.blackhat.com/",
+				"description": "- Black Hat provides security professionals with the latest in information security research, trends, and techniques."
+			},
+			{
+				"emoji": "⚖️",
+				"title": "Legal and Ethical Considerations",
+				"link": "https://www.eff.org/",
+				"description": "- The Electronic Frontier Foundation provides insights into the legal aspect of technology, privacy, and civil liberties."
+			},
+			{
+				"emoji": "🔒",
+				"title": "Internet of Things (IoT) Security",
+				"link": "https://www.iotsecurityfoundation.org/",
+				"description": "- Resources and guidance for securing IoT devices and networks."
+			}
+		]
 	},
-	"professionalSkills": {
-		"Communication Skills": "https://alison.com/tag/communication-skills",
-		"Communication Skills 2": "https://www.mygreatlearning.com/academy/learn-for-free/courses/effective-communication",
-		"Problem Solving": "https://www.hackerrank.com/domains/tutorials/10-days-of-javascript",
-		"Adaptability": "https://www.linkedin.com/learning/topics/adaptability",
-		"Critical Thinking": "https://www.edx.org/learn/critical-thinking-skills/rochester-institute-of-technology-critical-thinking-problem-solving",
-		"Leadership": "https://www.linkedin.com/learning/leadership-foundations",
-		"Data Analysis Google": "https://analytics.google.com/analytics/academy/",
-		"Data Analysis Coursera": "https://www.coursera.org/specializations/data-visualization",
-		"Digital Literacy": "https://learndigital.withgoogle.com/digitalgarage",
-		"Networking Skills": "https://www.netacad.com/courses/networking/https://skillsforall.com/course/networking-basics",
-		"Emotional Intelligence": "https://online.hbs.edu/blog/post/emotional-intelligence-skills"
+	{
+		"Professinal Skills": [
+			{
+				"emoji": "🗣️",
+				"title": "Communication Skills",
+				"link": "https://alison.com/tag/communication-skills",
+				"description": "- Free online courses to enhance your communication abilities."
+			},
+			{
+				"emoji": "💬",
+				"title": "Communication Skills 2",
+				"link": "https://www.mygreatlearning.com/academy/learn-for-free/courses/effective-communication",
+				"description": "- A course focused on techniques for effective communication."
+			},
+			{
+				"emoji": "🧩",
+				"title": "Problem Solving",
+				"link": "https://www.hackerrank.com/domains/tutorials/10-days-of-javascript",
+				"description": "- Improve your JavaScript skills through this 10-day coding challenge."
+			},
+			{
+				"emoji": "🌱",
+				"title": "Adaptability",
+				"link": "https://www.linkedin.com/learning/topics/adaptability",
+				"description": "- Courses aimed at improving your adaptability in various work environments."
+			},
+			{
+				"emoji": "🧠",
+				"title": "Critical Thinking",
+				"link": "https://www.edx.org/learn/critical-thinking-skills/rochester-institute-of-technology-critical-thinking-problem-solving",
+				"description": "- Develop your critical thinking and problem-solving skills through this course from RIT."
+			},
+			{
+				"emoji": "🧑‍🏫",
+				"title": "Leadership",
+				"link": "https://www.linkedin.com/learning/leadership-foundations",
+				"description": "- Explore the foundational skills necessary for effective leadership."
+			},
+			{
+				"emoji": "📊",
+				"title": "Data Analysis Google",
+				"link": "https://analytics.google.com/analytics/academy/",
+				"description": "- Google's Analytics Academy offers free courses on data analysis and Google Analytics."
+			},
+			{
+				"emoji": "📈",
+				"title": "Data Analysis Coursera",
+				"link": "https://www.coursera.org/specializations/data-visualization",
+				"description": "- A specialization in data visualization techniques through Coursera."
+			},
+			{
+				"emoji": "💻",
+				"title": "Digital Literacy",
+				"link": "https://learndigital.withgoogle.com/digitalgarage",
+				"description": "- A comprehensive program by Google to enhance your digital skills."
+			},
+			{
+				"emoji": "📡",
+				"title": "Networking Skills",
+				"link": "https://www.netacad.com/courses/networking/https://skillsforall.com/course/networking-basics",
+				"description": "- Courses to build a solid foundation in networking concepts."
+			},
+			{
+				"emoji": "😊",
+				"title": "Emotional Intelligence",
+				"link": "https://online.hbs.edu/blog/post/emotional-intelligence-skills",
+				"description": "- Learn about emotional intelligence and how to apply it in personal and professional contexts."
+			}
+		]
 	},
-	"movies": {
-		"Prmovies": "https://prmovies.my",
-		"Movies2Watch": "https://movies2watch.is",
-		"Allmoviesforyou": "https://anymovie.cc",
-		"M4UHD": "https://ww1.m4uhd.tv",
-		"watchasian": "https://watchasian.art",
-		"fmovies": "https://fmovies.llc",
-		"Sflix": "https://sflix.to/",
-		"Bflix": "https://bflix.ru",
-		"Privatehd": "https://privatehd.to",
-		"Primewire": "https://ww2.primewire.quest/",
-		"Lookmovie2": "https://lookmovie2.to",
-		"Downloadhub": "https://www.downloadhub.sx/",
-		"Dvdplay": "https://dvdplay.link/",
-		"Foumovies": "https://foumovies.pro/",
-		"1tamilmv": "https://www.1tamilmv.tf/",
-		"UwatchFree": "https://uwatchfree.be",
-		"WatchToday": "https://watchtoday.stream/",
-		"8xmovies": "https://8xmovies.college/",
-		"Gimy": "https://gimy.news/",
-		"Dramanice": "https://ww3.dramanice.video/",
-		"Kisskh": "https://kisskh.co",
-		"Vumoo": "https://vumoo.mx/",
-		"Pseudo Flix": "https://pseudo-flix.pro",
-		"Levidia": "https://www.levidia.ch/",
-		"Binged": "https://binged.in/",
-		"Showflix": "https://showflix.xyz/",
-		"Tvids": "https://www.tvids.net/",
-		"AsianFlix": "https://www.asianflix.one",
-		"MyAsianTv": "https://myasiantv.ac",
-		"DramaFull": "https://dramafull.net",
-		"GoPlay": "https://goplay.pw",
-		"Cinevez": "https://www.cinevez.mov/"
+	{
+		"Cheat Sheets": [
+			{
+				"emoji": "📖",
+				"title": "Cheatsheets",
+				"link": "https://cheatsheets.zip/",
+				"description": "- ultimate repository of sheets and quick references meticulously crafted by the open community boost your productivity."
+			},
+			{
+				"emoji": "📖",
+				"title": "Quick Ref",
+				"link": "https://quickref.me/",
+				"description": "- A collection of quick reference guides for various programming languages and tools."
+			},
+			{
+				"emoji": "👨‍💻",
+				"title": "Code with Harry",
+				"link": "https://www.codewithharry.com/",
+				"description": "- An educational platform offering tutorials and resources for different programming languages."
+			},
+			{
+				"emoji": "👨‍💻",
+				"title": "Codecademy",
+				"link": "https://www.codecademy.com/resources/cheatsheets/all",
+				"description": "- The Codecademy Cheatsheets page offers a comprehensive collection of quick reference guides for various programming languages and technologies."
+			},
+			{
+				"emoji": "📚",
+				"title": "GeekForGeeks",
+				"link": "https://www.geeksforgeeks.org/",
+				"description": "- A popular educational website providing tutorials, coding problems, and technical articles for programmers."
+			},
+			{
+				"emoji": "💼",
+				"title": "Interview Bit",
+				"link": "https://www.interviewbit.com/",
+				"description": "- A platform dedicated to helping users prepare for technical interviews with coding challenges and interview questions."
+			},
+			{
+				"emoji": "🎓",
+				"title": "Edureks",
+				"link": "https://www.edureka.co/blog/cheatsheets/",
+				"description": "- Offers a collection of cheat sheets and educational resources across various technology topics."
+			},
+			{
+				"emoji": "🔥",
+				"title": "CodeBurst",
+				"link": "https://codeburst.io/",
+				"description": "- A platform featuring articles, coding tutorials, and insights from developers worldwide."
+			},
+			{
+				"emoji": "🏋️‍♂️",
+				"title": "Exercism",
+				"link": "https://exercism.org/",
+				"description": "- A coding practice platform where users can solve exercises and receive mentorship in various programming languages."
+			},
+			{
+				"emoji": "🔍",
+				"title": "Alta3",
+				"link": "https://alta3.com/posters/",
+				"description": "- Provides educational posters and resources for various programming languages and concepts."
+			},
+			{
+				"emoji": "📝",
+				"title": "DevHints",
+				"link": "https://devhints.io/",
+				"description": "- A collection of cheatsheets for developers covering various programming languages and frameworks."
+			},
+			{
+				"emoji": "🛠️",
+				"title": "GitSheet",
+				"link": "https://gitsheet.wtf/",
+				"description": "- A handy resource for quick references and commands for using Git."
+			},
+			{
+				"emoji": "📊",
+				"title": "Overapi",
+				"link": "https://overapi.com/",
+				"description": "- A compilation of cheat sheets covering multiple programming languages and technologies."
+			},
+			{
+				"emoji": "📧",
+				"title": "GmailCity",
+				"link": "https://gmailcity.com/",
+				"description": "- A resource focused on Gmail tips, tricks, and tools to enhance productivity."
+			},
+			{
+				"emoji": "🗂️",
+				"title": "CheatoGraphy",
+				"link": "https://cheatography.com/",
+				"description": "- A site that offers a vast collection of cheat sheets for various subjects and programming languages."
+			},
+			{
+				"emoji": "🏠",
+				"title": "CodeHouse",
+				"link": "https://codehouse.vercel.app/app",
+				"description": "- A resource providing cheat sheets and coding shortcuts for developers."
+			}
+		]
 	},
-	"lNovels": {
-		"MTLArchive": "https://mtlarchive.com",
-		"NovelsEmperor": "https://novelsemperor.net/",
-		"TicBic": "https://ticbic.com",
-		"MTLNovel": "https://www.mtlnovel.com",
-		"LNMTL": "https://lnmtl.com",
-		"FANMTL": "https://www.fanmtl.com",
-		"DaoNovel": "https://daonovel.com",
-		"Wuxia": "https://wuxia.click/",
-		"NovelBuddy": "https://novelbuddy.com",
-		"RoyalRoad": "https://www.royalroad.com",
-		"Ranobes": "https://ranobes.top",
-		"Ffxs8": "https://www.ffxs8.com",
-		"Feiszw": "https://m.feibzw.com",
-		"4ksw": "http://www.4ksw.com/",
-		"Shencou": "https://m.shencou.com/",
-		"Wangshuge": "http://wap.wangshugu.net",
-		"Paozww": "https://wap.paozww.com",
-		"txt520": "https://www.txt520.com/",
-		"Jpxs123": "https://jpxs123.com",
-		"Trxs": "https://trxs.cc"
+	{
+		"Discounted Coupons": [
+			{
+				"emoji": "🛍️",
+				"title": "SharewareOnSale",
+				"link": "https://sharewareonsale.com/",
+				"description": "- A website that offers software discounts, free trials, and limited-time offers for various applications."
+			},
+			{
+				"emoji": "💸",
+				"title": "BitsDuJour",
+				"link": "https://www.bitsdujour.com/",
+				"description": "- Provides daily deals on software, including significant discounts and giveaway opportunities."
+			},
+			{
+				"emoji": "🎁",
+				"title": "Giveaway of the Day",
+				"link": "https://www.giveawayoftheday.com/",
+				"description": "- Offers a new free software application each day to download and try, usually with promotional offers."
+			},
+			{
+				"emoji": "🌐",
+				"title": "Net Load",
+				"link": "https://net-load.com/",
+				"description": "- A platform for discovering various free downloads, software giveaways, and technological offers."
+			},
+			{
+				"emoji": "🎉",
+				"title": "Vovsoft Giveaway",
+				"link": "https://vovsoft.com/",
+				"description": "- A site offering giveaways for software developed by Vovsoft, including a range of useful applications."
+			},
+			{
+				"emoji": "🔗",
+				"title": "Giveaways Networks",
+				"link": "https://giveawaysnetworks.net/",
+				"description": "- A hub for various giveaways and promotional materials across different categories and platforms."
+			},
+			{
+				"emoji": "📚",
+				"title": "DiscUdemy",
+				"link": "https://www.discudemy.com/",
+				"description": "- A platform providing discounts and free access to online courses, primarily from Udemy."
+			},
+			{
+				"emoji": "💳",
+				"title": "Coupon Scorpion",
+				"link": "https://couponscorpion.com/",
+				"description": "- A website dedicated to aggregating various coupons and discounts for online shopping."
+			},
+			{
+				"emoji": "🏷️",
+				"title": "Best Coupon Hunter",
+				"link": "https://bestcouponhunter.com/",
+				"description": "- A platform that collects the best available coupon codes for a variety of online stores."
+			},
+			{
+				"emoji": "📖",
+				"title": "LearnViral",
+				"link": "https://udemycoupon.learnviral.com/",
+				"description": "- Offers free and discounted coupons for Udemy courses, making online learning more accessible."
+			},
+			{
+				"emoji": "💰",
+				"title": "Real Discount",
+				"link": "https://www.real.discount/",
+				"description": "- A site showcasing genuine discount offers and coupon codes for various products and services."
+			},
+			{
+				"emoji": "🎓",
+				"title": "Mega Courses",
+				"link": "https://megacourses.net/",
+				"description": "- Aggregates free online courses from various providers, enabling learners to expand their knowledge.."
+			},
+			{
+				"emoji": "🧾",
+				"title": "Promo Coupons",
+				"link": "https://www.promocoupons24.com/",
+				"description": "- A resource for finding promotional coupons for both online and local businesses."
+			},
+			{
+				"emoji": "🌍",
+				"title": "FreeBies Global",
+				"link": "https://freebiesglobal.com/",
+				"description": "- A site offering a wide range of free products, discounts, samples, and promotional items."
+			},
+			{
+				"emoji": "🏫",
+				"title": "CourseCity",
+				"link": "https://coursesity.com/",
+				"description": "- An educational platform providing access to free courses and learning resources across various subjects."
+			},
+			{
+				"emoji": "💼",
+				"title": "999CourseSale",
+				"link": "https://999coursesale.com/freebie-courses-list.php",
+				"description": "- A website that lists free courses and educational resources to help learners find valuable opportunities."
+			},
+			{
+				"emoji": "🎓",
+				"title": "CourseCity Alt",
+				"link": "https://coursesity.com/provider/free/udemy-courses?ref=banner",
+				"description": "- An alternative section of CourseCity focused on providing free Udemy courses to users."
+			}
+		]
 	},
-	"manga": {
-		"Manganato": "https://manganato.com",
-		"MangaDex": "https://mangadex.org",
-		"Comick": "https://comick.io",
-		"Mangafire": "https://mangafire.to",
-		"Mangapark": "https://mangapark.net",
-		"Bato": "https://bato.to",
-		"Mangabuddy": "https://mangabuddy.com",
-		"Mangapill": "https://mangapill.com",
-		"Mangareader": "https://mangareader.to",
-		"FanFox": "https://m.fanfox.net",
-		"Mangatown": "https://m.mangatown.com",
-		"ReadComic": "https://readcomiconline.li",
-		"ComicExtra": "https://comixextra.com",
-		"Ninemanga": "https://ninemanga.com"
+	{
+		"Machine Learning": [
+			{
+				"emoji": "📚",
+				"title": "Google's Machine Learning Crash Course",
+				"link": "https://developers.google.com/machine-learning/crash-course/",
+				"description": "- A free course providing a quick introduction to machine learning, covering all foundational aspects."
+			},
+			{
+				"emoji": "📚",
+				"title": "Andrew Ng's Machine Learning Coursera Course",
+				"link": "https://www.coursera.org/learn/machine-learning",
+				"description": "- A widely recognized course that covers the basics of machine learning algorithms and best practices."
+			},
+			{
+				"emoji": "📚",
+				"title": "Intro to Machine Learning",
+				"link": "https://www.kaggle.com/learn/intro-to-machine-learning",
+				"description": "- Introducing machine learning concepts with practical exercises on Kaggle."
+			},
+			{
+				"emoji": "📚",
+				"title": "Intermediate Machine Learning",
+				"link": "https://www.kaggle.com/learn/intermediate-machine-learning",
+				"description": "- A course to enhance your existing machine learning knowledge with intermediate concepts and techniques."
+			},
+			{
+				"emoji": "📚",
+				"title": "Understanding Machine Learning: From Theory to Algorithms",
+				"link": "https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html",
+				"description": "- A book that provides a theoretical understanding of the field of machine learning."
+			},
+			{
+				"emoji": "📚",
+				"title": "Probability and Statistics",
+				"link": "https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/index.htm",
+				"description": "- MIT's course on probability and statistics, essential for understanding machine learning algorithms."
+			},
+			{
+				"emoji": "📚",
+				"title": "freeCodeCamp's courses for machine learning",
+				"link": "https://www.freecodecamp.org/learn/",
+				"description": "- A variety of free coding lessons that cover machine learning topics and projects."
+			},
+			{
+				"emoji": "💡",
+				"title": "A quick review of linear algebra concepts relevant to machine learning",
+				"link": "http://www.deeplearningbook.org/contents/linear_algebra.html",
+				"description": "- Understand the mathematical foundations necessary for algorithms in machine learning."
+			},
+			{
+				"emoji": "📚",
+				"title": "Calculus",
+				"link": "http://cs231n.stanford.edu/handouts/derivatives.pdf",
+				"description": "- A brief overview of calculus concepts important for machine learning derived from Stanford's CS231n course."
+			},
+			{
+				"emoji": "📚",
+				"title": "Statistical concepts for machine learning",
+				"link": "http://www-bcf.usc.edu/~gareth/ISL/",
+				"description": "- A reference for statistical techniques important for data analysis and machine learning applications."
+			},
+			{
+				"emoji": "💡",
+				"title": "AWS Machine Learning Tools",
+				"link": "https://www-freecodecamp-org.cdn.ampproject.org/c/s/www.freecodecamp.org/news/aws-machine-learning-tools-the-complete-guide/amp/",
+				"description": "- An extensive guide to the various machine learning tools available on AWS."
+			},
+			{
+				"emoji": "📗",
+				"title": "Introductory Primer",
+				"link": "https://www.toptal.com/machine-learning/machine-learning-theory-an-introductory-primer",
+				"description": "- An introduction to machine learning theory and concepts for beginners."
+			},
+			{
+				"emoji": "💡",
+				"title": "Machine Learning Roadmap",
+				"link": "https://whimsical.com/machine-learning-roadmap-2020-CA7f3ykvXpnJ9Az32vYXva",
+				"description": "- A visual guide outlining the learning path for becoming proficient in machine learning."
+			},
+			{
+				"emoji": "📚",
+				"title": "TinyML Course",
+				"link": "https://www.edx.org/professional-certificate/harvardx-tiny-machine-learning",
+				"description": "- A course focused on implementing machine learning on low-power devices."
+			},
+			{
+				"emoji": "📚",
+				"title": "Deep Learning - University of Buffalo",
+				"link": "https://cedar.buffalo.edu/~srihari/CSE676/index.html",
+				"description": "- Comprehensive course materials on deep learning provided by the University of Buffalo."
+			},
+			{
+				"emoji": "📚",
+				"title": "Machine Learning Introduction with Python",
+				"link": "https://www.dataquest.io/path/machine-learning-intro-with-python/",
+				"description": "- An introduction to machine learning using Python geared toward practical implementations."
+			},
+			{
+				"emoji": "🎤",
+				"title": "Machine Learning Guide Podcast",
+				"link": "https://ocdevel.com/mlg",
+				"description": "- A podcast exploring various topics in machine learning, featuring expert guests."
+			},
+			{
+				"emoji": "📚",
+				"title": "An Introduction to Statistical Learning with Applications in R",
+				"link": "https://www.statlearning.com/",
+				"description": "- A prominent textbook that explores statistical learning techniques with practical applications."
+			},
+			{
+				"emoji": "📹",
+				"title": "Neural Networks Theory",
+				"link": "https://youtube.com/playlist?list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1",
+				"description": "- A comprehensive YouTube playlist exploring the theory behind neural networks, perfect for deepening your understanding."
+			},
+			{
+				"emoji": "📁",
+				"title": "Open AI GPT-3 documentation",
+				"link": "https://beta.openai.com/docs/introduction/overview",
+				"description": "- Official documentation for OpenAI's GPT-3, detailing its capabilities, uses, and guidelines for implementation."
+			}
+		]
 	},
-	"anime": {
-		"Hianime": "https://hianime.to",
-		"GogoAnime": "https://gogotaku.info",
-		"Aniwave": "https://aniwave.live",
-		"Animeowl": "https://animeowl.live/",
-		"KickAssAnime": "https://watchanime.io",
-		"Anix": "https://anix.vc/",
-		"Gojo": "https://gojo.wtf",
-		"Wcostream": "https://wcostream.cc",
-		"Kayoanime": "https://kayoanime.com",
-		"Animepahe": "https://animepahe.ru/",
-		"Shiroko": "https://shiroko.co",
-		"Animefox": "https://animefox.sbs",
-		"Animeworld": "https://anime-world.in/",
-		"Allanime": "https://allmanga.to",
-		"AniWatch": "https://www.google.com/search?q=AniWatch",
-		"AniWorld": "https://www.google.com/search?q=AniWorld",
-		"Zoro": "https://aniwatch.to/",
-		"Animania": "https://www.google.com/search?q=animania",
-		"9anime": "https://www.google.com/search?q=9anime",
-		"Animekisa": "https://www.google.com/search?q=Animekisa",
-		"Kiss - Anime": "https://www.google.com/search?q=kiss+anime",
-		"AnimiXPlay": "https://www.google.com/search?q=AnimiXPlay",
-		"Anime-World": "https://anime-world.in/series/",
-		"AnimeFox": "https://animefox.io/",
-		"Animeflick": "https://animeflick.net/",
-		"Kimanime": "https://kimanime.com/",
-		"Animet": "https://animet.tv/home"
+	{
+		"Free Hosting": [
+			{
+				"emoji": "🔧",
+				"title": "Netlify",
+				"link": "https://www.netlify.com/",
+				"description": "- A platform for hosting static websites and web applications."
+			},
+			{
+				"emoji": "🔧",
+				"title": "Heroku",
+				"link": "https://www.heroku.com/",
+				"description": "- A cloud platform that enables companies to build, run, and operate applications entirely in the cloud."
+			},
+			{
+				"emoji": "🔧",
+				"title": "Vercel",
+				"link": "https://vercel.com/",
+				"description": "- Provides hosting and serverless functions, optimized for frontend frameworks."
+			},
+			{
+				"emoji": "🔧",
+				"title": "Fly.io",
+				"link": "https://fly.io/",
+				"description": "- Offers a platform to run applications close to users globally with ease."
+			},
+			{
+				"emoji": "🔧",
+				"title": "Github Pages",
+				"link": "http://pages.github.com/",
+				"description": "- A service that allows you to host static websites directly from a GitHub repository."
+			},
+			{
+				"emoji": "🔧",
+				"title": "Gitlab Pages",
+				"link": "http://docs.gitlab.com/ee/user/project/pages",
+				"description": "- A feature within GitLab for hosting static websites from repositories."
+			},
+			{
+				"emoji": "🔧",
+				"title": "Deta",
+				"link": "https://www.deta.sh/",
+				"description": "- A platform for building and deploying serverless applications effortlessly."
+			},
+			{
+				"emoji": "🔧",
+				"title": "InfinityFree",
+				"link": "https://infinityfree.net/",
+				"description": "- A free hosting service with unlimited disk space and bandwidth."
+			},
+			{
+				"emoji": "🔧",
+				"title": "Cyclic",
+				"link": "https://www.cyclic.sh/",
+				"description": "- Provides seamless deployment for serverless applications with minimal setup."
+			},
+			{
+				"emoji": "🔧",
+				"title": "Surge",
+				"link": "https://surge.sh/",
+				"description": "- A simple tool for publishing static sites to the web quickly."
+			},
+			{
+				"emoji": "🔧",
+				"title": "Adaptable",
+				"link": "https://adaptable.io/",
+				"description": "- A platform that helps in deploying web applications smoothly and efficiently."
+			}
+		]
 	},
-	"nsfw": {
-		"Manytoon": "https://manytoon.com",
-		"nhentai": "https://nhentai.net",
-		"Literotica": "https://search.literotica.com",
-		"Toonily": "https://toonily.me",
-		"Hanime": "https://hanime.tv",
-		"Hentaihaven": "https://hentaihaven.xxx",
-		"Doujins": "https://doujins.com",
-		"Hentaihere": "https://hentaihere.com",
-		"Hentai2read": "https://hentai2read.com",
-		"Tsumino": "https://www.tsumino.com",
-		"8muses": "https://comics.8muses.com",
-		"A-hentai": "https://a-hentai.tv",
-		"Haho": "https://haho.moe"
+	{
+		"Tools": [
+			{
+				"emoji": "🔧",
+				"title": "Tiny helpers",
+				"link": "https://tiny-helpers.dev/",
+				"description": ": A collection of free single-purpose online tools for web developers"
+			},
+			{
+				"emoji": "🔧",
+				"title": "How To Set Up ESLint & Prettier In VS Code",
+				"link": "https://dev.to/rahulshawdev/how-to-set-up-eslint-prettier-in-vs-code-1dc1",
+				"description": ""
+			},
+			{
+				"emoji": "🔧",
+				"title": "Ray.so",
+				"link": "https://ray.so/",
+				"description": ": Create beautiful images of your code snippets!"
+			},
+			{
+				"emoji": "🔧",
+				"title": "Squircley",
+				"link": "https://squircley.app/",
+				"description": ": Start creating beautiful organic shapes ready to use for logos, icons and background images"
+			},
+			{
+				"emoji": "🔧",
+				"title": "BrandBird",
+				"link": "https://www.brandbird.app/",
+				"description": ": An image editor for busy SaaS founders, who build in public!"
+			},
+			{
+				"emoji": "🔧",
+				"title": "Carbon",
+				"link": "https://carbon.now.sh/",
+				"description": ": Create and share beautiful images of your source code. (An alternative of"
+			},
+			{
+				"emoji": "🔧",
+				"title": "Milanote",
+				"link": "https://milanote.com/",
+				"description": ": Organize your creative ideas into visual boards"
+			},
+			{
+				"emoji": "🔧",
+				"title": "Quicktype",
+				"link": "https://app.quicktype.io/",
+				"description": ": Instantly parse JSON in any language"
+			}
+		]
 	},
-	"ytClients": {
-		"LibreTube": "https://github.com/libre-tube/LibreTube",
-		"FluxTube": "https://github.com/mu-fazil-vk/FluxTube",
-		"VueTube": "https://github.com/Frontesque/VueTube",
-		"SongTube": "https://github.com/SongTube/SongTube-App",
-		"NewPipe": "https://github.com/TeamNewPipe/NewPipe",
-		"ReVanced": "https://github.com/revanced",
-		"NewPipeX": "https://github.com/NewPipeX/NewPipeX",
-		"SkyTube": "https://github.com/SkyTubeTeam/SkyTube",
-		"FreeTube": "https://github.com/FreeTubeApp/FreeTube",
-		"uYouPlus": "https://github.com/qnblackcat/uYouPlus",
-		"SmartTubeNext": "https://github.com/yuliskov/SmartTubeNext",
-		"Clipious": "https://github.com/lamarios/clipious",
-		"Hyperion": "https://github.com/zt64/Hyperion",
-		"Materialious": "https://github.com/Materialious/Materialious",
-		"LightTube": "https://github.com/lighttube-org/LightTube-Android",
-		"pstube": "https://github.com/prateekmedia/pstube"
+	{
+		"Dynamic Programming": [
+			{
+				"emoji": "📗",
+				"title": "Divide and Conquer DP",
+				"link": "https://cp-algorithms.com/dynamic_programming/divide-and-conquer-dp.html",
+				"description": ""
+			},
+			{
+				"emoji": "📗",
+				"title": "Dynamic Programming on Broken Profile. Problem \"Parquet\"",
+				"link": "https://cp-algorithms.com/dynamic_programming/profile-dynamics.html",
+				"description": ""
+			},
+			{
+				"emoji": "📗",
+				"title": "Dynamic Programming GeeksforGeeks",
+				"link": "https://www.geeksforgeeks.org/dynamic-programming/",
+				"description": ""
+			},
+			{
+				"emoji": "📗",
+				"title": "Finding the largest zero submatrix",
+				"link": "https://cp-algorithms.com/dynamic_programming/zero_matrix.html",
+				"description": ""
+			},
+			{
+				"emoji": "📹",
+				"title": "Best Dynamic Programming Playlist",
+				"link": "https://youtube.com/playlist?list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go",
+				"description": ""
+			},
+			{
+				"emoji": "📹",
+				"title": "Dynamic Programming Playlist - Interview Questions - Recursion - Tabulation - Striver - C++ - Java - DSA - Placements",
+				"link": "https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY",
+				"description": ""
+			}
+		]
 	},
-	"ytMusic": {
-		"InnerTune": "https://github.com/z-huang/InnerTune",
-		"OuterTune": "https://github.com/DD3Boh/OuterTune",
-		"namida": "https://github.com/namidaco/namida",
-		"spmp": "https://github.com/toasterofbread/spmp",
-		"Spotube": "https://github.com/KRTirtho/spotube",
-		"SimpMusic": "https://github.com/maxrave-dev/SimpMusic",
-		"RiMusic": "https://github.com/fast4x/RiMusic",
-		"AbleMusicPlayer": "https://github.com/uditkarode/AbleMusicPlayer",
-		"Ymusic": "https://ymusic.io",
-		"Musify": "https://github.com/gokadzev/Musify",
-		"Serenity": "https://github.com/YajanaRao/Serenity"
+	{
+		"Data Structures": [
+			{
+				"emoji": "📹",
+				"title": "DSA + Java Interview Preparation Course",
+				"link": "https://youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ",
+				"description": ""
+			},
+			{
+				"emoji": "📹",
+				"title": "DSA + C++ Interview Preparation Course",
+				"link": "https://www.youtube.com/watch?v=z9bZufPHFLU&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ",
+				"description": ""
+			},
+			{
+				"emoji": "📹",
+				"title": "Data Structures",
+				"link": "https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P",
+				"description": ""
+			},
+			{
+				"emoji": "📹",
+				"title": "DSA-One Course - The Complete Data Structures and Algorithms Course",
+				"link": "https://www.youtube.com/playlist?list=PLUcsbZa0qzu3yNzzAxgvSgRobdUUJvz7p",
+				"description": ""
+			},
+			{
+				"emoji": "📹",
+				"title": "Advanced Data Structures",
+				"link": "https://youtube.com/playlist?list=PLv9sD0fPjvSHqIOLTIvHJWjkdH0IdzmXT",
+				"description": ""
+			},
+			{
+				"emoji": "📗",
+				"title": "Minimum Stack / Minimum Queue",
+				"link": "https://cp-algorithms.com/data_structures/stack_queue_modification.html",
+				"description": ""
+			},
+			{
+				"emoji": "📚",
+				"title": "Data Structures Tutorial - Scalar",
+				"link": "https://www.scaler.com/topics/data-structures/",
+				"description": ""
+			},
+			{
+				"emoji": "📚",
+				"title": "Princeton University Algorithms, Part 1",
+				"link": "https://www.coursera.org/learn/algorithms-part1",
+				"description": ""
+			},
+			{
+				"emoji": "📚",
+				"title": "Princeton University Algorithms, Part 2",
+				"link": "https://www.coursera.org/learn/algorithms-part2",
+				"description": ""
+			},
+			{
+				"emoji": "📚",
+				"title": "Sparse Table",
+				"link": "https://cp-algorithms.com/data_structures/sparse-table.html",
+				"description": ""
+			},
+			{
+				"emoji": "📚",
+				"title": "This is CS50x",
+				"link": "https://cs50.harvard.edu/x/2021",
+				"description": "- David J. Malan"
+			},
+			{
+				"emoji": "📚",
+				"title": "IIT Bombay Foundation of Data Structures (CS213.1x)",
+				"link": "https://courses.edx.org/courses/course-v1:IITBombayX+CS213.1x+1T2017/course/",
+				"description": ""
+			},
+			{
+				"emoji": "📚",
+				"title": "Intro to Data Structures and Algorithms",
+				"link": "https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513",
+				"description": "- Brynn Claypoole, Horatio Thomas"
+			}
+		]
 	},
-	"appStreaming": {
-		"Miru": "https://github.com/miru-project/miru-app",
-		"CloudStream 3": "https://github.com/LagradOst/CloudStream-3",
-		"Flixclusive": "https://github.com/rhenwinch/Flixclusive",
-		"CineMax": "https://github.com/BeamlakAschalew/cinemax",
-		"AnimeTV": "https://github.com/amarullz/AnimeTV",
-		"Mihon": "https://github.com/mihonapp/mihon",
-		"Yokai": "https://github.com/null2264/yokai",
-		"Awery": "https://github.com/MrBoomDeveloper/Awery",
-		"LNReader": "https://github.com/LNReader/lnreader",
-		"IReader": "https://github.com/IReaderorg/IReader",
-		"Legado": "https://github.com/gedoor/legado",
-		"QuickNovel": "https://github.com/LagradOst/QuickNovel",
-		"AnimeScrap": "https://github.com/fakeyatogod/AnimeScrap",
-		"OtakuWorld": "https://github.com/jakepurple13/OtakuWorld#mangaworld",
-		"Animity": "https://github.com/kl3jvi/animity",
-		"Neko": "https://github.com/CarlosEsco/Neko",
-		"TachiyomiSY": "https://github.com/jobobby04/TachiyomiSY",
-		"Kotatsu": "https://github.com/nv95/Kotatsu",
-		"Tokeii": "https://github.com/Sovan22/Tokeii",
-		"Myne": "https://github.com/Pool-Of-Tears/Myne",
-		"NovelDokusha": "https://github.com/nanihadesuka/NovelDokusha",
-		"Aniyomi": "https://github.com/jmir1/aniyomi",
-		"Flixfox": "https://www.flixfox.in/",
-		"OnStream": "https://onstream.to/",
-		"FilmPlus": "https://filmplusapk.com/",
-		"CloudStream": "https://github.com/recloudstream/cloudstream",
-		"Castle Movies": "http://castlemovies.in/",
-		"Moviebox Pro": "https://www.movieboxpro.app/",
-		"Cinema HD": "https://cinemahd.app/v2-apk-8/",
-		"Tea TV": "https://teatv.org/new-version/",
-		"Crackle": "https://www.crackle.com/",
-		"EV01 Net": "https://ev01.sx/android-movies-apk"
+	{
+		"Deep Learning": [
+			{
+				"emoji": "📚",
+				"title": "Andrew Ng's Deep Learning Specializations Course",
+				"link": "https://www.coursera.org/specializations/deep-learning",
+				"description": ""
+			},
+			{
+				"emoji": "📗",
+				"title": "Convolutional networks CS231n",
+				"link": "https://cs231n.github.io/convolutional-networks/",
+				"description": ""
+			},
+			{
+				"emoji": "📚",
+				"title": "Deep Learning Fundamentals",
+				"link": "https://www.dataquest.io/course/deep-learning-fundamentals/",
+				"description": ""
+			},
+			{
+				"emoji": "💡",
+				"title": "Deep learning cheat sheet",
+				"link": "https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-deep-learning",
+				"description": ""
+			},
+			{
+				"emoji": "📚",
+				"title": "Natural Language Processing CS224n",
+				"link": "http://web.stanford.edu/class/cs224n/",
+				"description": ""
+			},
+			{
+				"emoji": "📚",
+				"title": "IBM Deep Learning Course with certification",
+				"link": "https://cognitiveclass.ai/courses/introduction-deep-learning",
+				"description": ""
+			},
+			{
+				"emoji": "📚",
+				"title": "Geometric Deep Learning",
+				"link": "https://geometricdeeplearning.com/lectures/",
+				"description": ""
+			},
+			{
+				"emoji": "📚",
+				"title": "CS224W: Machine Learning with Graphs",
+				"link": "http://web.stanford.edu/class/cs224w/",
+				"description": ""
+			},
+			{
+				"emoji": "📹",
+				"title": "Machine Learning University (MLU) Accelerated Natural Language Processing class",
+				"link": "https://www.youtube.com/playlist?list=PL8P_Z6C4GcuWfAq8Pt6PBYlck4OprHXsw",
+				"description": ""
+			}
+		]
 	},
-	"softwareCoup": {
-		"SharewareOnSale": "https://sharewareonsale.com/",
-		"BitsDuJour": "https://www.bitsdujour.com/",
-		"Giveaway of the day": "https://www.giveawayoftheday.com/",
-		"Net Load": "https://net-load.com/",
-		"Vovsoft Giveaway": "https://vovsoft.com/",
-		"Giveaways Networks": "https://giveawaysnetworks.net/"
+	{
+		"Networking": [
+			{
+				"emoji": "📹",
+				"title": "Fundamentals of Networking",
+				"link": "https://www.youtube.com/playlist?list=PLIFyRwBY_4bRLmKfP1KnZA6rZbRHtxmXi",
+				"description": ""
+			},
+			{
+				"emoji": "📹",
+				"title": "Computer Networking Full Course - OSI Model Deep Dive with Real Life Examples",
+				"link": "https://www.youtube.com/watch?v=IPvYjXCsTg8",
+				"description": ""
+			},
+			{
+				"emoji": "📹",
+				"title": "Computer Networking Course - Network Engineering (CompTIA Network+ Exam Prep)",
+				"link": "https://www.youtube.com/watch?v=qiQR5rTSshw",
+				"description": ""
+			},
+			{
+				"emoji": "📹",
+				"title": "Computer Networking Full Course- By Gate Smashers",
+				"link": "https://youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_",
+				"description": ""
+			}
+		]
 	},
-	"udemyCoup": {
-		"DiscUdemy": "https://www.discudemy.com/",
-		"Coupon Scorpion": "https://couponscorpion.com/",
-		"Best Coupon Hunter": "https://bestcouponhunter.com/",
-		"LearnViral": "https://udemycoupon.learnviral.com/",
-		"Real Discount": "https://www.real.discount/",
-		"Mega Courses": "https://megacourses.net/",
-		"Promo Coupons": "https://www.promocoupons24.com/",
-		"FreeBies Global": "https://freebiesglobal.com/",
-		"CourseCity": "https://coursesity.com/",
-		"999CourseSale": "https://999coursesale.com/freebie-courses-list.php",
-		"CourseCity Alt": "https://coursesity.com/provider/free/udemy-courses?ref=banner"
+	{
+		"Algorithms": [
+			{
+				"emoji": "💡",
+				"title": "List of helpful algos",
+				"link": "https://www.geeksforgeeks.org/fundamentals-of-algorithms/",
+				"description": ""
+			},
+			{
+				"emoji": "📚",
+				"title": "Stanford University Algorithms: Design and Analysis, Part 1",
+				"link": "https://online.stanford.edu/courses/soe-ycsalgorithms1-algorithms-design-and-analysis-part-1",
+				"description": ""
+			},
+			{
+				"emoji": "📚",
+				"title": "Stanford University Algorithms: Design and Analysis, Part 2",
+				"link": "https://online.stanford.edu/courses/soe-ycs0001-algorithms-design-and-analysis-part-2",
+				"description": ""
+			},
+			{
+				"emoji": "📹",
+				"title": "Sorting Algorithms",
+				"link": "https://www.youtube.com/playlist?list=PL2_aWCzGMAwKedT2KfDMB9YA5DgASZb3U",
+				"description": "- mycodeschool"
+			},
+			{
+				"emoji": "💡",
+				"title": "Algorithm Visualizer",
+				"link": "https://algorithm-visualizer.org/",
+				"description": ""
+			},
+			{
+				"emoji": "📹",
+				"title": "Greedy Algorithm by Abdul Bari",
+				"link": "https://www.youtube.com/playlist?list=PL8zDQ1C22qvvwdkPj1uXLpwzcYDJtjnze",
+				"description": ""
+			}
+		]
 	},
-	"githubRepo": {
-		"Web Scraping": "https://github.com/scrapy/scrapy",
-		"Hacking Tools": "https://github.com/carpedm20/awesome-hacking",
-		"Password Cracking": "https://github.com/vanhauser-thc/thc-hydra",
-		"Cryptography": "https://github.com/pyca/cryptography",
-		"Malware Analysis": "https://github.com/rshipp/awesome-malware-analysis",
-		"Awesome Hacking": "https://github.com/Hack-with-Github/Awesome-Hacking",
-		"Payloads all the things": "https://github.com/swisskyrepo/PayloadsAllTheThings",
-		"H4cker": "https://github.com/The-Art-of-Hacking/h4cker",
-		"Hacking Resource": "https://github.com/vitalysim/Awesome-Hacking-Resources",
-		"Web Security": "https://github.com/qazbnm456/awesome-web-security",
-		"Brute Force": "https://github.com/vanhauser-thc/thc-hydra",
-		"Exploite Development": "https://github.com/wtsxDev/Exploit-Development",
-		"Firewall Cfg": "https://github.com/trimstray/iptables-essentials",
-		"Vulnerability Scanning": "https://github.com/sqlmapproject/sqlmap",
-		"BruteForce": "hhttps://github.com/threat9/routersploit",
-		"Red Team Ops": "https://github.com/CyberSecurityUP/Awesome-Red-Team-Operations",
-		"Red Teaming": "https://github.com/yeyintminthuhtut/Awesome-Red-Teaming",
-		"Red Team ToolKit": "https://0x1.gitlab.io/pentesting/Red-Teaming-Toolkit/",
-		"Blue Team Ops": "https://github.com/fabacab/awesome-cybersecurity-blueteam",
-		"OSINT": "https://github.com/jivoi/awesome-osint",
-		"DevSecOps": "https://github.com/devsecops/awesome-devsecop",
-		"Pentest": "https://github.com/enaqx/awesome-pentest",
-		"Cloud Pentest": "https://github.com/CyberSecurityUP/Awesome-Cloud-PenTest",
-		"Shodan": "https://github.com/jakejarvis/awesome-shodan-queries",
-		"AWS Security": "https://github.com/jassics/awesome-aws-security",
-		"Malware Analysis & Reverse Engineering": "https://github.com/CyberSecurityUP/Awesome-Malware-Analysis-Reverse-Engineering",
-		"Computer Forensic": "https://github.com/cugu/awesome-forensics",
-		"Cloud Security": "https://github.com/4ndersonLin/awesome-cloud-security",
-		"Reverse Engineering": "https://github.com/tylerha97/awesome-reversing",
-		"Threat Intelligence": "https://github.com/hslatman/awesome-threat-intelligence",
-		"SOC": "https://github.com/cyb3rxp/awesome-soc",
-		"Social Engineering": "https://github.com/v2-dev/awesome-social-engineering",
-		"Forensics": "https://github.com/cugu/awesome-forensics",
-		"API Security": "https://github.com/arainho/awesome-api-security",
-		"WEB3": "https://github.com/Anugrahsr/Awesome-web3-Security",
-		"Incident Response": "https://github.com/Correia-jpv/fucking-awesome-incident-response",
-		"Search Engines": "https://github.com/edoardottt/awesome-hacker-search-engines",
-		"Smart Contract Security": "https://github.com/saeidshirazi/Awesome-Smart-Contract-Security",
-		"Terraform": "https://github.com/shuaibiyy/awesome-terraform",
-		"Burpsuite Extensions": "https://github.com/snoopysecurity/awesome-burp-extensions",
-		"IOT": "https://github.com/phodal/awesome-iot/blob/master/README.md",
-		"IOS Security": "https://github.com/Cy-clon3/awesome-ios-security",
-		"Embedded & IOT Security": "https://github.com/fkie-cad/awesome-embedded-and-iot-security",
-		"OSINT Bots": "https://github.com/ItIsMeCall911/Awesome-Telegram-OSINT#-bots",
-		"IOT Hacks": "https://github.com/nebgnahz/awesome-iot-hacks",
-		"WEB3 Security": "https://github.com/Anugrahsr/Awesome-web3-Security",
-		"Security": "https://github.com/sbilly/awesome-security",
-		"Reversing": "https://github.com/tylerha97/awesome-reversing",
-		"Piracy": "https://github.com/Igglybuff/awesome-piracy",
-		"Web Hacking": "https://github.com/infoslack/awesome-web-hacking",
-		"Memory Forensics": "https://github.com/digitalisx/awesome-memory-forensics",
-		"OSCP": "https://github.com/0x4D31/awesome-oscp",
-		"RAT": "https://github.com/alphaSeclab/awesome-rat"
+	{
+		"Ethical Hacking": [
+			{
+				"emoji": "💡",
+				"title": "Collection of hackers, pentesters & security researchers",
+				"link": "https://github.com/Hack-with-Github/Awesome-Hacking",
+				"description": ""
+			},
+			{
+				"emoji": "📹",
+				"title": "Ethical Hacking from Scratch",
+				"link": "https://www.udemy.com/course/learn-ethical-hacking-from-scratch/learn/",
+				"description": ""
+			},
+			{
+				"emoji": "🔧",
+				"title": "Open Source Reverse Engineering Platform",
+				"link": "https://github.com/radareorg/cutter",
+				"description": ""
+			},
+			{
+				"emoji": "📹",
+				"title": "Penetration Testing Bootcamp",
+				"link": "https://hackersploit.org/penetration-testing-bootcamp/",
+				"description": ""
+			},
+			{
+				"emoji": "💡",
+				"title": "Practical-Ethical-Hacking-Resources",
+				"link": "https://github.com/TCM-Course-Resources/Practical-Ethical-Hacking-Resources",
+				"description": ""
+			}
+		]
 	},
-	"torrents": {
-		"Torrentz2": "https://torrentz2.nz/",
-		"Torrent Downloads": "https://www.torrentdownloads.pro/",
-		"YTS": "https://yts.mx/",
-		"1337x": "https://www.1337x.tw/",
-		"RARBG": "https://rarbg.to/torrents.php?category%5B%5D=54",
-		"Lime Torrents": "https://ww3.limetorrents.cyou/",
-		"The Pirate Bay": "https://thepiratebay.org/",
-		"Katcr": "https://katcr.to/",
-		"Kick Ass Torrent": "https://thekickasstorrents.to/",
-		"Torrent Galexy": "https://torrentgalaxy.cyou/"
-	},
-	"androidAppMods": {
-		"LiteApks": "https://liteapks.com",
-		"Filecr": "https://filecr.com/android",
-		"ApkDone": "https://apkdone.com/",
-		"Apk Mody": "https://apkmody.io/",
-		"AN1": "https://an1.com/",
-		"ModYolo": "https://modyolo.com/",
-		"HappyMod": "https://happymod.com/",
-		"5Play": "https://5play.ru/en/",
-		"ModDroid": "https://moddroid.com/"
-	},
-	"pcGame": {
-		"Fitgirl Repack": "https://fitgirl-repacks.site/",
-		"SteamUnlocked": "https://steamunlocked.net/",
-		"Ocean of Games": "http://oceanofgames.com/",
-		"DoDi Repacks": "https://dodi-repacks.site/",
-		"Skidrow Reloaded": "https://www.skidrowreloaded.com/",
-		"CPY Skidrow": "https://cpyskidrow.com/",
-		"Skidrow CPY": "https://skidrowcpy.games/",
-		"Igruha torrent": "https://itorrents-igruha.org/"
-	},
-	"piratedSoftware": {
-		"Filecr": "https://filecr.com/en",
-		"SoftPedia": "https://www.softpedia.com/",
-		"CNET Download": "https://download.cnet.com/",
-		"File Hippo": "https://filehippo.com/",
-		"AbbasPC": "https://abbaspc.net/",
-		"Download .io": "https://www.download.io/",
-		"Crackzoom": "https://crackzoom.com/"
-	},
-	"cheatSheet": {
-		"Quick Ref": "https://quickref.me/",
-		"Code with Harry": "https://www.codewithharry.com/",
-		"GeekForGeeks": "https://www.geeksforgeeks.org/",
-		"Interview Bit": "https://www.interviewbit.com/",
-		"Edureks": "https://www.edureka.co/blog/cheatsheets/",
-		"CodeBurst": "https://codeburst.io/",
-		"Exercism": "https://exercism.org/",
-		"Alta3": "https://alta3.com/posters/",
-		"DevHints": "https://devhints.io",
-		"GitSheet": "https://gitsheet.wtf",
-		"Overapi": "https://overapi.com",
-		"GmailCity": "https://gmailcity.com",
-		"CheatoGraphy": "https://cheatography.com",
-		"CodeHouse": "https://codehouse.vercel.app/app"
-	},
-	"hGames": {
-		"Rubix Cube Game": "hgames/rubix/index.html",
-		"Bullseye Game": "hgames/bullseye/index.html",
-		"Tower Blocks Game": "hgames/tower/index.html",
-		"Valorous Rabbit Game": "hgames/rabbit/index.html",
-		"Menja Game": "hgames/menja/index.html",
-		"Gorillas": "hgames/gorillas/index.html",
-		"Pink Snow": "hgames/pink_snow/index.html"
-	},
-	"disposableNumber": {
-		"hs3x": "http://hs3x.com",
-		"smsget": "http://smsget.net",
-		"sms-online": "http://sms-online.co",
-		"catchsms": "http://catchsms.com",
-		"sms-receive": "http://sms-receive.net",
-		"sellaite": "http://sms.sellaite.com",
-		"receivefreesms.net": "http://receivefreesms.net",
-		"receive-a-sms": "https://receive-a-sms.com",
-		"receivesmsonline.in": "http://receivesmsonline.in",
-		"receivefreesms.com": "http://receivefreesms.com",
-		"receivesmsonline.me": "http://receivesmsonline.me",
-		"smsreceivefree": "http://smsreceivefree.com",
-		"smsreceiveonline.com": "https://smsreceiveonline.com",
-		"receive-sms-online": "https://receive-sms-online.com",
-		"receivesmsonline": "https://www.receivesmsonline.net",
-		"temp-mails Number": "https://www.temp-mails.com/number",
-		"freeonlinephone": "https://www.freeonlinephone.org",
-		"getfreesmsnumber": "https://getfreesmsnumber.com"
-	},
-	"disposableMail": {
-		"MailDrop": "https://maildrop.cc",
-		"TempR": "https://tempr.email",
-		"TempMail": "https://tempmail.net",
-		"Temp-Mail": "https://temp-mail.org",
-		"Moakt": "https://www.moakt.com",
-		"TempMailo": "https://tempmailo.com",
-		"EmailOnDeck": "https://www.emailondeck.com",
-		"GuerrillaMail": "https://www.guerrillamail.com",
-		"SmailPro": "https://smailpro.com",
-		"Gmailnator": "https://gmailnator.com"
-	},
-	"fakeIdentidy": {
-		"FakeNa": "https://fakena.me",
-		"FauxID": "https://fauxid.com",
-		"FakeXY": "https://www.fakexy.com",
-		"Elfqrin": "https://www.elfqrin.com/fakeid.php8",
-		"Fake Name Generator": "https://www.fakenamegenerator.com",
-		"Fake Person Generator": "https://www.fakepersongenerator.com",
-		"Fake Address Generator": "https://www.fakeaddressgenerator.com",
-		"Data Fake Generator": "https://datafakegenerator.com/generador.php",
-		"Name Generators": "http://namegenerators.org/fake-name-generator-gr"
+	{
+		"Online Learning Platforms": [
+			{
+				"emoji": "Coursera",
+				"title": "Coursera",
+				"link": "https://www.coursera.org/",
+				"description": "- Many courses free to audit"
+			},
+			{
+				"emoji": "MIT OpenCourseWare",
+				"title": "MIT OpenCourseWare",
+				"link": "https://ocw.mit.edu/",
+				"description": "- Free MIT course materials"
+			},
+			{
+				"emoji": "Stanford Online",
+				"title": "Stanford Online",
+				"link": "https://online.stanford.edu/free-courses",
+				"description": "- Free online courses from Stanford"
+			},
+			{
+				"emoji": "edX",
+				"title": "edX",
+				"link": "https://www.edx.org/",
+				"description": "- Free courses from top institutions"
+			},
+			{
+				"emoji": "Khan Academy",
+				"title": "Khan Academy",
+				"link": "https://www.khanacademy.org/",
+				"description": "- Completely free courses"
+			}
+		]
 	}
-}
+]

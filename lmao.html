@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dynamic Content</title>
+        <link rel="stylesheet" href="thisiscss.css">
+    </head>
+
+    <body>
+        <nav id="navigation"></nav>
+        <div id="content"></div>
+
+        <script>
+            // Fetch the JSON data from main.json
+            fetch('json/main.json')
+                .then(response => response.json())
+                .then(data => {
+                    const contentDiv = document.getElementById('content');
+                    const navDiv = document.getElementById('navigation');
+                    const navList = document.createElement('ul');
+
+                    data.forEach(section => {
+                        for (const [sectionTitle, items] of Object.entries(section)) {
+                            // Generate ID for the section title
+                            const sectionId = sectionTitle.replace(/\s+/g, '').toLowerCase();
+
+                            // Create and append the section title
+                            const h2 = document.createElement('h2');
+                            h2.innerText = sectionTitle;
+                            h2.id = sectionId;
+                            contentDiv.appendChild(h2);
+
+                            // Create and append the list of items
+                            const ul = document.createElement('ul');
+                            items.forEach(item => {
+                                const li = document.createElement('li');
+
+                                // Create and append the emoji
+                                const emojiSpan = document.createElement('span');
+                                emojiSpan.innerText = item.emoji;
+                                li.appendChild(emojiSpan);
+
+                                // Create and append the link
+                                const a = document.createElement('a');
+                                a.innerText = item.title;
+                                a.href = item.link.toLowerCase(); // Ensure href is lowercase
+                                li.appendChild(a);
+
+                                // Append the description
+                                const descriptionText = document.createTextNode(` ${item.description}`);
+                                li.appendChild(descriptionText);
+
+                                ul.appendChild(li);
+                            });
+
+                            contentDiv.appendChild(ul);
+
+                            // Create and append the navigation link
+                            const navItem = document.createElement('li');
+                            const navLink = document.createElement('a');
+                            navLink.href = `#${sectionId}`;
+                            navLink.innerText = sectionTitle;
+                            navItem.appendChild(navLink);
+                            navList.appendChild(navItem);
+                        }
+                    });
+
+                    navDiv.appendChild(navList);
+                })
+                .catch(error => console.error('Error fetching JSON:', error));
+        </script>
+    </body>
+
+</html>

@@ -75,8 +75,8 @@ function fetchJSON(file) {
 		.catch((error) => console.error("Error fetching JSON:", error));
 }
 
-function otherPages(file) {
-	window.open(`pages/${file}.html`, "_blank");
+function otherPages(link) {
+	window.open(link, "_blank");
 }
 
 let icon = document.querySelectorAll(".icon");
@@ -85,4 +85,11 @@ setInterval(() => {
 	let element = icon[Math.floor(Math.random() * icon.length)];
 	element.style.transition = "all 0.8s ease-in-out";
 	element.style.transform = `rotate(${Math.floor(Math.random() * 360)}deg)`;
-}, 1000);
+}, 5000);
+
+function changeTheme() {
+	document.documentElement.classList.toggle("dark-theme");
+}
+
+let themeElement = document.querySelector(".toggleTheme");
+themeElement.addEventListener("click", changeTheme);

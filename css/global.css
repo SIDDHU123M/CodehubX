@@ -61,6 +61,11 @@ body {
 	background-image: linear-gradient(45deg, #29323c, #485563);
 }
 
+/* Basic Styling */
+/* .text-bold {
+	font-weight: 700;
+} */
+
 /* Web Settings */
 * {
 	-webkit-user-drag: none;

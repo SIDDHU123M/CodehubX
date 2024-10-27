@@ -89,7 +89,10 @@ main {
 .container,
 .container1,
 .container2,
-.container3 {
+.container3,
+.container4,
+.container5,
+.container6 {
 	display: flex;
 	/* width: 100%; */
 	flex-wrap: wrap;
@@ -171,4 +174,22 @@ main {
 	padding: 30px;
 	text-align: center;
 	color: #ffffff;
+}
+
+.status-circle {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-right: 5px;
+	background-color: grey;
+	/* Default color */
+}
+
+.online {
+	background-color: green;
+}
+
+.offline {
+	background-color: red;
 }

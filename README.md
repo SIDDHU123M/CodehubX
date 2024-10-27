@@ -2,8 +2,7 @@
   <img src="https://img.shields.io/github/watchers/SIDDHU123M/CodehubX?style=for-the-badge&logo=github&label=Views&color=2a2a2a" />
 </div>
 
-# CodehubX
-https://siddhu123m.github.io/CodehubX/
+# CodehubX [Open Site](https://siddhu123m.github.io/CodehubX/)
 
 ## Introduction
 CodeHubX is the perfect destination for programmers, developers, and students looking for a vast collection of tools to make their work easier. With a wide range of useful websites and resources, CodeHubX is your one-stop-shop for all your programming needs.

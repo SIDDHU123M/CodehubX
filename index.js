@@ -1,100 +1,88 @@
+let divcontainer = document.querySelector(".container");
+divcontainer.style.display = "none";
+
 function fetchJSON(file) {
-    fetch(`json/${file}.json`)
-        .then((response) => response.json())
-        .then((data) => {
-            const contentDiv = document.getElementById("content");
-            const navDiv = document.getElementById("navigation");
+	divcontainer.style.display = "flex";
 
-            contentDiv.innerHTML = "";
-            navDiv.innerHTML = "";
+	let htagDIV = document.getElementById("contentHtag");
+	htagDIV.innerHTML = "<h1 style='font-weight: 700;'>Contents</h1>";
 
-            const navList = document.createElement("ul");
+	fetch(`json/${file}.json`)
+		.then((response) => response.json())
+		.then((data) => {
+			const contentDiv = document.getElementById("content");
+			const navDiv = document.getElementById("navigation");
 
-            data.forEach((section) => {
-                for (const [sectionTitle, items] of Object.entries(
-                    section
-                )) {
-                    const sectionId = sectionTitle
-                        .replace(/\s+/g, "")
-                        .toLowerCase();
+			navDiv.style.display = "none";
 
-                    const h2 = document.createElement("h2");
-                    h2.innerText = sectionTitle;
-                    h2.id = sectionId;
-                    contentDiv.appendChild(h2);
+			contentDiv.innerHTML = "";
+			navDiv.innerHTML = "";
 
-                    const ul = document.createElement("ul");
-                    items.forEach((item) => {
-                        const li = document.createElement("li");
+			const navList = document.createElement("ul");
 
-                        const emojiSpan =
-                            document.createElement("span");
-                        emojiSpan.innerText = item.emoji;
-                        li.appendChild(emojiSpan);
+			data.forEach((section, index) => {
+				for (const [sectionTitle, items] of Object.entries(section)) {
+					const sectionId = sectionTitle.replace(/\s+/g, "").toLowerCase();
 
-                        const a = document.createElement("a");
-                        a.innerText = item.title;
-                        a.href = item.link.toLowerCase(); // Ensure href is lowercase
-                        li.appendChild(a);
+					if (data.length > 1 && index > 0) {
+						const separator = document.createElement("div");
+						separator.className = "separator";
+						contentDiv.appendChild(separator);
+					}
 
-                        const descriptionText =
-                            document.createTextNode(
-                                ` ${item.description}`
-                            );
-                        li.appendChild(descriptionText);
+					const h2 = document.createElement("h2");
+					h2.innerText = sectionTitle;
+					h2.id = sectionId;
+					contentDiv.appendChild(h2);
 
-                        ul.appendChild(li);
-                    });
+					const ul = document.createElement("ul");
+					items.forEach((item) => {
+						const li = document.createElement("li");
 
-                    contentDiv.appendChild(ul);
+						const emojiSpan = document.createElement("span");
+						emojiSpan.innerText = item.emoji;
+						li.appendChild(emojiSpan);
 
-                    const navItem = document.createElement("li");
-                    const navLink = document.createElement("a");
-                    navLink.href = `#${sectionId}`;
-                    navLink.innerText = sectionTitle;
-                    navItem.appendChild(navLink);
-                    navList.appendChild(navItem);
-                }
-            });
+						const a = document.createElement("a");
+						a.innerText = item.title;
+						a.href = item.link.toLowerCase(); // Ensure href is lowercase
+						li.appendChild(a);
 
-            navDiv.appendChild(navList);
-        })
-        .catch((error) =>
-            console.error("Error fetching JSON:", error)
-        );
+						const descriptionText = document.createTextNode(` ${item.description}`);
+						li.appendChild(descriptionText);
+
+						ul.appendChild(li);
+					});
+
+					contentDiv.appendChild(ul);
+
+					if (data.length > 1) {
+						navDiv.style.display = "block";
+						const navItem = document.createElement("li");
+						const navLink = document.createElement("a");
+						navLink.href = `#${sectionId}`;
+						navLink.innerText = `${sectionTitle}`;
+						navItem.appendChild(navLink);
+						navList.appendChild(navItem);
+					}
+				}
+			});
+
+			if (data.length > 1) {
+				navDiv.appendChild(navList);
+			}
+		})
+		.catch((error) => console.error("Error fetching JSON:", error));
 }
 
-function Otherpages(file) {
-window.open(`pages/${file}.html`, "_blank");
+function otherPages(file) {
+	window.open(`pages/${file}.html`, "_blank");
 }
 
-// const sections = document.querySelectorAll('h2');
-// const result = [];
+let icon = document.querySelectorAll(".icon");
 
-// sections.forEach(section => {
-//     const sectionTitle = section.innerText;
-//     const ul = section.nextElementSibling;
-//     const items = ul.querySelectorAll('li');
-
-//     const sectionItems = Array.from(items).map(item => {
-//         const link = item.querySelector('a');
-//         const emoji = item.childNodes[0].textContent.trim();
-//         const descriptionNode = Array.from(item.childNodes).find((node, index, nodes) => {
-//             return node.nodeType === Node.TEXT_NODE && node.textContent.trim() !== '' && nodes[index - 1] === link;
-//         });
-//         return {
-//             emoji: emoji,
-//             title: link.innerText,
-//             link: link.href,
-//             description: descriptionNode ? descriptionNode.textContent.trim().replace(/\s+/g, ' ') : ''
-//         };
-//     });
-
-//     result.push({
-//         [sectionTitle]: sectionItems
-//     });
-// });
-
-// console.log(result);
-
-
+setInterval(() => {
+	let element = icon[Math.floor(Math.random() * icon.length)];
+	element.style.transition = "all 0.8s ease-in-out";
+	element.style.transform = `rotate(${Math.floor(Math.random() * 360)}deg)`;
+}, 1000);

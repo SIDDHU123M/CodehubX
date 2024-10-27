@@ -4,5 +4,6 @@
 	"semi": true,
 	"singleQuote": false,
 	"bracketSpacing": false,
-	"bracketSameLine": true
+	"bracketSameLine": true,
+	"printWidth": 2000
 }

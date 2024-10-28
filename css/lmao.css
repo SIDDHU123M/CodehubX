@@ -10,12 +10,49 @@
 	--font-weight-medium: 500;
 }
 
+:root {
+	--primary-color: rgba(0, 0, 0, 0.1);
+	--secondary-color: rgba(0, 0, 0, 0.4);
+	--hover-shadow: rgba(0, 0, 0, 0.3);
+	--font-color: #000000;
+	--background-color: #ffffff;
+}
+
 .dark-theme {
 	--primary-color: rgba(255, 255, 255, 0.1);
 	--secondary-color: rgba(255, 255, 255, 0.4);
 	--hover-shadow: rgba(255, 255, 255, 0.3);
 	--font-color: #ffffff;
+	--background-color: #000000;
 }
+
+body {
+	background-color: var(--background-color);
+	color: var(--font-color);
+}
+
+/* Button Styles */
+.button {
+	background-color: var(--primary-color);
+	border: 2px solid var(--secondary-color);
+	color: var(--font-color);
+}
+
+/* Default SVG fill color */
+.icon path {
+	fill: #000; /* Default fill color for light theme */
+}
+
+/* Dark theme SVG fill color */
+.dark-theme .icon path {
+	fill: #fff; /* Fill color for dark theme */
+}
+
+.dark-theme a {
+	color: rgb(204, 136, 33);
+}
+
+/* Other styles using the variables */
 
 /* Button Container */
 .button-container {

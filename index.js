@@ -88,8 +88,7 @@ setInterval(() => {
 }, 5000);
 
 function changeTheme() {
-	document.documentElement.classList.toggle("dark-theme");
+	document.body.classList.toggle("dark-theme");
 }
 
-let themeElement = document.querySelector(".toggleTheme");
-themeElement.addEventListener("click", changeTheme);
+document.querySelector(".toggleTheme").addEventListener("click", changeTheme);

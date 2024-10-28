@@ -161,6 +161,9 @@ body {
 
 @media (max-width: 767px) {
 	/* Smaller screens */
+	a {
+		font-weight: 600;
+	}
 	.container {
 		margin: 1em;
 	}

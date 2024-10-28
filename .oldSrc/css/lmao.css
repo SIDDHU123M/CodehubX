@@ -1,0 +1,159 @@
+/* CSS Variables for easy maintenance */
+:root {
+	--primary-color: rgba(0, 0, 0, 0.1);
+	--secondary-color: rgba(0, 0, 0, 0.4);
+	--hover-shadow: rgba(0, 0, 0, 0.3);
+	--gap: 1em;
+	--border-radius: 2em;
+	--font-color: #000000;
+	--font-weight-bold: 700;
+	--font-weight-medium: 500;
+}
+
+.dark-theme {
+	--primary-color: rgba(255, 255, 255, 0.1);
+	--secondary-color: rgba(255, 255, 255, 0.4);
+	--hover-shadow: rgba(255, 255, 255, 0.3);
+	--font-color: #ffffff;
+}
+
+/* Button Container */
+.button-container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1em;
+	gap: var(--gap);
+	align-items: center;
+	justify-content: center;
+}
+
+/* Button Styles */
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.7em 1.4em;
+	gap: var(--gap);
+	text-align: center;
+	background-color: var(--primary-color);
+	border: 2px solid var(--secondary-color);
+	border-radius: var(--border-radius);
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
+}
+
+.button > .text {
+	color: var(--font-color);
+	font-weight: var(--font-weight-bold);
+	font-size: 1em;
+	transition: all 0.4s ease-in-out;
+}
+
+.button > .icon {
+	aspect-ratio: 1/1;
+	width: 2.2em;
+}
+
+/* Separator */
+.separator {
+	height: 2px;
+	background-color: var(--secondary-color);
+	margin: 10px 0;
+}
+
+/* Content Header */
+#contentHtag {
+	text-align: center;
+	margin: 1em;
+}
+
+/* Container */
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: 0 20%;
+	background-color: var(--primary-color);
+	border: 2px solid var(--secondary-color);
+	border-radius: var(--border-radius);
+	justify-content: center;
+}
+
+.container > h2 {
+	font-weight: var(--font-weight-medium);
+}
+
+/* Navigation and Content */
+#navigation,
+#content {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	border-radius: 1em;
+	margin: 1.4em;
+	display: flex;
+	gap: var(--gap);
+}
+
+#navigation > ul,
+#content > ul {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4em;
+	list-style: disc;
+	padding: 0 1em;
+}
+
+#navigation > ul > li > a,
+#content > ul > li > a {
+	text-decoration: none;
+	font-weight: 600;
+	/* color: var(--font-color); */
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+	/* Larger screens */
+	.container {
+		margin: 1em 15%;
+	}
+	.button:hover {
+		background-color: transparent;
+		box-shadow: 0 0 10px var(--hover-shadow);
+		transform: scale(1.05);
+	}
+}
+
+@media (max-width: 767px) {
+	/* Smaller screens */
+	.container {
+		margin: 1em;
+	}
+	#navigation,
+	#content {
+		flex-direction: column;
+	}
+}
+
+.floating-buttons {
+	position: fixed;
+	right: 1em;
+	bottom: 1em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.floating-buttons button {
+	display: block;
+	border: none;
+	background-color: none;
+	border: 2px solid var(--secondary-color);
+	border-radius: 5em;
+	padding: 0;
+	cursor: pointer;
+	> svg {
+		display: flex;
+		aspect-ratio: 1/1;
+		margin: 0.6em;
+		width: 2em;
+	}
+}

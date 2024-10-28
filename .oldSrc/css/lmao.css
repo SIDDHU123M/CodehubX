@@ -1,3 +1,4 @@
+/* CSS Variables for easy maintenance */
 :root {
 	--primary-color: rgba(0, 0, 0, 0.1);
 	--secondary-color: rgba(0, 0, 0, 0.4);
@@ -7,7 +8,6 @@
 	--font-color: #000000;
 	--font-weight-bold: 700;
 	--font-weight-medium: 500;
-	--background-color: #ffffff;
 }
 
 .dark-theme {
@@ -15,32 +15,9 @@
 	--secondary-color: rgba(255, 255, 255, 0.4);
 	--hover-shadow: rgba(255, 255, 255, 0.3);
 	--font-color: #ffffff;
-	--background-color: #000000;
 }
 
-body {
-	background-color: var(--background-color);
-	color: var(--font-color);
-}
-
-.button {
-	background-color: var(--primary-color);
-	border: 2px solid var(--secondary-color);
-	color: var(--font-color);
-}
-
-.icon path {
-	fill: #000;
-}
-
-.dark-theme .icon path {
-	fill: #fff;
-}
-
-.dark-theme a {
-	color: rgb(204, 136, 33);
-}
-
+/* Button Container */
 .button-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -50,6 +27,7 @@ body {
 	justify-content: center;
 }
 
+/* Button Styles */
 .button {
 	display: flex;
 	justify-content: center;
@@ -76,17 +54,20 @@ body {
 	width: 2.2em;
 }
 
+/* Separator */
 .separator {
 	height: 2px;
 	background-color: var(--secondary-color);
 	margin: 10px 0;
 }
 
+/* Content Header */
 #contentHtag {
 	text-align: center;
 	margin: 1em;
 }
 
+/* Container */
 .container {
 	display: flex;
 	flex-direction: column;
@@ -101,6 +82,7 @@ body {
 	font-weight: var(--font-weight-medium);
 }
 
+/* Navigation and Content */
 #navigation,
 #content {
 	background-color: rgba(0, 0, 0, 0);
@@ -124,9 +106,12 @@ body {
 #content > ul > li > a {
 	text-decoration: none;
 	font-weight: 600;
+	/* color: var(--font-color); */
 }
 
+/* Media Queries for Responsiveness */
 @media (min-width: 768px) {
+	/* Larger screens */
 	.container {
 		margin: 1em 15%;
 	}
@@ -138,9 +123,7 @@ body {
 }
 
 @media (max-width: 767px) {
-	a {
-		font-weight: 600;
-	}
+	/* Smaller screens */
 	.container {
 		margin: 1em;
 	}

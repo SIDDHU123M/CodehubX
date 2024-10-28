@@ -1,11 +1,9 @@
-/* Import */
 @import url("https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Borel&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap");
 
-/* Reset */
 html {
 	box-sizing: border-box;
 	font-size: 100%;
@@ -42,10 +40,7 @@ img {
 	height: auto;
 }
 
-/* Background Styling */
 body {
-	/* background-image: url('../assets/images/ai_abstract_minimal_blue_scenery.jpg'); */
-	/* background-image: url('../assets/images/minimalist_4k_blue_scenery.jpg'); */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -61,24 +56,13 @@ body {
 	background-image: linear-gradient(45deg, #29323c, #485563);
 }
 
-/* Basic Styling */
-/* .text-bold {
-	font-weight: 700;
-} */
-
-/* Web Settings */
 * {
 	-webkit-user-drag: none;
-}
-
-* {
 	transition: all 0.4s ease-in-out;
 }
 
-/* Basic Styling */
 body {
 	font-family: Arial, sans-serif;
-	/* margin-bottom: 25px; */
 }
 
 ::selection {
@@ -86,13 +70,11 @@ body {
 	color: #000;
 }
 
-/* Styles for desktops */
 @media only screen and (min-width: 1025px) {
 	body {
 		font-size: 13px;
 	}
 
-	/* Custom scrollbar */
 	body::-webkit-scrollbar {
 		width: 6px;
 	}
@@ -111,21 +93,18 @@ body {
 	}
 }
 
-/* Styles for mobile devices */
 @media only screen and (max-width: 600px) {
 	body {
 		font-size: 14px;
 	}
 }
 
-/* Styles for tablets */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
 	body {
 		font-size: 16px;
 	}
 }
 
-/* Styles for desktops */
 @media only screen and (min-width: 1025px) {
 	body {
 		font-size: 13px;

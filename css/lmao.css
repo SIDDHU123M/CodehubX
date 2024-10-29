@@ -222,3 +222,56 @@ body {
 	border-color: var(--hover-shadow);
 	box-shadow: 0 0 15px var(--hover-shadow);
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    padding: 1em 0;
+    text-align: center;
+    border-top: 2px solid var(--secondary-color);
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

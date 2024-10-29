@@ -1,31 +1,45 @@
 const divContainer = document.querySelector(".container");
+const spinner = document.getElementById("loading-spinner");
+const htagDIV = document.getElementById("contentHtag");
+const contentDiv = document.getElementById("content");
+const navDiv = document.getElementById("navigation");
+const icon = document.querySelectorAll(".icon");
+
 divContainer.style.display = "none";
 
-function fetchJSON(file) {
+const cache = {};
+
+async function fetchJSON(file) {
+	spinner.style.display = "block";
 	divContainer.style.display = "flex";
-	const htagDIV = document.getElementById("contentHtag");
 	htagDIV.innerHTML = "<h1 style='font-weight: 700;'>Contents</h1>";
 
-	fetch(`json/${file}.json`)
-		.then((response) => {
-			if (!response.ok) {
-				throw new Error(`HTTP error! status: ${response.status}`);
-			}
-			return response.json();
-		})
-		.then((data) => {
-			renderContent(data);
-		})
-		.catch((error) => {
-			console.error("Error fetching JSON:", error);
-			htagDIV.innerHTML = "<h1 style='font-weight: 700; color: red;'>Failed to load content</h1>";
-		});
+	if (cache[file]) {
+		renderContent(cache[file]);
+		spinner.style.display = "none";
+		return;
+	}
+
+	try {
+		const response = await fetch(`json/${file}.json`);
+		if (!response.ok) {
+			throw new Error(`HTTP error! status: ${response.status}`);
+		}
+		const data = await response.json();
+		cache[file] = data;
+		renderContent(data);
+	} catch (error) {
+		console.error("Error fetching JSON:", error);
+		htagDIV.innerHTML = `
+            <h1 style='font-weight: 700; color: red;'>Failed to load content</h1>
+            <button onclick="fetchJSON('${file}')">Retry</button>
+        `;
+	} finally {
+		spinner.style.display = "none";
+	}
 }
 
 function renderContent(data) {
-	const contentDiv = document.getElementById("content");
-	const navDiv = document.getElementById("navigation");
-
 	navDiv.style.display = "none";
 	contentDiv.innerHTML = "";
 	navDiv.innerHTML = "";
@@ -59,6 +73,7 @@ function renderContent(data) {
 				const a = document.createElement("a");
 				a.innerText = item.title;
 				a.href = item.link.toLowerCase();
+				a.setAttribute("aria-label", `${item.title} - ${item.description}`);
 				li.appendChild(a);
 
 				const descriptionText = document.createTextNode(` ${item.description}`);
@@ -92,7 +107,18 @@ function otherPages(link) {
 	window.open(link, "_blank");
 }
 
-const icon = document.querySelectorAll(".icon");
+function changeTheme() {
+	document.body.classList.toggle("dark-theme");
+	localStorage.setItem("theme", document.body.classList.contains("dark-theme") ? "dark" : "light");
+}
+
+document.querySelector(".toggleTheme").addEventListener("click", changeTheme);
+
+document.addEventListener("DOMContentLoaded", () => {
+	if (localStorage.getItem("theme") === "dark") {
+		document.body.classList.add("dark-theme");
+	}
+});
 
 setInterval(() => {
 	const element = icon[Math.floor(Math.random() * icon.length)];
@@ -100,8 +126,12 @@ setInterval(() => {
 	element.style.transform = `rotate(${Math.floor(Math.random() * 360)}deg)`;
 }, 5000);
 
-function changeTheme() {
-	document.body.classList.toggle("dark-theme");
-}
+function searchTools() {
+	const query = document.getElementById("searchBar").value.toLowerCase();
+	const items = document.querySelectorAll("#content ul li");
 
-document.querySelector(".toggleTheme").addEventListener("click", changeTheme);
+	items.forEach((item) => {
+		const text = item.textContent.toLowerCase();
+		item.style.display = text.includes(query) ? "" : "none";
+	});
+}

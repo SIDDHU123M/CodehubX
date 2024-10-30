@@ -1180,31 +1180,31 @@
 	{
 		"Online Learning Platforms": [
 			{
-				"emoji": "Coursera",
+				"emoji": "📕",
 				"title": "Coursera",
 				"link": "https://www.coursera.org/",
 				"description": "- Many courses free to audit"
 			},
 			{
-				"emoji": "MIT OpenCourseWare",
+				"emoji": "📕",
 				"title": "MIT OpenCourseWare",
 				"link": "https://ocw.mit.edu/",
 				"description": "- Free MIT course materials"
 			},
 			{
-				"emoji": "Stanford Online",
+				"emoji": "📕",
 				"title": "Stanford Online",
 				"link": "https://online.stanford.edu/free-courses",
 				"description": "- Free online courses from Stanford"
 			},
 			{
-				"emoji": "edX",
+				"emoji": "📕",
 				"title": "edX",
 				"link": "https://www.edx.org/",
 				"description": "- Free courses from top institutions"
 			},
 			{
-				"emoji": "Khan Academy",
+				"emoji": "📕",
 				"title": "Khan Academy",
 				"link": "https://www.khanacademy.org/",
 				"description": "- Completely free courses"

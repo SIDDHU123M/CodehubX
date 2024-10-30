@@ -107,17 +107,22 @@ function otherPages(link) {
 	window.open(link, "_blank");
 }
 
-function changeTheme() {
-	document.body.classList.toggle("dark-theme");
-	localStorage.setItem("theme", document.body.classList.contains("dark-theme") ? "dark" : "light");
-}
-
-document.querySelector(".toggleTheme").addEventListener("click", changeTheme);
-
 document.addEventListener("DOMContentLoaded", () => {
-	if (localStorage.getItem("theme") === "dark") {
-		document.body.classList.add("dark-theme");
+	const themeToggleButton = document.querySelector(".toggleTheme");
+	const currentTheme = localStorage.getItem("theme");
+
+	if (currentTheme) {
+		document.body.classList.add(currentTheme);
 	}
+
+	themeToggleButton.addEventListener("click", () => {
+		document.body.classList.toggle("dark-theme");
+		let theme = "light";
+		if (document.body.classList.contains("dark-theme")) {
+			theme = "dark";
+		}
+		localStorage.setItem("theme", theme);
+	});
 });
 
 setInterval(() => {
@@ -135,3 +140,5 @@ function searchTools() {
 		item.style.display = text.includes(query) ? "" : "none";
 	});
 }
+
+

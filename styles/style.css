@@ -80,9 +80,13 @@ header h1#doc-title {
 	font-size: 2.5em;
 	background: linear-gradient(to right, #ff9800 0%, rgba(255, 152, 0, 0) 100%);
 	color: #ff9800;
-	font-weight: bold;
+/* 	font-weight: bold; */
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-family: "Kanit", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+}
 }
 
 #content h2,

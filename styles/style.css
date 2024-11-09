@@ -197,7 +197,7 @@ header h1#doc-title {
 
 @media (max-width: 768px) {
 	#sidebar {
-		width: 100%;
+		width: 60%;
 		height: auto;
 		position: relative;
 		display: none;

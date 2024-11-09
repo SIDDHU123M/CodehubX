@@ -90,12 +90,11 @@ font-family: "Kanit", sans-serif;
 /*   font-weight: 400; */
   font-style: normal;
 }
-}
 
 #content h2,
 #content h3 {
 	color: #000000;
-	margin-top: 20px;
+	/* margin-top: 20px; */
 	font-weight: 600;
 	font-size: 1.5em;
     	padding: 0.25em 0px;

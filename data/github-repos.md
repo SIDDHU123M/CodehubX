@@ -13,6 +13,18 @@
 * [H4cker](https://github.com/The-Art-of-Hacking/h4cker) - An in-depth resource for ethical hacking and security research.
 * [Hacking Resource](https://github.com/vitalysim/Awesome-Hacking-Resources) - A comprehensive collection of resources for ethical hacking and cybersecurity.
 * [Web Security](https://github.com/qazbnm456/awesome-web-security) - A curated list of resources for web application security.
+* [BurpSuite For Pentester](https://github.com/Ignitetechnologies/BurpSuite-For-Pentester) - This cheatsheet is built for the Bug Bounty Hunters and penetration testers.
+* [ToolKit](https://github.com/indetectables-net/toolkit) - The essential toolkit for reversing, malware analysis, and cracking.
+* [vulnerability Checklist](https://github.com/Az0x7/vulnerability-Checklist) - This repository contain a lot of web and api vulnerability checklists.
+* [XSStrike](https://github.com/s0md3v/XSStrike) - Most advanced XSS scanner.
+* [Cybersecurity Handbooks](https://github.com/0xsyr0/Awesome-Cybersecurity-Handbooks) - A huge chunk of my personal notes since I started playing CTFs and working as a Red Teamer.
+* [Awesome Bug Bounty](https://github.com/djadmin/awesome-bug-bounty) - A comprehensive curated list of available Bug Bounty & Disclosure Programs and Write-ups.
+* [Resources-for-Beginner-Bug-Bounty-Hunters](https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters) - A list of resources for those interested in getting started in bug bounties.
+* [Sec_Mind_Maps](https://github.com/h0tak88r/Sec_Mind_Maps) - cyber security mind maps collection.
+* [keyhacks](https://github.com/streaak/keyhacks) - Keyhacks is a repository which shows quick ways in which API keys leaked by a bug bounty program can be checked to see if they're valid.
+* [Full Stack Web Developer](https://github.com/bmorelli25/Become-A-Full-Stack-Web-Developer) - Free resources for learning Full Stack Web Development.
+* [Web-Development](https://github.com/keshavgbpecdelhi/Web-Development) - web development mini projects which are made up of HTML, CSS & little bit of JavaScript.
+* [Bug Bounty Beginner Roadmap](https://github.com/bittentech/Bug-Bounty-Beginner-Roadmap) - This is a resource factory for anyone looking forward to starting bug hunting and would require guidance as a beginner.
 * [Brute Force](https://github.com/vanhauser-thc/thc-hydra) - A tool for performing brute-force attacks on various protocols.
 * [Exploit Development](https://github.com/wtsxDev/Exploit-Development) - A collection of resources useful for exploit development.
 * [Firewall Cfg](https://github.com/trimstray/iptables-essentials) - Essential resources and examples for configuring iptables.
@@ -23,8 +35,11 @@
 * [Red Teaming](https://github.com/yeyintminthuhtut/Awesome-Red-Teaming) - Resources related to pentesting and red team operations.
 * [Red Team ToolKit](https://0x1.gitlab.io/pentesting/Red-Teaming-Toolkit/) - A curated toolkit for red teaming operations.
 * [Blue Team Ops](https://github.com/fabacab/awesome-cybersecurity-blueteam) - Resources and tools for blue team cybersecurity operations.
+* [Android Modding](https://github.com/jbro129/android-modding) - A large collection of github repositories related to android modding.
 * [OSINT](https://github.com/jivoi/awesome-osint) - A collection of resources and tools for open-source intelligence gathering.
 * [DevSecOps](https://github.com/devsecops/awesome-devsecop) - A repository of DevSecOps resources and practices.
+* [Build your own x](https://github.com/codecrafters-io/build-your-own-x) - Master programming by recreating your favorite technologies from scratch.
+* [DevOps-Roadmap](https://github.com/milanm/DevOps-Roadmap) - DevOps Roadmap for 2024. with learning resources
 * [Pentest](https://github.com/enaqx/awesome-pentest) - A comprehensive list of resources for penetration testing.
 * [Cloud Pentest](https://github.com/CyberSecurityUP/Awesome-Cloud-PenTest) - Resources and tools for cloud penetration testing.
 * [Shodan](https://github.com/jakejarvis/awesome-shodan-queries) - A collection of useful Shodan queries
@@ -40,6 +55,7 @@
 * [API Security](https://github.com/arainho/awesome-api-security) - Best practices and tools for securing APIs.
 * [WEB3](https://github.com/Anugrahsr/Awesome-web3-Security) - Security practices and resources for web3 development.
 * [Incident Response](https://github.com/Correia-jpv/fucking-awesome-incident-response) - A resource for incident response strategies and frameworks.
+* [Reverse-Engineering](https://github.com/mytechnotalent/Reverse-Engineering) - A FREE comprehensive reverse engineering tutorial covering x86, x64, 32-bit/64-bit ARM and embedded RISC-V architectures.
 * [Search Engines](https://github.com/edoardottt/awesome-hacker-search-engines) - A collection of hacker-focused search engines and tools.
 * [Smart Contract Security](https://github.com/saeidshirazi/Awesome-Smart-Contract-Security) - Resources for securing smart contract applications.
 * [Terraform](https://github.com/shuaibiyy/awesome-terraform) - Tools and resources for using Terraform effectively.

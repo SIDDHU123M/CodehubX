@@ -70,19 +70,20 @@ body {
 #main-content {
 	flex: 1;
 	margin-left: 270px;
-	margin-right: 220px; /* Adjusted to account for the right-nav */
+	margin-right: 220px; 
 	padding: 30px;
 	background-color: #fff;
-	overflow-y: auto; /* Allow scrolling within the main content */
+	overflow-y: auto; 
 }
 
 header h1#doc-title {
+	font-family: "Nabla", system-ui;
 	font-size: 2.5em;
+	text-shadow: #000000 0px 0px 3px;
 	background: linear-gradient(to right, #ff9800 0%, rgba(255, 152, 0, 0) 100%);
 	color: #ff9800;
 	font-weight: bold;
 	-webkit-background-clip: text;
-	/* 	-webkit-text-fill-color: transparent; */
 }
 
 h1#doc-title {

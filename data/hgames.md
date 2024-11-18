@@ -1,4 +1,3 @@
----
 ### HTML Games
 
 * [Rubix Cube Game](pages/hgames/rubix/index.html) - Challenge yourself to solve the classic Rubik's Cube puzzle!

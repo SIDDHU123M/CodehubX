@@ -1,7 +1,8 @@
----
 ## Fake Identity
 
-### Disposable Number
+---
+
+### Temporary Phone Numbers
 
 * [hs3x](http://hs3x.com/) - A web service for receiving SMS messages without revealing your personal phone number.
 * [smsget](http://smsget.net/) - Free SMS receiving service that provides various temporary phone numbers.
@@ -22,7 +23,7 @@
 * [freeonlinephone](https://www.freeonlinephone.org/) - Wall of disposable phone numbers available for receiving SMS messages.
 * [getfreesmsnumber](https://getfreesmsnumber.com/) - Quick access to various temporary numbers for receiving SMS.
 
-### Disposable Mail
+### Temporary Email Addresses
 
 * [MailDrop](https://maildrop.cc/) - Disposable email service that allows users to create temporary email addresses for receiving messages.
 * [TempR](https://tempr.email/) - Simple and user-friendly service for creating disposable email addresses.
@@ -31,12 +32,11 @@
 * [Moakt](https://www.moakt.com/) - A modern disposable email service for protecting your real email from spam.
 * [TempMailo](https://tempmailo.com/) - A free temporary email address service that helps protect your privacy online.
 * [EmailOnDeck](https://www.emailondeck.com/) - Offers disposable emails with added security against spam.
-* [EmailOnDeck](https://www.emailondeck.com/) - A simple tool for creating temporary email addresses to avoid spam and protect privacy.
 * [GuerrillaMail](https://www.guerrillamail.com/) - Provides disposable email addresses that can be used for a limited time, perfect for signing up for services safely.
 * [SmailPro](https://smailpro.com/) - An easy solution for receiving temporary emails without the need for personal information.
 * [Gmailnator](https://gmailnator.com/) - Generates temporary Gmail addresses for quick and anonymous use, ensuring your real email remains private.
 
-### Fake Identity
+### Fake Identity Generators
 
 * [FakeNa](https://fakena.me/) - Generate fake names and identities that are useful for testing, registrations, and online anonymity.
 * [FauxID](https://fauxid.com/) - A service that allows users to create fake identification information for various purposes.

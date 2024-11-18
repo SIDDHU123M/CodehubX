@@ -82,22 +82,24 @@ header h1#doc-title {
 	color: #ff9800;
 	font-weight: bold;
 	-webkit-background-clip: text;
-/* 	-webkit-text-fill-color: transparent; */
+	/* 	-webkit-text-fill-color: transparent; */
 }
 
 h1#doc-title {
-font-family: "Kanit", sans-serif;
-/*   font-weight: 400; */
-  font-style: normal;
+	font-family: "Kanit", sans-serif;
+	/*   font-weight: 400; */
+	font-style: normal;
 }
 
 #content h2,
-#content h3 {
+#content h3,
+#content h4 {
 	color: #000000;
+	font-family: "Space Grotesk", sans-serif;
 	/* margin-top: 20px; */
-	font-weight: 600;
+	font-weight: 900;
 	font-size: 1.5em;
-    	padding: 0.25em 0px;
+	padding: 0.25em 0px;
 }
 
 #content p {
@@ -137,6 +139,17 @@ font-family: "Kanit", sans-serif;
 
 #content li a:hover {
 	color: #ff9800;
+}
+
+#content ul li {
+	font-family: "Space Grotesk", sans-serif;
+	font-variation-settings: "wdth" 100;
+	font-weight: 400;
+	> a {
+		font-family: "Titillium Web", sans-serif;
+		font-weight: 600;
+		font-style: normal;
+	}
 }
 
 #right-nav {

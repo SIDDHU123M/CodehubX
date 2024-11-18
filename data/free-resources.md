@@ -1,5 +1,6 @@
----
 ## Free Resources
+
+---
 
 ### Programming Language
 
@@ -38,6 +39,8 @@
 * [Elixir](https://elixirschool.com/) - A functional, concurrent language built on the Erlang VM, known for its scalable and maintainable applications.
 * [Django (Python Framework)](https://djangoforbeginners.com/) - A high-level Python web framework that encourages rapid development and clean, pragmatic design.
 
+---
+
 ### Cybersecurity Skills
 
 * [Ethical Hacking](https://www.cybrary.it/course/ethical-hacking/) - A course that teaches the principles and practices of ethical hacking and penetration testing.
@@ -68,6 +71,8 @@
 * [Legal and Ethical Considerations](https://www.eff.org/) - The Electronic Frontier Foundation provides insights into the legal aspect of technology, privacy, and civil liberties.
 * [Internet of Things (IoT) Security](https://www.iotsecurityfoundation.org/) - Resources and guidance for securing IoT devices and networks.
 
+---
+
 ### Professinal Skills
 
 * [Communication Skills](https://alison.com/tag/communication-skills) - Free online courses to enhance your communication abilities.
@@ -81,6 +86,8 @@
 * [Digital Literacy](https://learndigital.withgoogle.com/digitalgarage) - A comprehensive program by Google to enhance your digital skills.
 * [Networking Skills](https://www.netacad.com/courses/networking/https://skillsforall.com/course/networking-basics) - Courses to build a solid foundation in networking concepts.
 * [Emotional Intelligence](https://online.hbs.edu/blog/post/emotional-intelligence-skills) - Learn about emotional intelligence and how to apply it in personal and professional contexts.
+
+---
 
 ### Cheat Sheets
 
@@ -101,6 +108,8 @@
 * [CheatoGraphy](https://cheatography.com/) - A site that offers a vast collection of cheat sheets for various subjects and programming languages.
 * [CodeHouse](https://codehouse.vercel.app/app) - A resource providing cheat sheets and coding shortcuts for developers.
 
+---
+
 ### Discounted Coupons
 
 * [SharewareOnSale](https://sharewareonsale.com/) - A website that offers software discounts, free trials, and limited-time offers for various applications.
@@ -120,6 +129,8 @@
 * [CourseCity](https://coursesity.com/) - An educational platform providing access to free courses and learning resources across various subjects.
 * [999CourseSale](https://999coursesale.com/freebie-courses-list.php) - A website that lists free courses and educational resources to help learners find valuable opportunities.
 * [CourseCity Alt](https://coursesity.com/provider/free/udemy-courses?ref=banner) - An alternative section of CourseCity focused on providing free Udemy courses to users.
+
+---
 
 ### Machine Learning
 
@@ -144,6 +155,8 @@
 * [Neural Networks Theory](https://youtube.com/playlist?list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1) - A comprehensive YouTube playlist exploring the theory behind neural networks, perfect for deepening your understanding.
 * [Open AI GPT-3 documentation](https://beta.openai.com/docs/introduction/overview) - Official documentation for OpenAI's GPT-3, detailing its capabilities, uses, and guidelines for implementation.
 
+---
+
 ### Free Hosting
 
 * [Netlify](https://www.netlify.com/) - A platform for hosting static websites and web applications.
@@ -158,16 +171,7 @@
 * [Surge](https://surge.sh/) - A simple tool for publishing static sites to the web quickly.
 * [Adaptable](https://adaptable.io/) - A platform that helps in deploying web applications smoothly and efficiently.
 
-### Tools
-
-* [Tiny helpers](https://tiny-helpers.dev/) : A collection of free single-purpose online tools for web developers
-* [How To Set Up ESLint & Prettier In VS Code](https://dev.to/rahulshawdev/how-to-set-up-eslint-prettier-in-vs-code-1dc1)
-* [Ray.so](https://ray.so/) : Create beautiful images of your code snippets!
-* [Squircley](https://squircley.app/) : Start creating beautiful organic shapes ready to use for logos, icons and background images
-* [BrandBird](https://www.brandbird.app/) : An image editor for busy SaaS founders, who build in public!
-* [Carbon](https://carbon.now.sh/) : Create and share beautiful images of your source code. (An alternative of
-* [Milanote](https://milanote.com/) : Organize your creative ideas into visual boards
-* [Quicktype](https://app.quicktype.io/) : Instantly parse JSON in any language
+---
 
 ### Dynamic Programming
 
@@ -177,6 +181,8 @@
 * [Finding the largest zero submatrix](https://cp-algorithms.com/dynamic\_programming/zero\_matrix.html)
 * [Best Dynamic Programming Playlist](https://youtube.com/playlist?list=PL\_z\_8CaSLPWekqhdCPmFohncHwz8TY2Go)
 * [Dynamic Programming Playlist - Interview Questions - Recursion - Tabulation - Striver - C++ - Java - DSA - Placements](https://www.youtube.com/playlist?list=PLgUwDviBIf0qUlt5H\_kiKYaNSqJ81PMMY)
+
+---
 
 ### Data Structures
 
@@ -194,6 +200,8 @@
 * [IIT Bombay Foundation of Data Structures (CS213.1x)](https://courses.edx.org/courses/course-v1:IITBombayX+CS213.1x+1T2017/course/)
 * [Intro to Data Structures and Algorithms](https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513) - Brynn Claypoole, Horatio Thomas
 
+---
+
 ### Deep Learning
 
 * [Andrew Ng's Deep Learning Specializations Course](https://www.coursera.org/specializations/deep-learning)
@@ -206,12 +214,16 @@
 * [CS224W: Machine Learning with Graphs](http://web.stanford.edu/class/cs224w/)
 * [Machine Learning University (MLU) Accelerated Natural Language Processing class](https://www.youtube.com/playlist?list=PL8P\_Z6C4GcuWfAq8Pt6PBYlck4OprHXsw)
 
+---
+
 ### Networking
 
 * [Fundamentals of Networking](https://www.youtube.com/playlist?list=PLIFyRwBY\_4bRLmKfP1KnZA6rZbRHtxmXi)
 * [Computer Networking Full Course - OSI Model Deep Dive with Real Life Examples](https://www.youtube.com/watch?v=IPvYjXCsTg8)
 * [Computer Networking Course - Network Engineering (CompTIA Network+ Exam Prep)](https://www.youtube.com/watch?v=qiQR5rTSshw)
 * [Computer Networking Full Course- By Gate Smashers](https://youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV\_)
+
+---
 
 ### Algorithms
 
@@ -222,6 +234,8 @@
 * [Algorithm Visualizer](https://algorithm-visualizer.org/)
 * [Greedy Algorithm by Abdul Bari](https://www.youtube.com/playlist?list=PL8zDQ1C22qvvwdkPj1uXLpwzcYDJtjnze)
 
+---
+
 ### Ethical Hacking
 
 * [Collection of hackers, pentesters & security researchers](https://github.com/Hack-with-Github/Awesome-Hacking)
@@ -229,6 +243,8 @@
 * [Open Source Reverse Engineering Platform](https://github.com/radareorg/cutter)
 * [Penetration Testing Bootcamp](https://hackersploit.org/penetration-testing-bootcamp/)
 * [Practical-Ethical-Hacking-Resources](https://github.com/TCM-Course-Resources/Practical-Ethical-Hacking-Resources)
+
+---
 
 ### Online Learning Platforms
 

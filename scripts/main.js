@@ -23,7 +23,7 @@ const iconMap = {
 	Piracy: "warning",
 	"Free Resources": "volunteer_activism",
 	"Github Repo's": "folder",
-	"Html Games": "games",
+	"tools" : "build",
 	"Fake Identity": "person",
 };
 

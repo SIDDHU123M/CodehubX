@@ -1,5 +1,6 @@
----
 ## Entertainment
+
+---
 
 ### Movie & Series
 
@@ -10,6 +11,7 @@
 * [Movies2Watch](https://movies2watch.is/) - A site providing a selection of films to watch.
 * [Allmoviesforyou](https://anymovie.cc/) - Features a wide range of movies across genres.
 * [M4UHD](https://ww1.m4uhd.tv/) - Specializes in high-definition movie streaming.
+* [ProtonMovies](https://protonmovies.online/) - Offers a variety of movies and shows for Downloading.
 * [watchasian](https://watchasian.art/) - Focused on Asian movies and TV series.
 * [fmovies](https://fmovies.llc/) - A popular destination for streaming films online.
 * [Sflix](https://sflix.to/) - Offers a wide selection of movies and shows for streaming.

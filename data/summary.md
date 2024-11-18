@@ -6,6 +6,6 @@
 * [Piracy](piracy.md)
 * [Free Resources](free-resources.md)
 * [Github Repo's](github-repos.md)
-* [Html Games](hgames.md)
+* [Tools](tools.md)
 * [Fake Identity](fake-identity.md)
 

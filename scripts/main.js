@@ -101,6 +101,7 @@ function createRightNav() {
 
 	// Add navigation links after the first line of the content for mobile users
 	if (window.innerWidth <= 768) {
+		content.append(document.createElement("hr"));
 		const mobileNav = `
             <nav class="mobile-nav">
                 <ul>${rightNavContent}</ul>

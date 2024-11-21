@@ -70,10 +70,10 @@ body {
 #main-content {
 	flex: 1;
 	margin-left: 270px;
-	margin-right: 220px; 
+	margin-right: 220px;
 	padding: 30px;
 	background-color: #fff;
-	overflow-y: auto; 
+	overflow-y: auto;
 }
 
 header h1#doc-title {
@@ -245,5 +245,24 @@ h1#doc-title {
 
 	#right-nav {
 		display: none;
+	}
+	header {
+		display: flex;
+		/* justify-content: space-between; */
+		align-items: center;
+		padding: 10px 20px;
+		flex-direction: row;
+	}
+	hr {
+		margin: 5px 0px !important;
+	}
+	#doc-title {
+		/* put in center */
+		text-align: center;
+	}
+	#menu-button {
+		/* put at start without margin and padding*/
+		margin-left: 0;
+		margin-right: 30px;
 	}
 }

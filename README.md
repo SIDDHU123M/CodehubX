@@ -1,10 +1,9 @@
-# Overview
+## Overview
 
-## Introduction
+### Introduction
+The repository [**CodehubX**](https://github.com/SIDDHU123M/CodehubX) is a comprehensive resource hub for programmers, developers, and students. It includes a wide range of useful websites and resources, such as streaming platforms, torrents, cracked content, tools, repositories, piracy resources, movie links, and much more.&#x20;
 
-#### The repository [**CodehubX**](https://github.com/SIDDHU123M/CodehubX) is a comprehensive resource hub for programmers, developers, and students. It includes a wide range of useful websites and resources, such as streaming platforms, torrents, cracked content, and much more.&#x20;
-
-A collection of various useful resources which we can access for free, including streaming platforms, torrents, and cracked content and much more.
+A collection of various useful resources which we can access for free, including streaming platforms, torrents, cracked content, tools, repositories, piracy resources, movie links, and much more.
 
 ### Tools and Tutorials for All Levels
 

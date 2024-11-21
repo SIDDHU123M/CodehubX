@@ -2,11 +2,16 @@
 
 ---
 
-### Data Scraping Tools
-* [Web Scraping](https://github.com/scrapy/scrapy) - A popular framework for web scraping written in Python.
-* [Pyppeteer](https://github.com/pyppeteer/pyppeteer) - A headless browser automation library based on Puppeteer in Python.  
-* [BeautifulSoup](https://github.com/wention/BeautifulSoup4) - A library for parsing HTML and XML documents for web scraping.  
+### Data Scraping Tools (Best and Limited)
+* [Scrapy](https://github.com/scrapy/scrapy) - A robust, open-source framework for web scraping in Python, widely adopted for its scalability.
+* [BeautifulSoup](https://github.com/wention/BeautifulSoup4) - A Python library for extracting information from HTML and XML documents efficiently.
+* [Playwright](https://github.com/microsoft/playwright) - A modern automation library supporting multiple languages and ideal for scraping dynamic websites.
+* [Puppeteer](https://github.com/puppeteer/puppeteer) - A Node.js library for controlling headless browsers, widely used for automating and scraping.
+* [Cheerio](https://github.com/cheeriojs/cheerio) - A lightweight, server-side HTML parser inspired by jQuery, perfect for scraping static content in Node.js.
 
+### CAPTCHA Bypassing Tools
+* [anticaptcha](https://github.com/ad-m/python-anticaptcha) - Integrates Anti-Captcha service into Python projects for solving CAPTCHAs.
+* [2Captcha Python](https://github.com/2captcha/2captcha-python) - Official Python SDK to interact with the 2Captcha service for CAPTCHA solving.
 
 ### Penetration Testing Tools
 * [Hacking Tools](https://github.com/carpedm20/awesome-hacking) - A curated list of hacking tools for various purposes.

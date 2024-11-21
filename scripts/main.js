@@ -23,7 +23,7 @@ const iconMap = {
 	Piracy: "warning",
 	"Free Resources": "volunteer_activism",
 	"Github Repo's": "folder",
-	"tools" : "build",
+	tools: "build",
 	"Fake Identity": "person",
 };
 
@@ -69,7 +69,9 @@ async function loadPage(file) {
 	const markdown = await response.text();
 	let htmlContent = converter.makeHtml(markdown);
 	document.getElementById("content").innerHTML = htmlContent;
-	createRightNav();
+	if (file !== "data/README.md") {
+		createRightNav();
+	}
 	// Remove or define updatePagination function
 	// updatePagination();
 }
@@ -77,14 +79,16 @@ async function loadPage(file) {
 function createRightNav() {
 	const content = document.getElementById("content");
 	const headings = content.querySelectorAll("h3");
+	const firstH2 = content.querySelector("h2");
+	const navHeading = firstH2 ? firstH2.textContent : "Navigation";
 	const rightNavContent = Array.from(headings)
 		.map((heading) => {
 			const id = heading.textContent.toLowerCase().replace(/\s+/g, "-");
 			heading.id = id;
-			return `<a href="#${id}">${heading.textContent}</a>`;
+			return `<li><a href="#${id}" class="anchorNav">${heading.textContent}</a></li>`;
 		})
 		.join("");
-	document.getElementById("right-nav-content").innerHTML = rightNavContent;
+	document.getElementById("right-nav-content").innerHTML = `<ul>${rightNavContent}</ul>`;
 
 	document.querySelectorAll("#right-nav a").forEach((link) => {
 		link.addEventListener("click", (e) => {
@@ -94,6 +98,19 @@ function createRightNav() {
 			e.target.classList.add("active");
 		});
 	});
+
+	// Add navigation links after the first line of the content for mobile users
+	if (window.innerWidth <= 768) {
+		const mobileNav = `
+            <nav class="mobile-nav">
+                <ul>${rightNavContent}</ul>
+            </nav>`;
+		if (firstH2) {
+			firstH2.insertAdjacentHTML("afterend", mobileNav);
+		} else {
+			content.insertAdjacentHTML("afterbegin", mobileNav);
+		}
+	}
 }
 
 function addSidebarEventListeners() {

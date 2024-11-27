@@ -145,6 +145,19 @@ function handleSidebarClick(e) {
 		const file = link.getAttribute("data-link");
 		loadPage(file);
 		setActiveLink(link);
+
+		const sidebar = document.getElementById("sidebar");
+		if (window.innerWidth <= 768) {
+			sidebar.classList.add("sidebar-close");
+			sidebar.addEventListener(
+				"animationend",
+				() => {
+					sidebar.style.display = "none";
+					sidebar.classList.remove("sidebar-close");
+				},
+				{once: true}
+			);
+		}
 	}
 }
 

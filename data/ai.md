@@ -23,7 +23,8 @@
 * [Discover AI](https://discoverai.co/) - Explore the latest AI tools and apps sorted by category.  
 * [Zyro AI Tools](https://zyro.com/ai-tools) - Free AI-based tools for website building, writing, and more.  
 * [AIToolsDB](https://aitoolsdb.com/) - A search engine for AI tools categorized for various use cases.  
-
+* [AiToolHunt](https://www.aitoolhunt.com/) - Discover the best AI tools for your business needs.
+* [AI Tools Directory](https://aitoolsdirectory.com/) - A comprehensive directory of AI tools categorized by use case.
 ---
 
 ### Free AI Tools  
@@ -32,10 +33,14 @@
 * [Rytr.me](https://rytr.me/) - A free AI-powered content-writing tool for generating text.  
 * [Simplified](https://simplified.com/ai-content-generator) - Free tools for content creation, from copywriting to graphic design.  
 * [Quillbot](https://quillbot.com/) - A free AI paraphrasing and grammar checker tool.  
+* [Copy.ai](https://www.copy.ai/) - AI-powered content generation tool for creating marketing copy.
+* [Writesonic](https://writesonic.com/) - AI writing assistant for generating high-quality content.
 
 #### **Image Generation**  
 * [Craiyon](https://www.craiyon.com/) - Free AI image generator for creating artwork or visuals.  
 * [DeepAI](https://deepai.org/machine-learning-model/text-to-image) - Free AI tools for generating images from text prompts.  
+* [Artbreeder](https://www.artbreeder.com/) - A collaborative AI tool for creating and exploring images.
+* [Runway ML](https://runwayml.com/) - A platform for creating and experimenting with AI-generated images and videos.
 
 #### **Code Assistance**  
 * [TabNine](https://www.tabnine.com/) - AI-powered code completion tool available for free.  
@@ -43,6 +48,7 @@
 * [Blackbox AI](https://www.blackbox.ai/) - Blackbox Code Chat to answer coding questions and assist them while writing code
 * [Copiolot](https://copilot.microsoft.com/) - Microsoft Copilot is your companion to inform, entertain, and inspire. 
 * [DeepCode](https://www.deepcode.ai/) - DeepCode finds bugs, security vulnerabilities, performance issues, and code smells in your code.
+* [CodeT5](https://github.com/salesforce/CodeT5) - A pre-trained model for code understanding and generation.
 
 #### **Chatbots**  
 * [ChatGPT Free](https://chat.openai.com/) - Free conversational AI model (with restrictions on usage volume). 
@@ -50,11 +56,15 @@
 * [Copiolot](https://copilot.microsoft.com/) - Microsoft Copilot is your companion
 * [PiChat](https://pi.ai/) - Pi is your personal AI, designed to be supportive, smart, and there for you anytime.
 * [Replika](https://replika.ai/) - Replika is a chatbot that learns from you, and is designed to be your friend.
+* [Dialogflow](https://dialogflow.cloud.google.com/) - A natural language understanding platform for building conversational interfaces.
+* [Botpress](https://botpress.com/) - An open-source platform for building and managing chatbots.
 
 #### **Research and Analysis**  
 * [Semantic Scholar](https://www.semanticscholar.org/) - Free AI tool for academic paper discovery and summarization.  
 * [ExplainPaper](https://www.explainpaper.com/) - Simplifies and explains academic papers for researchers.  
-
+* [Paper Digest](https://paperdigest.org/) - Free AI tool for summarizing academic papers.
+* [Scite](https://scite.ai/) - An AI tool for discovering and evaluating scientific articles.
+* [Iris.ai](https://iris.ai/) - An AI assistant for literature reviews and research discovery.
 ---
 
 ### Paid/Enterprise AI Tools  
@@ -62,7 +72,8 @@
 * [Runway ML](https://runwayml.com/) - Creative tools for media and content creation.  
 * [Copy.ai](https://copy.ai/) - AI-powered marketing and writing assistant.  
 * [Jasper AI](https://www.jasper.ai/) - Advanced content generation tool for businesses.  
-
+* [Frase](https://www.frase.io/) - An AI-powered content optimization tool for SEO and content marketing.
+* [MarketMuse](https://www.marketmuse.com/) - An AI-driven content research and optimization platform.
 ---
 
 ### Open-Source AI Libraries  
@@ -70,3 +81,6 @@
 * [Hugging Face Transformers](https://github.com/huggingface/transformers) - Open-source AI models for NLP and beyond.  
 * [TensorFlow Hub](https://tfhub.dev/) - Library of pre-trained AI models for various applications.  
 * [PyTorch Hub](https://pytorch.org/hub/) - A repository of pre-trained PyTorch models.  
+* [Fastai](https://github.com/fastai/fastai) - A deep learning library that simplifies training fast and accurate neural nets.
+* [AllenNLP](https://github.com/allenai/allennlp) - An open-source library for building state-of-the-art NLP models.
+

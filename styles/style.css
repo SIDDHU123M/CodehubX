@@ -256,7 +256,7 @@ h1#doc-title {
 	display: none;
 	font-size: 2em;
 	cursor: pointer;
-	margin-right: 20px;
+	/* margin-right: 20px; */
 }
 
 #theme-toggle {
@@ -306,10 +306,6 @@ h1#doc-title {
 	}
 	#doc-title {
 		text-align: center;
-	}
-	#menu-button {
-		margin-left: 0;
-		margin-right: 30px;
 	}
 }
 

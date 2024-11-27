@@ -13,8 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 });
 
-/* Existing JavaScript code */
-
 const converter = new showdown.Converter();
 const iconMap = {
 	Overview: "home",
@@ -65,15 +63,21 @@ function renderSidebar(files) {
 }
 
 async function loadPage(file) {
-	const response = await fetch(file);
-	const markdown = await response.text();
-	let htmlContent = converter.makeHtml(markdown);
-	document.getElementById("content").innerHTML = htmlContent;
-	if (file !== "data/README.md") {
-		createRightNav();
+	try {
+		const response = await fetch(file);
+		if (!response.ok) {
+			throw new Error(`Failed to load ${file}: ${response.statusText}`);
+		}
+		const markdown = await response.text();
+		let htmlContent = converter.makeHtml(markdown);
+		document.getElementById("content").innerHTML = htmlContent;
+		if (file !== "data/README.md") {
+			createRightNav();
+		}
+	} catch (error) {
+		console.error(error);
+		document.getElementById("content").innerHTML = `<p>Error loading content. Please try again later.</p>`;
 	}
-	// Remove or define updatePagination function
-	// updatePagination();
 }
 
 function createRightNav() {
@@ -99,30 +103,36 @@ function createRightNav() {
 		});
 	});
 
-	// Add navigation links after the first line of the content for mobile users
 	if (window.innerWidth <= 768) {
-		content.append(document.createElement("hr"));
-		const mobileNav = `
-            <nav class="mobile-nav">
-                <ul>${rightNavContent}</ul>
-            </nav>`;
-		if (firstH2) {
-			firstH2.insertAdjacentHTML("afterend", mobileNav);
-		} else {
-			content.insertAdjacentHTML("afterbegin", mobileNav);
-		}
+		addMobileNav(content, rightNavContent, firstH2);
+	}
+}
+
+function addMobileNav(content, rightNavContent, firstH2) {
+	content.append(document.createElement("hr"));
+	const mobileNav = `
+        <nav class="mobile-nav" aria-label="Mobile Navigation">
+            <ul>${rightNavContent}</ul>
+        </nav>`;
+	if (firstH2) {
+		firstH2.insertAdjacentHTML("afterend", mobileNav);
+	} else {
+		content.insertAdjacentHTML("afterbegin", mobileNav);
 	}
 }
 
 function addSidebarEventListeners() {
-	document.querySelectorAll("#sidebar-content a").forEach((link, index) => {
-		link.addEventListener("click", (e) => {
-			e.preventDefault();
-			currentIndex = index;
-			loadPage(files[currentIndex].file);
-			setActiveLink(link);
-		});
-	});
+	document.getElementById("sidebar-content").addEventListener("click", handleSidebarClick);
+}
+
+function handleSidebarClick(e) {
+	if (e.target.tagName === "A") {
+		e.preventDefault();
+		const link = e.target;
+		const file = link.getAttribute("data-link");
+		loadPage(file);
+		setActiveLink(link);
+	}
 }
 
 function setActiveLink(activeLink) {

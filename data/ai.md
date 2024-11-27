@@ -25,7 +25,6 @@
 * [AIToolsDB](https://aitoolsdb.com/) - A search engine for AI tools categorized for various use cases.  
 * [AiToolHunt](https://www.aitoolhunt.com/) - Discover the best AI tools for your business needs.
 * [AI Tools Directory](https://aitoolsdirectory.com/) - A comprehensive directory of AI tools categorized by use case.
----
 
 ### Free AI Tools  
 
@@ -65,7 +64,6 @@
 * [Paper Digest](https://paperdigest.org/) - Free AI tool for summarizing academic papers.
 * [Scite](https://scite.ai/) - An AI tool for discovering and evaluating scientific articles.
 * [Iris.ai](https://iris.ai/) - An AI assistant for literature reviews and research discovery.
----
 
 ### Paid/Enterprise AI Tools  
 
@@ -74,7 +72,7 @@
 * [Jasper AI](https://www.jasper.ai/) - Advanced content generation tool for businesses.  
 * [Frase](https://www.frase.io/) - An AI-powered content optimization tool for SEO and content marketing.
 * [MarketMuse](https://www.marketmuse.com/) - An AI-driven content research and optimization platform.
----
+
 
 ### Open-Source AI Libraries  
 

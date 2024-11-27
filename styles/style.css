@@ -9,6 +9,8 @@
 	--right-nav-bg-color: #f8f9fa;
 	--right-nav-border-color: #ddd;
 	--right-nav-hover-bg-color: #ddd;
+	--main-content-bg-color: #fff;
+	--main-content-text-color: #333;
 	--font-family-main: Arial, sans-serif;
 	--font-family-title: "Nabla", system-ui;
 	--font-family-heading: "Space Grotesk", sans-serif;
@@ -24,6 +26,27 @@
 	--font-weight-normal: 400;
 	--font-weight-heading: 900;
 	--transition-duration: 0.3s;
+	--content-heading-color: #000;
+	--content-paragraph-color: #444;
+	--content-link-hover-color: #f57c00;
+}
+
+[data-theme="dark"] {
+	--primary-color: #ff5722;
+	--secondary-color: #03a9f4;
+	--background-color: #121212;
+	--text-color: #e0e0e0;
+	--sidebar-bg-color: #1e1e1e;
+	--sidebar-text-color: #bdbdbd;
+	--sidebar-hover-bg-color: #333;
+	--right-nav-bg-color: #1e1e1e;
+	--right-nav-border-color: #333;
+	--right-nav-hover-bg-color: #333;
+	--main-content-bg-color: #1e1e1e;
+	--main-content-text-color: #e0e0e0;
+	--content-heading-color: #e0e0e0;
+	--content-paragraph-color: #bdbdbd;
+	--content-link-hover-color: #ff9800;
 }
 
 * {
@@ -38,7 +61,6 @@ body {
 	color: var(--text-color);
 	line-height: 1.6;
 	background-color: var(--background-color);
-	/* overflow: hidden;  */
 }
 
 #sidebar {
@@ -78,7 +100,7 @@ body {
 	padding: 10px;
 	font-size: var(--font-size-sidebar);
 	text-decoration: none;
-	color: #ddd;
+	color: var(--sidebar-text-color);
 	border-radius: 5px;
 	transition: background-color var(--transition-duration);
 	margin-right: 1.8em;
@@ -99,7 +121,8 @@ body {
 	margin-left: 270px;
 	margin-right: 220px;
 	padding: 30px;
-	background-color: #fff;
+	background-color: var(--main-content-bg-color);
+	color: var(--main-content-text-color);
 	overflow-y: auto;
 }
 
@@ -115,16 +138,14 @@ header h1#doc-title {
 
 h1#doc-title {
 	font-family: var(--font-family-kanit);
-	/*   font-weight: 400; */
 	font-style: normal;
 }
 
 #content h2,
 #content h3,
 #content h4 {
-	color: #000000;
+	color: var(--content-heading-color);
 	font-family: var(--font-family-heading);
-	/* margin-top: 20px; */
 	font-weight: var(--font-weight-heading);
 	font-size: var(--font-size-heading);
 	padding: 0.25em 0px;
@@ -132,7 +153,7 @@ h1#doc-title {
 
 #content p {
 	font-size: var(--font-size-main-content);
-	color: #444;
+	color: var(--content-paragraph-color);
 	font-weight: var(--font-weight-normal);
 	line-height: 1.8;
 	margin-bottom: 20px;
@@ -141,7 +162,7 @@ h1#doc-title {
 #content ul,
 #content ol {
 	font-size: var(--font-size-main-content);
-	color: #444;
+	color: var(--content-paragraph-color);
 	font-weight: var(--font-weight-normal);
 	margin-left: 20px;
 	line-height: 1.8;
@@ -155,7 +176,7 @@ h1#doc-title {
 }
 
 #content a:hover {
-	color: #f57c00;
+	color: var(--content-link-hover-color);
 }
 
 #content li a {
@@ -231,13 +252,17 @@ h1#doc-title {
 	color: var(--text-color);
 }
 
-/* Existing styles */
-
 #menu-button {
 	display: none;
 	font-size: 2em;
 	cursor: pointer;
 	margin-right: 20px;
+}
+
+#theme-toggle {
+	font-size: 1.5em;
+	cursor: pointer;
+	margin-left: auto;
 }
 
 @media (max-width: 768px) {
@@ -260,7 +285,7 @@ h1#doc-title {
 
 	#main-content {
 		margin-left: 0;
-		margin-right: 0; /* Adjusted for mobile view */
+		margin-right: 0;
 	}
 
 	#menu-button {
@@ -272,7 +297,6 @@ h1#doc-title {
 	}
 	header {
 		display: flex;
-		/* justify-content: space-between; */
 		align-items: center;
 		padding: 10px 20px;
 		flex-direction: row;
@@ -281,12 +305,43 @@ h1#doc-title {
 		margin: 5px 0px !important;
 	}
 	#doc-title {
-		/* put in center */
 		text-align: center;
 	}
 	#menu-button {
-		/* put at start without margin and padding*/
 		margin-left: 0;
 		margin-right: 30px;
+	}
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+	background-color: var(--main-content-bg-color);
+	border-bottom: 1px solid var(--right-nav-border-color);
+}
+
+#theme-toggle {
+	font-size: 1.5em;
+	cursor: pointer;
+	background: none;
+	border: none;
+	color: var(--text-color);
+	margin-left: auto;
+	transition: color var(--transition-duration);
+}
+
+#theme-toggle:hover {
+	color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+	header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#theme-toggle {
+		margin-left: 0;
 	}
 }

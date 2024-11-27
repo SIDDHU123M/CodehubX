@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+	const lastVisitedPage = localStorage.getItem("lastVisitedPage") || "data/README.md";
+	const theme = localStorage.getItem("theme") || "light";
+	document.documentElement.setAttribute("data-theme", theme);
+
 	loadSidebar();
-	loadPage("data/README.md");
+	loadPage(lastVisitedPage);
 
 	const menuButton = document.getElementById("menu-button");
 	menuButton.addEventListener("click", () => {
@@ -10,6 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
 		} else {
 			sidebar.style.display = "block";
 		}
+	});
+
+	const themeToggle = document.getElementById("theme-toggle");
+	themeToggle.addEventListener("click", () => {
+		const currentTheme = document.documentElement.getAttribute("data-theme");
+		const newTheme = currentTheme === "light" ? "dark" : "light";
+		document.documentElement.setAttribute("data-theme", newTheme);
+		localStorage.setItem("theme", newTheme);
 	});
 });
 
@@ -74,6 +86,7 @@ async function loadPage(file) {
 		if (file !== "data/README.md") {
 			createRightNav();
 		}
+		localStorage.setItem("lastVisitedPage", file);
 	} catch (error) {
 		console.error(error);
 		document.getElementById("content").innerHTML = `<p>Error loading content. Please try again later.</p>`;

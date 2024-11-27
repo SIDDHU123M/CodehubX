@@ -10,6 +10,13 @@
       <meta property="og:title" content="CodeHubX Resources - Free Tools and Resources for Developers" />
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <meta name="description"
+            content="Discover a wide range of free tools and resources for developers, including AI tools, programming resources, and more at CodeHubX." />
+      <meta property="og:title" content="CodeHubX Resources - Free Tools and Resources for Developers" />
+      <meta property="og:description"
+            content="Discover a wide range of free tools and resources for developers, including AI tools, programming resources, and more at CodeHubX." />
+      <meta property="og:url" content="https://siddhu123m.github.io/CodehubX/" />
+      <meta property="og:type" content="website" />
       <meta http-equiv="Content-Security-Policy"
             content="default-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src data:; connect-src 'self'; font-src 'self' https://fonts.gstatic.com;">
       <title>CodeHubx</title>
@@ -40,6 +47,17 @@
       </div>
       <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
       <script defer src="scripts/main.js"></script>
+      <script>
+            if ('serviceWorker' in navigator) {
+                  window.addEventListener('load', () => {
+                        navigator.serviceWorker.register('/serviceWorker.js').then((registration) => {
+                              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                        }, (error) => {
+                              console.log('ServiceWorker registration failed: ', error);
+                        });
+                  });
+            }
+      </script>
 </body>
 
 </html>

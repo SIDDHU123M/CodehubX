@@ -167,3 +167,13 @@ function setActiveLink(activeLink) {
 	});
 	activeLink.classList.add("active");
 }
+
+window.addEventListener("scroll", () => {
+	const headings = Array.from(document.querySelectorAll("#content h3"));
+	const scrollPosition = window.scrollY + 200;
+	headings.forEach((heading, i) => {
+		const nextHeading = headings[i + 1];
+		const isActive = nextHeading ? scrollPosition >= heading.offsetTop && scrollPosition < nextHeading.offsetTop : scrollPosition >= heading.offsetTop;
+		document.querySelectorAll("#right-nav a")[i].classList.toggle("active", isActive);
+	});
+});

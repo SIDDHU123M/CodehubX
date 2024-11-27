@@ -40,9 +40,16 @@
 #### **Code Assistance**  
 * [TabNine](https://www.tabnine.com/) - AI-powered code completion tool available for free.  
 * [Kite](https://www.kite.com/) - Free AI assistant for programmers (supports multiple languages).  
+* [Blackbox AI](https://www.blackbox.ai/) - Blackbox Code Chat to answer coding questions and assist them while writing code
+* [Copiolot](https://copilot.microsoft.com/) - Microsoft Copilot is your companion to inform, entertain, and inspire. 
+* [DeepCode](https://www.deepcode.ai/) - DeepCode finds bugs, security vulnerabilities, performance issues, and code smells in your code.
 
 #### **Chatbots**  
-* [ChatGPT Free](https://chat.openai.com/) - Free conversational AI model (with restrictions on usage volume).  
+* [ChatGPT Free](https://chat.openai.com/) - Free conversational AI model (with restrictions on usage volume). 
+* [Gemini](https://gemini.google.com/app) - Developed by google, A free AI Assistant 
+* [Copiolot](https://copilot.microsoft.com/) - Microsoft Copilot is your companion
+* [PiChat](https://pi.ai/) - Pi is your personal AI, designed to be supportive, smart, and there for you anytime.
+* [Replika](https://replika.ai/) - Replika is a chatbot that learns from you, and is designed to be your friend.
 
 #### **Research and Analysis**  
 * [Semantic Scholar](https://www.semanticscholar.org/) - Free AI tool for academic paper discovery and summarization.  

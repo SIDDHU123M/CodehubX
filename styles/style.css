@@ -29,6 +29,7 @@
 	--content-heading-color: #000;
 	--content-paragraph-color: #444;
 	--content-link-hover-color: #f57c00;
+	--primary-color-head: red;
 }
 
 [data-theme="dark"] {
@@ -47,6 +48,7 @@
 	--content-heading-color: #e0e0e0;
 	--content-paragraph-color: #bdbdbd;
 	--content-link-hover-color: #ff9800;
+	--primary-color-head: rgba(14, 212, 189, 0.936);
 }
 
 * {
@@ -139,9 +141,10 @@ body {
 header h1#doc-title {
 	font-family: var(--font-family-title);
 	font-size: var(--font-size-title);
-	text-shadow: #000000 0px 0px 3px;
+	text-shadow: #9a9999 0px 0px 2px;
 	background: linear-gradient(to right, var(--primary-color) 0%, rgba(255, 152, 0, 0) 100%);
-	color: var(--primary-color);
+	color: var(--primary-color-head);
+	/* color: firebrick; */
 	font-weight: bold;
 	-webkit-background-clip: text;
 }

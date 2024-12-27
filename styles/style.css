@@ -13,6 +13,7 @@
 	--main-content-text-color: #333;
 	--font-family-main: Arial, sans-serif;
 	--font-family-title: "Nabla", system-ui;
+	/* --font-family-title: "Nabla", system-ui; */
 	--font-family-heading: "Space Grotesk", sans-serif;
 	--font-family-alt: "Titillium Web", sans-serif;
 	--font-family-kanit: "Kanit", sans-serif;
@@ -29,7 +30,7 @@
 	--content-heading-color: #000;
 	--content-paragraph-color: #444;
 	--content-link-hover-color: #f57c00;
-	--primary-color-head: red;
+	--primary-color-head: rgba(14, 212, 189, 0.936);
 }
 
 [data-theme="dark"] {
@@ -163,6 +164,14 @@ h1#doc-title {
 	font-size: var(--font-size-heading);
 	padding: 0.25em 0px;
 }
+
+#content h1 {
+	color: var(--content-heading-color);
+	font-family: var(--font-family-heading);
+	font-weight: var(--font-weight-heading);
+	padding: 0.25em 0px;
+}
+
 
 #content p {
 	font-size: var(--font-size-main-content);
@@ -368,3 +377,7 @@ header {
 	animation: slideOut 0.3s forwards;
 }
 
+.boldS {
+	font-weight: 500 !important;
+	font-family: "Nunito", serif;
+}

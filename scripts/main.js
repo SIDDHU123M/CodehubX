@@ -76,12 +76,63 @@ function renderSidebar(files) {
 
 async function loadPage(file) {
 	try {
-		const response = await fetch(file);
-		if (!response.ok) {
-			throw new Error(`Failed to load ${file}: ${response.statusText}`);
+		let htmlContent;
+		if (file === "data/README.md") {
+			htmlContent = `
+			<h2>Overview</h2>
+<p class="boldS mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">The repository <a href="https://github.com/SIDDHU123M/CodehubX">CodehubX</a> is a curated collection of diverse resources for developers, students, and tech enthusiasts. It features an extensive range of websites and tools, categorized into multiple sections for easy navigation. Whether you're interested in AI, entertainment, cybersecurity, or even creating a fake identity, CodehubX offers valuable tools and resources to enhance your journey.</p>
+<p class="boldS mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">Explore various categories, each containing carefully selected websites with detailed descriptions, ensuring you can easily find what you need.</p>
+
+<h2>Content</h2>
+<ol class="relative border-s border-gray-200 dark:border-gray-700"> 
+    <li class="mb-4 ms-4">
+        <div class="absolute w-2 h-2 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+        <h1 class="text-lg font-semibold text-gray-900 dark:text-white">AI Resources</h1>
+        <p class="boldS mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">Unlock the potential of AI with tools and libraries.</p>
+    </li>
+    <li class="mb-4 ms-4">
+        <div class="absolute w-2 h-2 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+        <h1 class="text-lg font-semibold text-gray-900 dark:text-white">Entertainment</h1>
+        <p class="boldS mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">Get access to the best platforms for your entertainment needs.</p>
+    </li>
+    <li class="mb-4 ms-4">
+        <div class="absolute w-2 h-2 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+        <h1 class="text-lg font-semibold text-gray-900 dark:text-white">Piracy Resources</h1>
+        <p class="boldS mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">Access tools and websites for piracy-related content.</p>
+    </li>
+    <li class="mb-4 ms-4">
+        <div class="absolute w-2 h-2 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+        <h1 class="text-lg font-semibold text-gray-900 dark:text-white">Free Resources</h1>
+        <p class="boldS mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">Explore educational and professional resources for growth and development.</p>
+    </li>
+    <li class="mb-4 ms-4">
+        <div class="absolute w-2 h-2 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+        <h1 class="text-lg font-semibold text-gray-900 dark:text-white">GitHub Repositories</h1>
+        <p class="boldS mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">Browse valuable repositories for developers and cybersecurity enthusiasts.</p>
+    </li>
+    <li class="mb-4 ms-4">
+        <div class="absolute w-2 h-2 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+        <h1 class="text-lg font-semibold text-gray-900 dark:text-white">Tools</h1>
+        <p class="boldS mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">Access a comprehensive collection of development and design tools.</p>
+    </li>
+    <li class="mb-4 ms-4">
+        <div class="absolute w-2 h-2 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+        <h1 class="text-lg font-semibold text-gray-900 dark:text-white">Fake Identity Tools</h1>
+        <p class="boldS mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">Create and manage temporary identities with ease.</p>
+    </li>
+</ol>
+
+<h2>Important Note</h2>
+<p class="boldS mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">If any URL is not working or you think something needs an update, please report it to <a href="mailto:codehubx.work@gmail.com" class="text-blue-500">codehubx.work@gmail.com</a>.</p>
+`;
+		} else {
+			const response = await fetch(file);
+			if (!response.ok) {
+				throw new Error(`Failed to load ${file}: ${response.statusText}`);
+			}
+			const markdown = await response.text();
+			htmlContent = converter.makeHtml(markdown);
 		}
-		const markdown = await response.text();
-		let htmlContent = converter.makeHtml(markdown);
 		document.getElementById("content").innerHTML = htmlContent;
 		if (file !== "data/README.md") {
 			createRightNav();
@@ -95,7 +146,7 @@ async function loadPage(file) {
 
 function createRightNav() {
 	const content = document.getElementById("content");
-	const headings = content.querySelectorAll("h3");
+	const headings = content.querySelectorAll("h1");
 	const firstH2 = content.querySelector("h2");
 	const navHeading = firstH2 ? firstH2.textContent : "Navigation";
 	const rightNavContent = Array.from(headings)
@@ -169,7 +220,7 @@ function setActiveLink(activeLink) {
 }
 
 window.addEventListener("scroll", () => {
-	const headings = Array.from(document.querySelectorAll("#content h3"));
+	const headings = Array.from(document.querySelectorAll("#content h1"));
 	const scrollPosition = window.scrollY + 200;
 	headings.forEach((heading, i) => {
 		const nextHeading = headings[i + 1];

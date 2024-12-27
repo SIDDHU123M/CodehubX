@@ -2,7 +2,7 @@
 
 ---
 
-### Data Scraping Tools (Best and Limited)
+### Data Scraping Tools
 * [Scrapy](https://github.com/scrapy/scrapy) - A robust, open-source framework for web scraping in Python, widely adopted for its scalability.
 * [BeautifulSoup](https://github.com/wention/BeautifulSoup4) - A Python library for extracting information from HTML and XML documents efficiently.
 * [Playwright](https://github.com/microsoft/playwright) - A modern automation library supporting multiple languages and ideal for scraping dynamic websites.

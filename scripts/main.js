@@ -146,7 +146,7 @@ async function loadPage(file) {
 
 function createRightNav() {
 	const content = document.getElementById("content");
-	const headings = content.querySelectorAll("h1");
+	const headings = content.querySelectorAll("h3");
 	const firstH2 = content.querySelector("h2");
 	const navHeading = firstH2 ? firstH2.textContent : "Navigation";
 	const rightNavContent = Array.from(headings)
@@ -220,7 +220,7 @@ function setActiveLink(activeLink) {
 }
 
 window.addEventListener("scroll", () => {
-	const headings = Array.from(document.querySelectorAll("#content h1"));
+	const headings = Array.from(document.querySelectorAll("#content h3"));
 	const scrollPosition = window.scrollY + 200;
 	headings.forEach((heading, i) => {
 		const nextHeading = headings[i + 1];

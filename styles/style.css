@@ -381,3 +381,8 @@ header {
 	font-weight: 500 !important;
 	font-family: "Nunito", serif;
 }
+
+.mobile-nav ul {
+	list-style: disc;
+	padding: 0;
+}

@@ -95,7 +95,7 @@
 * [Quick Ref](https://quickref.me/) - A collection of quick reference guides for various programming languages and tools.
 * [Code with Harry](https://www.codewithharry.com/) - An educational platform offering tutorials and resources for different programming languages.
 * [Codecademy](https://www.codecademy.com/resources/cheatsheets/all) - The Codecademy Cheatsheets page offers a comprehensive collection of quick reference guides for various programming languages and technologies.
-* [Zero To Mastery](https://github.com/zero-to-mastery/resources/blob/master/cheatSheets.md) - For those looking for the quick-and-dirty of how to do things, or if you simply forgot something, look no further!
+* [Zero To Mastery](https://zero-to-mastery.github.io/resources/cheatSheets.html) - For those looking for the quick-and-dirty of how to do things, or if you simply forgot something, look no further!
 * [GeekForGeeks](https://www.geeksforgeeks.org/) - A popular educational website providing tutorials, coding problems, and technical articles for programmers.
 * [Interview Bit](https://www.interviewbit.com/) - A platform dedicated to helping users prepare for technical interviews with coding challenges and interview questions.
 * [Edureks](https://www.edureka.co/blog/cheatsheets/) - Offers a collection of cheat sheets and educational resources across various technology topics.
